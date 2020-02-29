@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/oboeru-web/static/css/main.d1b05096.chunk.css",
+    "main.js": "/oboeru-web/static/js/main.4dfe76db.chunk.js",
+    "main.js.map": "/oboeru-web/static/js/main.4dfe76db.chunk.js.map",
+    "runtime-main.js": "/oboeru-web/static/js/runtime-main.42dea728.js",
+    "runtime-main.js.map": "/oboeru-web/static/js/runtime-main.42dea728.js.map",
+    "static/js/2.1b8bcbfe.chunk.js": "/oboeru-web/static/js/2.1b8bcbfe.chunk.js",
+    "static/js/2.1b8bcbfe.chunk.js.map": "/oboeru-web/static/js/2.1b8bcbfe.chunk.js.map",
+    "index.html": "/oboeru-web/index.html",
+    "precache-manifest.22408d67c15e09b5f64cbbb35d4ed487.js": "/oboeru-web/precache-manifest.22408d67c15e09b5f64cbbb35d4ed487.js",
+    "service-worker.js": "/oboeru-web/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/oboeru-web/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.1b8bcbfe.chunk.js.LICENSE.txt": "/oboeru-web/static/js/2.1b8bcbfe.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/oboeru-web/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42dea728.js",
+    "static/js/2.1b8bcbfe.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.4dfe76db.chunk.js"
+  ]
+}
