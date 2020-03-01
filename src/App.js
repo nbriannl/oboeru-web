@@ -1,3 +1,13 @@
+import React from "react";
+
+import "./App.css";
+
+const App = () => <b></b>;
+
+export default App;
+
+/**
+export default App;
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -9,6 +19,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <p>
+          Hi
         </p>
         <a
           className="App-link"
@@ -22,5 +35,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+**/
