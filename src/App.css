@@ -1,4 +1,35 @@
-.App {
+.full-height {
+  height: 100vh;
+}
+
+.content {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  height: 92%;
+}
+
+.content > .row {
+  padding: 0.2em;
+}
+
+.quit-button {
+  flex: 0 1 5%;
+}
+
+.question-card {
+  flex: 20 1 auto;
+}
+
+.answer-buttons {
+  flex: 0 1 20%;
+}
+
+.special {
+  display: flex;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +66,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
