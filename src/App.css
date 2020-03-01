@@ -1,12 +1,6 @@
-.full-height {
-  height: 100vh;
-}
-
 .content {
-  padding: 0.5em;
   display: flex;
   flex-direction: column;
-  height: 92%;
 }
 
 .content > .row {
