@@ -26,6 +26,17 @@ const App = () => (
           </Button>
         </Col>
       </Row>
+      <Row className="previous-question-card">
+        <Col>
+          <Card bg="success" text="white" className="text-center">
+            <Card.Header>Previous Question</Card.Header>
+            <Card.Body>
+              <Card.Title>Free of Charge</Card.Title>
+              <Card.Text>無料</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
       <Row className="question-card">
         <Col>
           <Card className="text-center">
@@ -45,10 +56,18 @@ const App = () => (
       <Row className="answer-buttons">
         <Col>
           <ButtonGroup vertical className="special">
-            <Button variant="outline-danger">おさがしですか</Button>
-            <Button variant="outline-danger">しつれいします</Button>
-            <Button variant="outline-danger">行ってきます</Button>
-            <Button variant="outline-danger">つかれました</Button>
+            <Button variant="outline-danger">
+              おさがしですか　[おさがしですか]
+            </Button>
+            <Button variant="outline-danger">
+              しつれいします [しつれいします]
+            </Button>
+            <Button variant="outline-danger">
+              行ってきます [いってきます]
+            </Button>
+            <Button variant="outline-danger">
+              つかれました　[つかれました］
+            </Button>
           </ButtonGroup>
         </Col>
       </Row>
