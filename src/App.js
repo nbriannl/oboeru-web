@@ -3,7 +3,6 @@ import {
   Row,
   Col,
   Container,
-  Alert,
   Badge,
   Navbar,
   Card,
@@ -13,67 +12,111 @@ import {
 
 import "./App.css";
 
-const App = () => (
-  <div className="full-height">
-    <Navbar bg="danger" variant="dark" expand="lg">
-      <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
-    </Navbar>
-    <Container className="content" fluid>
-      <Row className="quit-button">
-        <Col>
-          <Button block variant="outline-danger">
-            Quit
-          </Button>
-        </Col>
-      </Row>
-      <Row className="previous-question-card">
-        <Col>
-          <Card bg="success" text="white" className="text-center">
-            <Card.Header>Previous Question</Card.Header>
-            <Card.Body>
-              <Card.Title>Free of Charge</Card.Title>
-              <Card.Text>無料</Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className="question-card">
-        <Col>
-          <Card className="text-center">
-            <Card.Body>
-              <Card.Title>See you later</Card.Title>
-              <Card.Text>( ? )[。]</Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              Q <Badge variant="secondary">2</Badge> out of{" "}
-              <Badge variant="secondary">50</Badge>{" "}
-              <i className="fa fa-check"></i> <Badge variant="success">2</Badge>{" "}
-              <i className="fa fa-times"></i> <Badge variant="danger">0</Badge>
-            </Card.Footer>
-          </Card>
-        </Col>
-      </Row>
-      <Row className="answer-buttons">
-        <Col>
-          <ButtonGroup vertical className="special">
-            <Button variant="outline-danger">
-              おさがしですか　[おさがしですか]
-            </Button>
-            <Button variant="outline-danger">
-              しつれいします [しつれいします]
-            </Button>
-            <Button variant="outline-danger">
-              行ってきます [いってきます]
-            </Button>
-            <Button variant="outline-danger">
-              つかれました　[つかれました］
-            </Button>
-          </ButtonGroup>
-        </Col>
-      </Row>
-    </Container>
-  </div>
-);
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isInQuiz: false };
+  }
+
+  handleStartQuiz = () => {
+    this.setState({ isInQuiz: true });
+  };
+
+  handleEndQuiz = () => {
+    this.setState({ isInQuiz: false });
+  };
+
+  render() {
+    const isInQuiz = this.state.isInQuiz;
+    let content;
+    if (isInQuiz) {
+      content = (
+        <>
+          <Row className="quit-button" onClick={this.handleEndQuiz}>
+            <Col>
+              <Button block variant="outline-danger">
+                Quit
+              </Button>
+            </Col>
+          </Row>
+          <Row className="previous-question-card">
+            <Col>
+              <Card bg="success" text="white" className="text-center">
+                <Card.Header>Previous Question</Card.Header>
+                <Card.Body>
+                  <Card.Title>Free of Charge</Card.Title>
+                  <Card.Text>無料</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+          <Row className="question-card">
+            <Col>
+              <Card className="text-center">
+                <Card.Body>
+                  <Card.Title>See you later</Card.Title>
+                  <Card.Text>( ? )[。]</Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  Q <Badge variant="secondary">2</Badge> out of{" "}
+                  <Badge variant="secondary">50</Badge>{" "}
+                  <i className="fa fa-check"></i>{" "}
+                  <Badge variant="success">2</Badge>{" "}
+                  <i className="fa fa-times"></i>{" "}
+                  <Badge variant="danger">0</Badge>
+                </Card.Footer>
+              </Card>
+            </Col>
+          </Row>
+          <Row className="answer-buttons">
+            <Col>
+              <ButtonGroup vertical className="special">
+                <Button variant="outline-danger">
+                  おさがしですか　[おさがしですか]
+                </Button>
+                <Button variant="outline-danger">
+                  しつれいします [しつれいします]
+                </Button>
+                <Button variant="outline-danger">
+                  行ってきます [いってきます]
+                </Button>
+                <Button variant="outline-danger">
+                  つかれました　[つかれました］
+                </Button>
+              </ButtonGroup>
+            </Col>
+          </Row>
+        </>
+      );
+    } else {
+      content = (
+        <>
+          <Row>
+            <Col>
+              <Button
+                block
+                variant="outline-danger"
+                onClick={this.handleStartQuiz}
+              >
+                Start
+              </Button>
+            </Col>
+          </Row>
+        </>
+      );
+    }
+    return (
+      <div>
+        <Navbar bg="danger" variant="dark" expand="lg">
+          <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
+        </Navbar>
+        <Container className="content" fluid>
+          {content}
+        </Container>
+      </div>
+    );
+  }
+}
 
 export default App;
 
