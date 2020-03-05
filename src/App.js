@@ -13,7 +13,7 @@ import {
 
 import "./App.css";
 import vocabulary from "./vocabulary.json";
-import poslist from "./poslist.json";
+import posList from "./poslist.json";
 import lessonList from "./lessonlist.json";
 
 const numLessons = Object.keys(lessonList).length;
@@ -27,12 +27,13 @@ class App extends React.Component {
       lessonNum: 1
     };
     console.log(vocabulary);
-    console.log(poslist);
+    console.log(posList);
     console.log(lessonList);
   }
 
   handleStartQuiz = () => {
     const wordIndices = lessonList[this.state.lessonNum];
+    const correctOptionIndex = Math.floor(Math.random() * 4);
     this.setState({
       isInQuiz: true,
       questionsIndices: wordIndices,
@@ -42,7 +43,8 @@ class App extends React.Component {
         isCorrect: null,
         english: null,
         japanese: null
-      }
+      },
+      correctOptionIndex: correctOptionIndex
     });
   };
 
@@ -61,38 +63,104 @@ class App extends React.Component {
   };
 
   getQuestionAndAnswers = questionIndex => {
-    console.log(questionIndex);
     const questionWord = vocabulary[questionIndex];
-    console.log(questionWord);
     const englishQuestion = questionWord.english;
     let questionBlank = "(    ?    )";
-    let japaneseAnswer = questionWord.japanese;
+    let japaneseAnswerString = questionWord.japanese;
+    let japaneseAnswerStringHiragana = questionWord.japanese_all_hiragana;
     if (questionWord.preJapanese !== "") {
       questionBlank = questionWord.preJapanese + " " + questionBlank;
-      japaneseAnswer = questionWord.preJapanese + " " + japaneseAnswer;
+      japaneseAnswerString =
+        questionWord.preJapanese + " " + japaneseAnswerString;
+      japaneseAnswerStringHiragana =
+        questionWord.preJapanese + " " + japaneseAnswerStringHiragana;
     }
     if (questionWord.postJapanese !== "") {
       questionBlank = questionBlank + " " + questionWord.postJapanese;
-      japaneseAnswer = japaneseAnswer + " " + questionWord.postJapanese;
+      japaneseAnswerString =
+        japaneseAnswerString + " " + questionWord.postJapanese;
+      japaneseAnswerStringHiragana =
+        japaneseAnswerStringHiragana + " " + questionWord.postJapanese;
     }
-    return { englishQuestion, questionBlank, japaneseAnswer };
+    let correctJapaneseOption =
+      questionWord.japanese + " [" + questionWord.japanese_all_hiragana + "]";
+    const incorrectJapaneseOptions = this.getIncorrectOptions(
+      questionWord.partOfSpeech[0],
+      questionIndex
+    );
+    return {
+      englishQuestion,
+      questionBlank,
+      japaneseAnswerString,
+      japaneseAnswerStringHiragana,
+      correctJapaneseOption,
+      incorrectJapaneseOptions
+    };
+  };
+
+  getIncorrectOptions = (partOfSpeech, indexQuestionWord) => {
+    const posListForQuestionWord = posList[partOfSpeech];
+    const indexInPosList = posListForQuestionWord.indexOf(indexQuestionWord);
+    let optionIndices = [];
+    while (optionIndices.length < 3) {
+      const randomIndex = this.getRandomInt(
+        0,
+        posListForQuestionWord.length - 1
+      );
+      if (
+        randomIndex !== indexInPosList &&
+        !optionIndices.includes(randomIndex)
+      ) {
+        optionIndices.push(randomIndex);
+      }
+    }
+    const incorrectOptions = optionIndices.map(index => {
+      const indexToVocab = posListForQuestionWord[index]
+      const incorrectWord = vocabulary[indexToVocab];
+      const incorrecOption =
+        incorrectWord.japanese +
+        " [" +
+        incorrectWord.japanese_all_hiragana +
+        "]";
+      return incorrecOption;
+    });
+    return incorrectOptions;
+  };
+
+  getRandomInt = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
   handleOptionSelect = event => {
     console.log("option selected: " + event.target.value);
+    const isCorrect = parseInt(event.target.value) === this.state.correctOptionIndex;
+    let newNumCorrect = this.state.numCorrect;
+    if (isCorrect) {
+      newNumCorrect = newNumCorrect + 1;
+    }
+    console.log(event.target.value)
+    console.log(this.state.correctOptionIndex);
     const currQnNum = this.state.currentQnNum;
     const currentWordIndex = this.state.questionsIndices[currQnNum];
     const nextQnNum = this.state.currentQnNum + 1;
-    const { englishQuestion, japaneseAnswer } = this.getQuestionAndAnswers(
-      currentWordIndex
-    );
+    const {
+      englishQuestion,
+      japaneseAnswerString,
+      japaneseAnswerStringHiragana
+    } = this.getQuestionAndAnswers(currentWordIndex);
+    const correctOptionIndex = Math.floor(Math.random() * 4);
     this.setState({
       currentQnNum: nextQnNum,
       previousQuestion: {
-        isCorrect: true,
+        isCorrect: isCorrect,
         english: englishQuestion,
-        japanese: japaneseAnswer
-      }
+        japanese: japaneseAnswerString,
+        japaneseAllHiragana: japaneseAnswerStringHiragana
+      },
+      numCorrect: newNumCorrect,
+      correctOptionIndex: correctOptionIndex
     });
   };
 
@@ -103,9 +171,16 @@ class App extends React.Component {
       const numTotal = this.state.questionsIndices.length;
       const currentQnNum = this.state.currentQnNum; // 0-index
       const currentWordIndex = this.state.questionsIndices[currentQnNum];
-      const { englishQuestion, questionBlank } = this.getQuestionAndAnswers(
-        currentWordIndex
-      );
+      const {
+        englishQuestion,
+        questionBlank,
+        correctJapaneseOption,
+        incorrectJapaneseOptions
+      } = this.getQuestionAndAnswers(currentWordIndex);
+      const correctOptionIndex = this.state.correctOptionIndex;
+      let options = incorrectJapaneseOptions;
+      options.splice(correctOptionIndex, 0, correctJapaneseOption);
+
       const numCorrect = this.state.numCorrect;
       const numWrong = currentQnNum - numCorrect;
       content = (
@@ -140,12 +215,7 @@ class App extends React.Component {
             <Col>
               <MCQOptions
                 handleOptionSelect={this.handleOptionSelect}
-                options={[
-                  "おさがしですか　[おさがしですか]",
-                  "しつれいします [しつれいします]",
-                  "行ってきます [いってきます]",
-                  "つかれました　[つかれました]"
-                ]}
+                options={options}
               />
             </Col>
           </Row>
@@ -209,7 +279,12 @@ const NavBar = () => {
 };
 
 function PreviousQuestionCard(props) {
-  const { isCorrect, english, japanese } = props.previousQuestion;
+  const {
+    isCorrect,
+    english,
+    japanese,
+    japaneseAllHiragana
+  } = props.previousQuestion;
   if (isCorrect === null) {
     return (
       <Card bg="light" text="black" className="text-center">
@@ -227,7 +302,11 @@ function PreviousQuestionCard(props) {
       <Card.Header>Previous Question</Card.Header>
       <Card.Body>
         <Card.Title>{english}</Card.Title>
-        <Card.Text>{japanese}</Card.Text>
+        <Card.Text>
+          {japanese}
+          <br></br>
+          {japaneseAllHiragana}
+        </Card.Text>
       </Card.Body>
     </Card>
   );
