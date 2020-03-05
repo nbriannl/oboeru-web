@@ -26,17 +26,16 @@ class App extends React.Component {
       isInQuiz: false,
       lessonNum: 1
     };
-    console.log(vocabulary);
-    console.log(posList);
-    console.log(lessonList);
   }
 
   handleStartQuiz = () => {
     const wordIndices = lessonList[this.state.lessonNum];
+    const shuffled = this.shuffleArray(wordIndices);
+
     const correctOptionIndex = Math.floor(Math.random() * 4);
     this.setState({
       isInQuiz: true,
-      questionsIndices: wordIndices,
+      questionsIndices: shuffled,
       currentQnNum: 0,
       numCorrect: 0,
       previousQuestion: {
@@ -46,6 +45,16 @@ class App extends React.Component {
       },
       correctOptionIndex: correctOptionIndex
     });
+  };
+
+  shuffleArray = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * i);
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
   };
 
   handleEndQuiz = () => {
@@ -66,8 +75,15 @@ class App extends React.Component {
     const questionWord = vocabulary[questionIndex];
     const englishQuestion = questionWord.english;
     let questionBlank = "(    ?    )";
-    let japaneseAnswerString = questionWord.japanese;
-    let japaneseAnswerStringHiragana = questionWord.japanese_all_hiragana;
+    let japaneseAnswerString = `[${questionWord.japanese}]`;
+    let japaneseAnswerStringHiragana = `[${questionWord.japanese_all_hiragana}]`;
+    if (questionWord.preJapaneseParticle !== "") {
+      questionBlank = questionWord.preJapaneseParticle + " " + questionBlank;
+      japaneseAnswerString =
+        questionWord.preJapaneseParticle + " " + japaneseAnswerString;
+      japaneseAnswerStringHiragana =
+        questionWord.preJapaneseParticle + " " + japaneseAnswerStringHiragana;
+    }
     if (questionWord.preJapanese !== "") {
       questionBlank = questionWord.preJapanese + " " + questionBlank;
       japaneseAnswerString =
