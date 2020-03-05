@@ -7,15 +7,28 @@ import {
   Navbar,
   Card,
   Button,
-  ButtonGroup
+  ButtonGroup,
+  Form
 } from "react-bootstrap";
 
 import "./App.css";
+import vocabulary from "./vocabulary.json";
+import poslist from "./poslist.json";
+import lessonlist from "./lessonlist.json";
+
+const numLessons = Object.keys(lessonlist).length;
+const lessonNumbers = [...Array(numLessons).keys()].map(x => x + 1);
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isInQuiz: false };
+    this.state = {
+      isInQuiz: false,
+      lessonNum: 1
+    };
+    console.log(vocabulary);
+    console.log(poslist);
+    console.log(lessonlist);
   }
 
   handleStartQuiz = () => {
@@ -26,9 +39,21 @@ class App extends React.Component {
     this.setState({ isInQuiz: false });
   };
 
+  handleLessonSelect = event => {
+    const selectedLessonNum = parseInt(event.target.value);
+    this.setState({ lessonNum: selectedLessonNum });
+  };
+
   render() {
     const isInQuiz = this.state.isInQuiz;
     let content;
+    const options = lessonNumbers.map(number => {
+      return (
+        <option key={number.toString()} value={number}>
+          {number}
+        </option>
+      );
+    });
     if (isInQuiz) {
       content = (
         <>
@@ -41,49 +66,31 @@ class App extends React.Component {
           </Row>
           <Row className="previous-question-card">
             <Col>
-              <Card bg="success" text="white" className="text-center">
-                <Card.Header>Previous Question</Card.Header>
-                <Card.Body>
-                  <Card.Title>Free of Charge</Card.Title>
-                  <Card.Text>無料</Card.Text>
-                </Card.Body>
-              </Card>
+              <PreviousQuestionCard title="Free of Charge" text="無料" />
             </Col>
           </Row>
           <Row className="question-card">
             <Col>
-              <Card className="text-center">
-                <Card.Body>
-                  <Card.Title>See you later</Card.Title>
-                  <Card.Text>( ? )[。]</Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  Q <Badge variant="secondary">2</Badge> out of{" "}
-                  <Badge variant="secondary">50</Badge>{" "}
-                  <i className="fa fa-check"></i>{" "}
-                  <Badge variant="success">2</Badge>{" "}
-                  <i className="fa fa-times"></i>{" "}
-                  <Badge variant="danger">0</Badge>
-                </Card.Footer>
-              </Card>
+              <QuestionCard
+                title="See you later"
+                text="(   ?   )[。]"
+                currentQnNum={2}
+                numTotal={50}
+                numCorrect={2}
+                numWrong={0}
+              />
             </Col>
           </Row>
           <Row className="answer-buttons">
             <Col>
-              <ButtonGroup vertical className="special">
-                <Button variant="outline-danger">
-                  おさがしですか　[おさがしですか]
-                </Button>
-                <Button variant="outline-danger">
-                  しつれいします [しつれいします]
-                </Button>
-                <Button variant="outline-danger">
-                  行ってきます [いってきます]
-                </Button>
-                <Button variant="outline-danger">
-                  つかれました　[つかれました］
-                </Button>
-              </ButtonGroup>
+              <MCQOptions
+                options={[
+                  "おさがしですか　[おさがしですか]",
+                  "しつれいします [しつれいします]",
+                  "行ってきます [いってきます]",
+                  "つかれました　[つかれました]"
+                ]}
+              />
             </Col>
           </Row>
         </>
@@ -102,14 +109,26 @@ class App extends React.Component {
               </Button>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              <Form.Group controlId="exampleForm.ControlSelect1">
+                <Form.Label>Example select</Form.Label>
+                <Form.Control
+                  as="select"
+                  value={this.state.lessonNum}
+                  onChange={this.handleLessonSelect}
+                >
+                  {options}
+                </Form.Control>
+              </Form.Group>
+            </Col>
+          </Row>
         </>
       );
     }
     return (
       <div>
-        <Navbar bg="danger" variant="dark" expand="lg">
-          <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
-        </Navbar>
+        <NavBar />
         <Container className="content" fluid>
           {content}
         </Container>
@@ -118,35 +137,54 @@ class App extends React.Component {
   }
 }
 
-export default App;
-
-/**
-export default App;
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+const NavBar = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          Hi
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Navbar bg="danger" variant="dark" expand="lg">
+      <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
+    </Navbar>
+  );
+};
+
+function PreviousQuestionCard(props) {
+  return (
+    <Card bg="success" text="white" className="text-center">
+      <Card.Header>Previous Question</Card.Header>
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.text}</Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
-**/
+
+function QuestionCard(props) {
+  return (
+    <Card className="text-center">
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.text}</Card.Text>
+      </Card.Body>
+      <Card.Footer>
+        Q <Badge variant="secondary">{props.currentQnNum}</Badge> out of{" "}
+        <Badge variant="secondary">{props.numTotal}</Badge>{" "}
+        <i className="fa fa-check"></i>{" "}
+        <Badge variant="success">{props.numCorrect}</Badge>{" "}
+        <i className="fa fa-times"></i>{" "}
+        <Badge variant="danger">{props.numWrong}</Badge>
+      </Card.Footer>
+    </Card>
+  );
+}
+
+function MCQOptions(props) {
+  return (
+    <ButtonGroup vertical className="special">
+      <Button variant="outline-danger">{props.options[0]}</Button>
+      <Button variant="outline-danger">{props.options[1]}</Button>
+      <Button variant="outline-danger">{props.options[2]}</Button>
+      <Button variant="outline-danger">{props.options[3]}</Button>
+    </ButtonGroup>
+  );
+}
+
+export default App;
