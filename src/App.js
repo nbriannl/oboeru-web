@@ -14,9 +14,9 @@ import {
 import "./App.css";
 import vocabulary from "./vocabulary.json";
 import poslist from "./poslist.json";
-import lessonlist from "./lessonlist.json";
+import lessonList from "./lessonlist.json";
 
-const numLessons = Object.keys(lessonlist).length;
+const numLessons = Object.keys(lessonList).length;
 const lessonNumbers = [...Array(numLessons).keys()].map(x => x + 1);
 
 class App extends React.Component {
@@ -28,15 +28,31 @@ class App extends React.Component {
     };
     console.log(vocabulary);
     console.log(poslist);
-    console.log(lessonlist);
+    console.log(lessonList);
   }
 
   handleStartQuiz = () => {
-    this.setState({ isInQuiz: true });
+    const wordIndices = lessonList[this.state.lessonNum];
+    this.setState({
+      isInQuiz: true,
+      questionsIndices: wordIndices,
+      currentQnNum: 0,
+      numCorrect: 0,
+      previousQuestion: {
+        isCorrect: null,
+        english: null,
+        japanese: null
+      }
+    });
   };
 
   handleEndQuiz = () => {
-    this.setState({ isInQuiz: false });
+    this.setState({
+      isInQuiz: false,
+      questionsIndices: undefined,
+      currentQnNum: undefined,
+      previousQuestion: undefined
+    });
   };
 
   handleLessonSelect = event => {
@@ -44,17 +60,54 @@ class App extends React.Component {
     this.setState({ lessonNum: selectedLessonNum });
   };
 
+  getQuestionAndAnswers = questionIndex => {
+    console.log(questionIndex);
+    const questionWord = vocabulary[questionIndex];
+    console.log(questionWord);
+    const englishQuestion = questionWord.english;
+    let questionBlank = "(    ?    )";
+    let japaneseAnswer = questionWord.japanese;
+    if (questionWord.preJapanese !== "") {
+      questionBlank = questionWord.preJapanese + " " + questionBlank;
+      japaneseAnswer = questionWord.preJapanese + " " + japaneseAnswer;
+    }
+    if (questionWord.postJapanese !== "") {
+      questionBlank = questionBlank + " " + questionWord.postJapanese;
+      japaneseAnswer = japaneseAnswer + " " + questionWord.postJapanese;
+    }
+    return { englishQuestion, questionBlank, japaneseAnswer };
+  };
+
+  handleOptionSelect = event => {
+    console.log("option selected: " + event.target.value);
+    const currQnNum = this.state.currentQnNum;
+    const currentWordIndex = this.state.questionsIndices[currQnNum];
+    const nextQnNum = this.state.currentQnNum + 1;
+    const { englishQuestion, japaneseAnswer } = this.getQuestionAndAnswers(
+      currentWordIndex
+    );
+    this.setState({
+      currentQnNum: nextQnNum,
+      previousQuestion: {
+        isCorrect: true,
+        english: englishQuestion,
+        japanese: japaneseAnswer
+      }
+    });
+  };
+
   render() {
     const isInQuiz = this.state.isInQuiz;
     let content;
-    const options = lessonNumbers.map(number => {
-      return (
-        <option key={number.toString()} value={number}>
-          {number}
-        </option>
-      );
-    });
     if (isInQuiz) {
+      const numTotal = this.state.questionsIndices.length;
+      const currentQnNum = this.state.currentQnNum; // 0-index
+      const currentWordIndex = this.state.questionsIndices[currentQnNum];
+      const { englishQuestion, questionBlank } = this.getQuestionAndAnswers(
+        currentWordIndex
+      );
+      const numCorrect = this.state.numCorrect;
+      const numWrong = currentQnNum - numCorrect;
       content = (
         <>
           <Row className="quit-button" onClick={this.handleEndQuiz}>
@@ -66,24 +119,27 @@ class App extends React.Component {
           </Row>
           <Row className="previous-question-card">
             <Col>
-              <PreviousQuestionCard title="Free of Charge" text="無料" />
+              <PreviousQuestionCard
+                previousQuestion={this.state.previousQuestion}
+              />
             </Col>
           </Row>
           <Row className="question-card">
             <Col>
               <QuestionCard
-                title="See you later"
-                text="(   ?   )[。]"
-                currentQnNum={2}
-                numTotal={50}
-                numCorrect={2}
-                numWrong={0}
+                title={englishQuestion}
+                text={questionBlank}
+                currentQnNum={currentQnNum + 1}
+                numTotal={numTotal}
+                numCorrect={numCorrect}
+                numWrong={numWrong}
               />
             </Col>
           </Row>
           <Row className="answer-buttons">
             <Col>
               <MCQOptions
+                handleOptionSelect={this.handleOptionSelect}
                 options={[
                   "おさがしですか　[おさがしですか]",
                   "しつれいします [しつれいします]",
@@ -96,6 +152,13 @@ class App extends React.Component {
         </>
       );
     } else {
+      const options = lessonNumbers.map(number => {
+        return (
+          <option key={number.toString()} value={number}>
+            {number}
+          </option>
+        );
+      });
       content = (
         <>
           <Row>
@@ -146,12 +209,25 @@ const NavBar = () => {
 };
 
 function PreviousQuestionCard(props) {
+  const { isCorrect, english, japanese } = props.previousQuestion;
+  if (isCorrect === null) {
+    return (
+      <Card bg="light" text="black" className="text-center">
+        <Card.Header>Previous Question</Card.Header>
+        <Card.Body>
+          <Card.Title></Card.Title>
+          <Card.Text></Card.Text>
+        </Card.Body>
+      </Card>
+    );
+  }
+  const bgStyle = isCorrect ? "success" : "danger";
   return (
-    <Card bg="success" text="white" className="text-center">
+    <Card bg={bgStyle} text="white" className="text-center">
       <Card.Header>Previous Question</Card.Header>
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>{props.text}</Card.Text>
+        <Card.Title>{english}</Card.Title>
+        <Card.Text>{japanese}</Card.Text>
       </Card.Body>
     </Card>
   );
@@ -179,10 +255,34 @@ function QuestionCard(props) {
 function MCQOptions(props) {
   return (
     <ButtonGroup vertical className="special">
-      <Button variant="outline-danger">{props.options[0]}</Button>
-      <Button variant="outline-danger">{props.options[1]}</Button>
-      <Button variant="outline-danger">{props.options[2]}</Button>
-      <Button variant="outline-danger">{props.options[3]}</Button>
+      <Button
+        value={0}
+        variant="outline-danger"
+        onClick={props.handleOptionSelect}
+      >
+        {props.options[0]}
+      </Button>
+      <Button
+        value={1}
+        variant="outline-danger"
+        onClick={props.handleOptionSelect}
+      >
+        {props.options[1]}
+      </Button>
+      <Button
+        value={2}
+        variant="outline-danger"
+        onClick={props.handleOptionSelect}
+      >
+        {props.options[2]}
+      </Button>
+      <Button
+        value={3}
+        variant="outline-danger"
+        onClick={props.handleOptionSelect}
+      >
+        {props.options[3]}
+      </Button>
     </ButtonGroup>
   );
 }
