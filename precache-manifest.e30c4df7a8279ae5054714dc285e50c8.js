@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "410c24257ca60a5dad38b1aa06463b65",
+    "revision": "ef6ad4a2de102e435dc3f5439188a885",
     "url": "/oboeru-web/index.html"
   },
   {
-    "revision": "a1a8ac85277f1742c000",
+    "revision": "a5ebd5afc06d24cfc8a0",
     "url": "/oboeru-web/static/css/2.99b0aee6.chunk.css"
   },
   {
-    "revision": "4d9816d5a6be03a7df8e",
+    "revision": "719b4dde5fde28a56ca0",
     "url": "/oboeru-web/static/css/main.aacde068.chunk.css"
   },
   {
-    "revision": "a1a8ac85277f1742c000",
-    "url": "/oboeru-web/static/js/2.a9352f40.chunk.js"
+    "revision": "a5ebd5afc06d24cfc8a0",
+    "url": "/oboeru-web/static/js/2.8dcdce93.chunk.js"
   },
   {
     "revision": "11a928b57aca5049fe950bf8bcde77c5",
-    "url": "/oboeru-web/static/js/2.a9352f40.chunk.js.LICENSE.txt"
+    "url": "/oboeru-web/static/js/2.8dcdce93.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d9816d5a6be03a7df8e",
-    "url": "/oboeru-web/static/js/main.76f1db81.chunk.js"
+    "revision": "719b4dde5fde28a56ca0",
+    "url": "/oboeru-web/static/js/main.8db4075f.chunk.js"
   },
   {
     "revision": "847ebd3bf8fdd8f02a12",
