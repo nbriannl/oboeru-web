@@ -115,7 +115,7 @@ class App extends React.Component {
       }
     }
     const incorrectOptions = optionIndices.map(index => {
-      const indexToVocab = posListForQuestionWord[index]
+      const indexToVocab = posListForQuestionWord[index];
       const incorrectWord = vocabulary[indexToVocab];
       const incorrecOption =
         incorrectWord.japanese +
@@ -134,14 +134,12 @@ class App extends React.Component {
   };
 
   handleOptionSelect = event => {
-    console.log("option selected: " + event.target.value);
-    const isCorrect = parseInt(event.target.value) === this.state.correctOptionIndex;
+    const isCorrect =
+      parseInt(event.target.value) === this.state.correctOptionIndex;
     let newNumCorrect = this.state.numCorrect;
     if (isCorrect) {
       newNumCorrect = newNumCorrect + 1;
     }
-    console.log(event.target.value)
-    console.log(this.state.correctOptionIndex);
     const currQnNum = this.state.currentQnNum;
     const currentWordIndex = this.state.questionsIndices[currQnNum];
     const nextQnNum = this.state.currentQnNum + 1;
@@ -170,57 +168,90 @@ class App extends React.Component {
     if (isInQuiz) {
       const numTotal = this.state.questionsIndices.length;
       const currentQnNum = this.state.currentQnNum; // 0-index
-      const currentWordIndex = this.state.questionsIndices[currentQnNum];
-      const {
-        englishQuestion,
-        questionBlank,
-        correctJapaneseOption,
-        incorrectJapaneseOptions
-      } = this.getQuestionAndAnswers(currentWordIndex);
-      const correctOptionIndex = this.state.correctOptionIndex;
-      let options = incorrectJapaneseOptions;
-      options.splice(correctOptionIndex, 0, correctJapaneseOption);
-
+      const isQuizEnd = currentQnNum >= numTotal;
       const numCorrect = this.state.numCorrect;
       const numWrong = currentQnNum - numCorrect;
-      content = (
-        <>
-          <Row className="quit-button" onClick={this.handleEndQuiz}>
-            <Col>
-              <Button block variant="outline-danger">
-                Quit
-              </Button>
-            </Col>
-          </Row>
-          <Row className="previous-question-card">
-            <Col>
-              <PreviousQuestionCard
-                previousQuestion={this.state.previousQuestion}
-              />
-            </Col>
-          </Row>
-          <Row className="question-card">
-            <Col>
-              <QuestionCard
-                title={englishQuestion}
-                text={questionBlank}
-                currentQnNum={currentQnNum + 1}
-                numTotal={numTotal}
-                numCorrect={numCorrect}
-                numWrong={numWrong}
-              />
-            </Col>
-          </Row>
-          <Row className="answer-buttons">
-            <Col>
-              <MCQOptions
-                handleOptionSelect={this.handleOptionSelect}
-                options={options}
-              />
-            </Col>
-          </Row>
-        </>
-      );
+      if (isQuizEnd) {
+        content = (
+          <>
+            <Row className="quit-button" onClick={this.handleEndQuiz}>
+              <Col>
+                <Button block variant="outline-danger">
+                  Quit
+                </Button>
+              </Col>
+            </Row>
+            <Row className="previous-question-card">
+              <Col>
+                <PreviousQuestionCard
+                  previousQuestion={this.state.previousQuestion}
+                />
+              </Col>
+            </Row>
+            <Row className="question-card">
+              <Col>
+                <QuestionCard
+                  title="Quiz Over"
+                  currentQnNum={currentQnNum}
+                  numTotal={numTotal}
+                  numCorrect={numCorrect}
+                  numWrong={numWrong}
+                />
+              </Col>
+            </Row>
+          </>
+        );
+      } else {
+        const currentWordIndex = this.state.questionsIndices[currentQnNum];
+        const {
+          englishQuestion,
+          questionBlank,
+          correctJapaneseOption,
+          incorrectJapaneseOptions
+        } = this.getQuestionAndAnswers(currentWordIndex);
+        const correctOptionIndex = this.state.correctOptionIndex;
+        let options = incorrectJapaneseOptions;
+        options.splice(correctOptionIndex, 0, correctJapaneseOption);
+
+        content = (
+          <>
+            <Row className="quit-button" onClick={this.handleEndQuiz}>
+              <Col>
+                <Button block variant="outline-danger">
+                  Quit
+                </Button>
+              </Col>
+            </Row>
+            <Row className="previous-question-card">
+              <Col>
+                <PreviousQuestionCard
+                  previousQuestion={this.state.previousQuestion}
+                />
+              </Col>
+            </Row>
+            <Row className="question-card">
+              <Col>
+                <QuestionCard
+                  title={englishQuestion}
+                  text={questionBlank}
+                  currentQnNum={currentQnNum + 1}
+                  numTotal={numTotal}
+                  numCorrect={numCorrect}
+                  numWrong={numWrong}
+                />
+              </Col>
+            </Row>
+            <Row className="answer-buttons">
+              <Col>
+                <MCQOptions
+                  handleOptionSelect={this.handleOptionSelect}
+                  options={options}
+                />
+              </Col>
+            </Row>
+          </>
+        );
+      }
     } else {
       const options = lessonNumbers.map(number => {
         return (
@@ -245,7 +276,7 @@ class App extends React.Component {
           <Row>
             <Col>
               <Form.Group controlId="exampleForm.ControlSelect1">
-                <Form.Label>Example select</Form.Label>
+                <Form.Label>Select Lesson</Form.Label>
                 <Form.Control
                   as="select"
                   value={this.state.lessonNum}
