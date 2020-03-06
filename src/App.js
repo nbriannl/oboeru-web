@@ -96,6 +96,11 @@ class App extends React.Component {
       japaneseAnswerStringHiragana =
         questionWord.preJapanese + " " + japaneseAnswerStringHiragana;
     }
+    if (questionWord.partOfSpeech.includes("na-adj")) {
+      questionBlank = questionBlank + "[な]";
+      japaneseAnswerString = japaneseAnswerString + "[な]";
+      japaneseAnswerStringHiragana = japaneseAnswerStringHiragana + "[な]";
+    }
     if (questionWord.postJapanese !== "") {
       questionBlank = questionBlank + " " + questionWord.postJapanese;
       japaneseAnswerString =
@@ -467,13 +472,14 @@ function MCQOptions(props) {
 }
 
 const SummaryTable = props => {
-  const cards = props.questions.map(question => {
-    console.log(question);
-    return <PreviousQuestionCardCompact previousQuestion={question} />;
+  const cards = props.questions.map((question, index) => {
+    return (
+      <PreviousQuestionCardCompact key={index} previousQuestion={question} />
+    );
   });
   return (
     <>
-      <h3 class="text-center">Summary</h3>
+      <h3 className="text-center">Summary</h3>
       {cards}
     </>
   );
