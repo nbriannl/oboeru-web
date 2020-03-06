@@ -45,7 +45,8 @@ class App extends React.Component {
         english: null,
         japanese: null
       },
-      correctOptionIndex: correctOptionIndex
+      correctOptionIndex: correctOptionIndex,
+      answeredQuestions: []
     });
   };
 
@@ -64,7 +65,9 @@ class App extends React.Component {
       isInQuiz: false,
       questionsIndices: undefined,
       currentQnNum: undefined,
-      previousQuestion: undefined
+      previousQuestion: undefined,
+      correctOptionIndex: undefined,
+      answeredQuestions: undefined
     });
   };
 
@@ -158,15 +161,27 @@ class App extends React.Component {
     if (isCorrect) {
       newNumCorrect = newNumCorrect + 1;
     }
+
     const currQnNum = this.state.currentQnNum;
-    const currentWordIndex = this.state.questionsIndices[currQnNum];
     const nextQnNum = this.state.currentQnNum + 1;
+
+    const currentWordIndex = this.state.questionsIndices[currQnNum];
     const {
       englishQuestion,
       japaneseAnswerString,
       japaneseAnswerStringHiragana
     } = this.getQuestionAndAnswers(currentWordIndex);
+
     const correctOptionIndex = Math.floor(Math.random() * 4);
+
+    const currentAnsweredQuestions = this.state.answeredQuestions;
+    currentAnsweredQuestions.push({
+      isCorrect,
+      english: englishQuestion,
+      japanese: japaneseAnswerString,
+      japaneseAllHiragana: japaneseAnswerStringHiragana
+    });
+
     this.setState({
       currentQnNum: nextQnNum,
       previousQuestion: {
@@ -176,7 +191,8 @@ class App extends React.Component {
         japaneseAllHiragana: japaneseAnswerStringHiragana
       },
       numCorrect: newNumCorrect,
-      correctOptionIndex: correctOptionIndex
+      correctOptionIndex: correctOptionIndex,
+      answeredQuestions: currentAnsweredQuestions
     });
   };
 
@@ -215,6 +231,11 @@ class App extends React.Component {
                   numCorrect={numCorrect}
                   numWrong={numWrong}
                 />
+              </Col>
+            </Row>
+            <Row className="question-card">
+              <Col>
+                <SummaryTable questions={this.state.answeredQuestions} />
               </Col>
             </Row>
           </>
@@ -369,6 +390,28 @@ function PreviousQuestionCard(props) {
   );
 }
 
+function PreviousQuestionCardCompact(props) {
+  const {
+    isCorrect,
+    english,
+    japanese,
+    japaneseAllHiragana
+  } = props.previousQuestion;
+  const bgStyle = isCorrect ? "success" : "danger";
+  return (
+    <Card bg={bgStyle} text="white" className="text-center">
+      <Card.Body>
+        <Card.Title>{english}</Card.Title>
+        <Card.Text>
+          {japanese}
+          <br></br>
+          {japaneseAllHiragana}
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  );
+}
+
 function QuestionCard(props) {
   return (
     <Card className="text-center">
@@ -422,5 +465,18 @@ function MCQOptions(props) {
     </ButtonGroup>
   );
 }
+
+const SummaryTable = props => {
+  const cards = props.questions.map(question => {
+    console.log(question);
+    return <PreviousQuestionCardCompact previousQuestion={question} />;
+  });
+  return (
+    <>
+      <h3 class="text-center">Summary</h3>
+      {cards}
+    </>
+  );
+};
 
 export default App;
