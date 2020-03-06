@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import {
   Row,
   Col,
@@ -308,6 +310,9 @@ class App extends React.Component {
     }
     return (
       <div>
+        <Helmet>
+          <title>Oboeru 覚える MCQ Vocab Quiz App</title>
+        </Helmet>
         <NavBar />
         <Container className="content" fluid>
           {content}
