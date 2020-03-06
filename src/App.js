@@ -312,6 +312,11 @@ class App extends React.Component {
       <div>
         <Helmet>
           <title>Oboeru 覚える MCQ Vocab Quiz App</title>
+          <meta name="author" content="Neil Brian Labayna" />
+          <meta
+            name="description"
+            content="MCQ Quiz App for Japanese Langauge"
+          />
         </Helmet>
         <NavBar />
         <Container className="content" fluid>
