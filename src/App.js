@@ -26,7 +26,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       isInQuiz: false,
-      lessonNum: 1
+      lessonNum: 1,
+      checked: false // checked false == Red theme
     };
   }
 
@@ -74,6 +75,10 @@ class App extends React.Component {
   handleLessonSelect = event => {
     const selectedLessonNum = parseInt(event.target.value);
     this.setState({ lessonNum: selectedLessonNum });
+  };
+
+  handleThemeSwitch = event => {
+    this.setState({ checked: event.target.checked });
   };
 
   getQuestionAndAnswers = questionIndex => {
@@ -202,6 +207,8 @@ class App extends React.Component {
   };
 
   render() {
+    const themeColor = this.state.checked ? "primary" : "danger";
+    console.log(themeColor);
     const isInQuiz = this.state.isInQuiz;
     let content;
     if (isInQuiz) {
@@ -215,7 +222,7 @@ class App extends React.Component {
           <>
             <Row className="quit-button" onClick={this.handleEndQuiz}>
               <Col>
-                <Button block variant="outline-danger">
+                <Button block variant={`outline-${themeColor}`}>
                   Quit
                 </Button>
               </Col>
@@ -261,7 +268,7 @@ class App extends React.Component {
           <>
             <Row className="quit-button" onClick={this.handleEndQuiz}>
               <Col>
-                <Button block variant="outline-danger">
+                <Button block variant={`outline-${themeColor}`}>
                   Quit
                 </Button>
               </Col>
@@ -288,6 +295,7 @@ class App extends React.Component {
             <Row className="answer-buttons">
               <Col>
                 <MCQOptions
+                  themeColor={themeColor}
                   handleOptionSelect={this.handleOptionSelect}
                   options={options}
                 />
@@ -310,7 +318,7 @@ class App extends React.Component {
             <Col>
               <Button
                 block
-                variant="outline-danger"
+                variant={`outline-${themeColor}`}
                 onClick={this.handleStartQuiz}
               >
                 Start
@@ -319,7 +327,10 @@ class App extends React.Component {
           </Row>
           <Row>
             <Col>
-              <Form.Group controlId="exampleForm.ControlSelect1">
+              <Form.Group
+                className="text-center"
+                controlId="exampleForm.ControlSelect1"
+              >
                 <Form.Label>Select Lesson</Form.Label>
                 <Form.Control
                   as="select"
@@ -328,6 +339,14 @@ class App extends React.Component {
                 >
                   {options}
                 </Form.Control>
+                <Form.Label>Theme</Form.Label>
+                <Form.Check
+                  type="switch"
+                  id="theme-switch"
+                  label="Red/Blue"
+                  checked={this.state.checked}
+                  onChange={this.handleThemeSwitch}
+                />
               </Form.Group>
             </Col>
           </Row>
@@ -344,7 +363,7 @@ class App extends React.Component {
             content="MCQ Quiz App for Japanese Langauge"
           />
         </Helmet>
-        <NavBar />
+        <NavBar bg={themeColor} />
         <Container className="content" fluid>
           {content}
         </Container>
@@ -353,9 +372,9 @@ class App extends React.Component {
   }
 }
 
-const NavBar = () => {
+const NavBar = props => {
   return (
-    <Navbar bg="danger" variant="dark" expand="lg">
+    <Navbar bg={props.bg} variant="dark" expand="lg">
       <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
     </Navbar>
   );
@@ -437,32 +456,33 @@ function QuestionCard(props) {
 }
 
 function MCQOptions(props) {
+  const themeColor = props.themeColor;
   return (
     <ButtonGroup vertical className="special">
       <Button
         value={0}
-        variant="outline-danger"
+        variant={`outline-${themeColor}`}
         onClick={props.handleOptionSelect}
       >
         {props.options[0]}
       </Button>
       <Button
         value={1}
-        variant="outline-danger"
+        variant={`outline-${themeColor}`}
         onClick={props.handleOptionSelect}
       >
         {props.options[1]}
       </Button>
       <Button
         value={2}
-        variant="outline-danger"
+        variant={`outline-${themeColor}`}
         onClick={props.handleOptionSelect}
       >
         {props.options[2]}
       </Button>
       <Button
         value={3}
-        variant="outline-danger"
+        variant={`outline-${themeColor}`}
         onClick={props.handleOptionSelect}
       >
         {props.options[3]}
