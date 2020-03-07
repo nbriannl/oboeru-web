@@ -483,6 +483,18 @@ class App extends React.Component {
             name="description"
             content="MCQ Quiz App for Japanese Langauge"
           />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-159910112-1"
+          ></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-159910112-1');
+            `}
+          </script>
         </Helmet>
         <NavBar bg={themeColor} />
         <Container className="content" fluid>
