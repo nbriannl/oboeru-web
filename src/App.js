@@ -26,9 +26,9 @@ class App extends React.Component {
     super(props);
     this.state = {
       isInQuiz: false,
-      lessonNum: 40,
+      lessonNum: 1,
       isBlueTheme: false, // checked false == Red theme
-      isOpenEnded: true
+      isOpenEnded: false
     };
   }
 
