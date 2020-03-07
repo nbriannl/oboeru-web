@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "23c202dbafd88e1ba22afb46790773c1",
+    "revision": "0a0f345f8fcd3db4b45ce20b6b5d5a5a",
     "url": "/oboeru-web/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oboeru-web/static/css/2.99b0aee6.chunk.css"
   },
   {
-    "revision": "f5a710b4b2377c3e4dc2",
+    "revision": "3b82f15fda1ed04cc17a",
     "url": "/oboeru-web/static/css/main.aacde068.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oboeru-web/static/js/2.8dcdce93.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f5a710b4b2377c3e4dc2",
-    "url": "/oboeru-web/static/js/main.457350b6.chunk.js"
+    "revision": "3b82f15fda1ed04cc17a",
+    "url": "/oboeru-web/static/js/main.d646098b.chunk.js"
   },
   {
     "revision": "847ebd3bf8fdd8f02a12",
