@@ -356,6 +356,7 @@ class App extends React.Component {
           answerContent = (
             <>
               <OpenEndedAnswerForm
+                themeColor={themeColor}
                 value={this.state.answerFormValue}
                 handleAnswerSubmit={this.handleAnswerSubmit}
                 handleAnswerChange={this.handleAnswerChange}
@@ -613,16 +614,40 @@ function MCQOptions(props) {
 
 const OpenEndedAnswerForm = props => {
   return (
-    <form onSubmit={props.handleAnswerSubmit}>
-      <label>
-        <input
-          type="text"
-          value={props.value}
-          onChange={props.handleAnswerChange}
-        />
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
+    <>
+      {/* <form onSubmit={props.handleAnswerSubmit}>
+        <label>
+          <input
+            type="text"
+            value={props.value}
+            onChange={props.handleAnswerChange}
+          />
+        </label>
+        <input type="submit" value="Submit" />
+      </form> */}
+      <Form>
+        <Form.Group controlId="formAnswer">
+          <Form.Label>Answer</Form.Label>
+          <Form.Control
+            type="answer"
+            placeholder="Enter answer here"
+            value={props.value}
+            onChange={props.handleAnswerChange}
+          />
+          <Form.Text className="text-muted">
+            If your answer includes kanji, you must type exactly the same as the
+            textbook's entry.
+          </Form.Text>
+        </Form.Group>
+        <Button
+          variant={props.themeColor}
+          type="submit"
+          onClick={props.handleAnswerSubmit}
+        >
+          Submit
+        </Button>
+      </Form>
+    </>
   );
 };
 
