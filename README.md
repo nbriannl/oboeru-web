@@ -43,7 +43,7 @@ The python script was developed with `Python 3.7.4`. And uses `pandas` to load t
 Therefore, a suitable version of python in your system and `pip install pandas` should do fine.
 
 ## How to add Vocabulary
-To update the vocabulary, simply open and edit `vocab.xlsx`
+To update the vocabulary, simply open and edit `vocab.xlsx` and run `npm run updatevocab`. If you do not want to install `npm` just run `python main.py` in the `/vocabulary_gen` directory. If you really don't want to do anything but update the xlsx. Just include the xlxs in the PR.
 
 ### Fields
 The excel file was originally made by me for Japanese 3 revision, hence not all fields are used in the current version of the application. It would be best however to fill up all fields when adding vocabulary as future functionality may use these.
