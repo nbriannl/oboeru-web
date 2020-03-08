@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 import {
   Row,
@@ -302,6 +301,18 @@ class App extends React.Component {
 
   render() {
     const themeColor = this.state.isBlueTheme ? "primary" : "danger";
+    const redColor = "#DC3545";
+    const blueColor = "#007BFF";
+    if (this.state.isBlueTheme) {
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute("content", blueColor);
+    } else {
+      document
+        .querySelector('meta[name="theme-color"]')
+        .setAttribute("content", redColor);
+    }
+
     const isInQuiz = this.state.isInQuiz;
     const isOpenEnded = this.state.isOpenEnded;
     let content;
@@ -476,26 +487,6 @@ class App extends React.Component {
     }
     return (
       <div>
-        <Helmet>
-          <title>Oboeru 覚える MCQ Vocab Quiz App</title>
-          <meta name="author" content="Neil Brian Labayna" />
-          <meta
-            name="description"
-            content="MCQ Quiz App for Japanese Langauge"
-          />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-159910112-1"
-          ></script>
-          <script>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'UA-159910112-1');
-            `}
-          </script>
-        </Helmet>
         <NavBar bg={themeColor} />
         <Container className="content" fluid>
           {content}
