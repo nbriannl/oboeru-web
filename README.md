@@ -24,6 +24,9 @@ Feel free to request a feature over at https://github.com/nbriannl/oboeru-web/is
 
 Fork and clone the repo and `npm install`
 
+To preview the app `npm start`
+
+Please install and set up `Prettier`.
 
 ### Vocabulary Generator
 
