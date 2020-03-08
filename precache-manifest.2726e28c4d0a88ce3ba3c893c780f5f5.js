@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35cb7062ebf5f4910f1f966d5aa0b54a",
+    "revision": "3e16fe94e5c06bf266ef4775d64edd19",
     "url": "/oboeru-web/index.html"
   },
   {
