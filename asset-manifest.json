@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/oboeru-web/static/css/main.aacde068.chunk.css",
-    "main.js": "/oboeru-web/static/js/main.550e2145.chunk.js",
-    "main.js.map": "/oboeru-web/static/js/main.550e2145.chunk.js.map",
+    "main.js": "/oboeru-web/static/js/main.7e37ff7e.chunk.js",
+    "main.js.map": "/oboeru-web/static/js/main.7e37ff7e.chunk.js.map",
     "runtime-main.js": "/oboeru-web/static/js/runtime-main.42dea728.js",
     "runtime-main.js.map": "/oboeru-web/static/js/runtime-main.42dea728.js.map",
     "static/css/2.99b0aee6.chunk.css": "/oboeru-web/static/css/2.99b0aee6.chunk.css",
     "static/js/2.a9352f40.chunk.js": "/oboeru-web/static/js/2.a9352f40.chunk.js",
     "static/js/2.a9352f40.chunk.js.map": "/oboeru-web/static/js/2.a9352f40.chunk.js.map",
     "index.html": "/oboeru-web/index.html",
-    "precache-manifest.2726e28c4d0a88ce3ba3c893c780f5f5.js": "/oboeru-web/precache-manifest.2726e28c4d0a88ce3ba3c893c780f5f5.js",
+    "precache-manifest.c2ff0167e377ba595f1f876702025a46.js": "/oboeru-web/precache-manifest.c2ff0167e377ba595f1f876702025a46.js",
     "service-worker.js": "/oboeru-web/service-worker.js",
     "static/css/2.99b0aee6.chunk.css.map": "/oboeru-web/static/css/2.99b0aee6.chunk.css.map",
     "static/css/main.aacde068.chunk.css.map": "/oboeru-web/static/css/main.aacde068.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.99b0aee6.chunk.css",
     "static/js/2.a9352f40.chunk.js",
     "static/css/main.aacde068.chunk.css",
-    "static/js/main.550e2145.chunk.js"
+    "static/js/main.7e37ff7e.chunk.js"
   ]
 }
