@@ -173,9 +173,14 @@ class App extends React.Component {
         0,
         posListForQuestionWord.length - 1
       );
+      const randomWord =
+        vocabulary[posListForQuestionWord[randomIndex]].japanese;
+      const questionWord =
+        vocabulary[posListForQuestionWord[indexInPosList]].japanese;
       if (
         randomIndex !== indexInPosList &&
-        !optionIndices.includes(randomIndex)
+        !optionIndices.includes(randomIndex) &&
+        randomWord !== questionWord
       ) {
         optionIndices.push(randomIndex);
       }
