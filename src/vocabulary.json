@@ -25442,7 +25442,7 @@
         "japanese_all_hiragana": "\u3042\u308b",
         "postJapanese": "\uff5e",
         "preEnglish": "",
-        "english": "a certain~, one~",
+        "english": "a certain\uff5e, one\uff5e",
         "postEnglish": ""
     },
     {
@@ -25889,7 +25889,7 @@
         "preJapanese": "",
         "preJapaneseParticle": "",
         "japanese": "\u6226\u4e89",
-        "japanese_all_hiragana": "\u305b\u3093\u3069\u3046",
+        "japanese_all_hiragana": "\u305b\u3093\u305d\u3046",
         "postJapanese": "",
         "preEnglish": "",
         "english": "war",
@@ -26039,7 +26039,7 @@
         "preJapanese": "",
         "preJapaneseParticle": "",
         "japanese": "\u7f36\u8a70",
-        "japanese_all_hiragana": "\u304b\u3093\u305a\u3081",
+        "japanese_all_hiragana": "\u304b\u3093\u3065\u3081",
         "postJapanese": "",
         "preEnglish": "",
         "english": "canned food, tinned food",
@@ -26132,7 +26132,7 @@
         "japanese_all_hiragana": "\u3042\u308b",
         "postJapanese": "\uff5e",
         "preEnglish": "",
-        "english": "a certain~, one~",
+        "english": "a certain\uff5e, one\uff5e",
         "postEnglish": ""
     },
     {
@@ -26279,7 +26279,7 @@
         "preJapanese": "",
         "preJapaneseParticle": "",
         "japanese": "\u4e3c\u3076\u308a",
-        "japanese_all_hiragana": "\u4e3c\u3076\u308a",
+        "japanese_all_hiragana": "\u3069\u3093\u3076\u308a",
         "postJapanese": "",
         "preEnglish": "",
         "english": "bowl",
@@ -26324,7 +26324,7 @@
         "preJapanese": "",
         "preJapaneseParticle": "",
         "japanese": "\u5e02\u5834\u8abf\u67fb",
-        "japanese_all_hiragana": "\u3072\u3058\u3087\u3046\u3061\u3087\u3046\u3055",
+        "japanese_all_hiragana": "\u3057\u3058\u3087\u3046\u3061\u3087\u3046\u3055",
         "postJapanese": "",
         "preEnglish": "",
         "english": "market survey",
