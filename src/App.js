@@ -31,10 +31,13 @@ class App extends React.Component {
     };
   }
 
-  handleStartQuiz = () => {
-    const wordIndices = lessonList[this.state.lessonNum];
-    const shuffled = this.shuffleArray(wordIndices);
+  handleRestartQuiz = _event => {
+    this.handleStartQuiz(_event, this.state.incorrectQuestions);
+  };
 
+  handleStartQuiz = (_event, wordIndicesParam) => {
+    const wordIndices = wordIndicesParam || lessonList[this.state.lessonNum];
+    const shuffled = this.shuffleArray(wordIndices);
     const correctOptionIndex = Math.floor(Math.random() * 4);
     if (this.state.isOpenEnded) {
       const currentWordIndex = shuffled[0];
@@ -54,6 +57,7 @@ class App extends React.Component {
         },
         correctAnswer: japaneseAnswerOpenEnded,
         correctAnswerHiragana: japaneseAnswerOpenEndedHiragana,
+        incorrectQuestions: [],
         answeredQuestions: [],
         answerFormValue: ""
       });
@@ -69,6 +73,7 @@ class App extends React.Component {
           japanese: null
         },
         correctOptionIndex: correctOptionIndex,
+        incorrectQuestions: [],
         answeredQuestions: []
       });
     }
@@ -91,7 +96,9 @@ class App extends React.Component {
       currentQnNum: undefined,
       previousQuestion: undefined,
       correctOptionIndex: undefined,
-      answeredQuestions: undefined
+      incorrectQuestions: undefined,
+      answeredQuestions: undefined,
+      numCorrect: undefined
     });
   };
 
@@ -232,6 +239,11 @@ class App extends React.Component {
       japaneseAllHiragana: japaneseAnswerStringHiragana
     });
 
+    const currentIncorrectQuestions = this.state.incorrectQuestions;
+    if (!isCorrect) {
+      currentIncorrectQuestions.push(currentWordIndex);
+    }
+
     this.setState({
       currentQnNum: nextQnNum,
       previousQuestion: {
@@ -286,6 +298,11 @@ class App extends React.Component {
       japaneseAllHiragana: japaneseAnswerStringHiragana
     });
 
+    const currentIncorrectQuestions = this.state.incorrectQuestions;
+    if (!isCorrect) {
+      currentIncorrectQuestions.push(currentWordIndex);
+    }
+
     this.setState({
       currentQnNum: nextQnNum,
       previousQuestion: {
@@ -328,6 +345,18 @@ class App extends React.Component {
       const numCorrect = this.state.numCorrect;
       const numWrong = currentQnNum - numCorrect;
       if (isQuizEnd) {
+        let restartButton = "";
+        if (numWrong !== 0) {
+          restartButton = (
+            <Row className="restart-button" onClick={this.handleRestartQuiz}>
+              <Col>
+                <Button block variant={`outline-${themeColor}`}>
+                  Test Incorrect Questions
+                </Button>
+              </Col>
+            </Row>
+          );
+        }
         content = (
           <>
             <Row className="quit-button" onClick={this.handleEndQuiz}>
@@ -355,6 +384,7 @@ class App extends React.Component {
                 />
               </Col>
             </Row>
+            {restartButton}
             <Row className="question-card">
               <Col>
                 <SummaryTable questions={this.state.answeredQuestions} />
