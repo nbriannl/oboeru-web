@@ -515,6 +515,12 @@ class App extends React.Component {
                   onChange={this.handleThemeSwitch}
                 />
               </Form.Group>
+              <h6 className="text-center">New features!</h6>
+              <ul className="list-unstyled text-center">
+                <li>App is now PWA</li>
+                <li>Redo incorrect questions</li>
+                <li>Updated some incorrect vocabulary entries 27/3/2020</li>
+              </ul>
             </Col>
           </Row>
         </>
@@ -534,7 +540,7 @@ class App extends React.Component {
 const NavBar = props => {
   return (
     <Navbar bg={props.bg} variant="dark" expand="lg">
-      <Navbar.Brand href="#home">Oboeru v1.26.3</Navbar.Brand>
+      <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
     </Navbar>
   );
 };
