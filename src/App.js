@@ -540,7 +540,7 @@ class App extends React.Component {
 const NavBar = props => {
   return (
     <Navbar bg={props.bg} variant="dark" expand="lg">
-      <Navbar.Brand href="#home">Oboeru v1.26.3</Navbar.Brand>
+      <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
     </Navbar>
   );
 };
