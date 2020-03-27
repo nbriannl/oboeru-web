@@ -515,6 +515,12 @@ class App extends React.Component {
                   onChange={this.handleThemeSwitch}
                 />
               </Form.Group>
+              <h6 className="text-center">New features!</h6>
+              <ul className="list-unstyled text-center">
+                <li>App is now PWA</li>
+                <li>Redo incorrect questions</li>
+                <li>Updated some incorrect vocabulary entries 27/3/2020</li>
+              </ul>
             </Col>
           </Row>
         </>
