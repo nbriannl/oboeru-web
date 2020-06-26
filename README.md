@@ -1,4 +1,4 @@
-# Oboeru
+# Oboeru Test
 *Japanese Language Vocabulary Quiz Application* 
 
 Oboeru (The romanization of the Japanese 覚える, which means ‘to remember’) is an application to help Japanese language learning, particularly NUS Japanese Language students using the みんなの日本語 textbook, to practice their vocabulary, especially after a hiatus of language studies.
