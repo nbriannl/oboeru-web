@@ -27394,5 +27394,2720 @@
         "preEnglish": "",
         "english": "unlucky, ill-omened",
         "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4fe1\u3058\u307e\u3059",
+        "japanese_all_hiragana": "\u3057\u3093\u3058\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "believe, trust",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30ad\u30e3\u30f3\u30bb\u30eb\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u30ad\u30e3\u30f3\u30bb\u30eb\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "cancel",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4fdd\u8a3c\u66f8",
+        "japanese_all_hiragana": "\u307b\u3057\u3087\u3046\u3057\u3087",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "guarantee",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u9818\u53ce\u66f8",
+        "japanese_all_hiragana": "\u308a\u3087\u3046\u3057\u3085\u3046\u3057\u3087",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "receipt",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30ad\u30e3\u30f3\u30d7",
+        "japanese_all_hiragana": "\u30ad\u30e3\u30f3\u30d7",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "camp",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4e2d\u6b62",
+        "japanese_all_hiragana": "\u3061\u3085\u3046\u3057",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "calling off, cancelling, suspension",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u70b9",
+        "japanese_all_hiragana": "\u3066\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "point, score",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u6885",
+        "japanese_all_hiragana": "\u3046\u3081",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "plum (blossom)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "110\u756a",
+        "japanese_all_hiragana": "\uff11\uff11\uff10\u3070\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the emergency police telephone number",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "119\u756a",
+        "japanese_all_hiragana": "\uff11\uff11\uff19\u3070\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the emergency fire service telephone number",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u6025\u306b",
+        "japanese_all_hiragana": "\u304d\u3085\u3046\u306b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "suddenly",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7121\u7406\u306b",
+        "japanese_all_hiragana": "\u3080\u308a\u306b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "unreasonably",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u305f\u306e\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "be looking forward to, be expecting",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4ee5\u4e0a\u3067\u3059\u3002",
+        "japanese_all_hiragana": "\u3044\u3058\u3087\u3046\u3067\u3046\u3002",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "That's all",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4fc2\u54e1",
+        "japanese_all_hiragana": "\u304b\u304b\u308a\u3044\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "person in charge, organsier",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30b3\u30fc\u30b9",
+        "japanese_all_hiragana": "\u30b3\u30fc\u30b9",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "course, route",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30b9\u30bf\u30fc\u30c8",
+        "japanese_all_hiragana": "\u30b9\u30bf\u30fc\u30c8",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "start",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30fc\u4f4d",
+        "japanese_all_hiragana": "\u30fc\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "-th (ranking)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u512a\u52dd\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3086\u3046\u3057\u3087\u3046\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "win the championship, come first",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u60a9\u307f",
+        "japanese_all_hiragana": "\u306a\u3084\u307f",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "trouble, worry",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u76ee\u899a\u307e\u3057",
+        "japanese_all_hiragana": "\u3081\u3056\u307e\u3057",
+        "postJapanese": "\u6642\u8a08",
+        "preEnglish": "",
+        "english": "alarm clock",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u76ee",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u899a\u3081\u307e\u3059",
+        "japanese_all_hiragana": "\u3055\u3081\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "wake up ",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5927\u5b66\u751f",
+        "japanese_all_hiragana": "\u3060\u3044\u304c\u304f\u305b\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "university student",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u56de\u7b54",
+        "japanese_all_hiragana": "\u304b\u3044\u3068\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "answer, reply ",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u9cf4\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u306a\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "ring",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30bb\u30c3\u30c8\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u30bb\u30c3\u30c8\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "set",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 45,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u305d\u308c\u3067\u3082",
+        "japanese_all_hiragana": "\u305d\u308c\u3067\u3082",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "nevertheless, for all that",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u6e21\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u308f\u305f\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "hand over",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5e30\u3063\u3066\u6765\u307e\u3059",
+        "japanese_all_hiragana": "\u304b\u3048\u3063\u3066\u304d\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "come back",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u30d0\u30b9",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u51fa\u307e\u3059",
+        "japanese_all_hiragana": "\u3067\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "a bus",
+        "english": "leave, depart",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u8377\u7269",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u5c4a\u304d\u307e\u3059",
+        "japanese_all_hiragana": "\u3068\u3069\u304d\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "parcels",
+        "english": "be delivered",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u5927\u5b66",
+        "preJapaneseParticle": "\u306b",
+        "japanese": "\u5165\u5b66\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u306b\u3085\u3046\u304c\u304f\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "enter",
+        "postEnglish": "a university"
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u5927\u5b66",
+        "preJapaneseParticle": "\u3092",
+        "japanese": "\u5352\u696d\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u305d\u3064\u304e\u3087\u3046\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "graduate",
+        "postEnglish": "from a university"
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3084\u304d\u307e\u3059",
+        "japanese_all_hiragana": "\u3084\u304d\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "bake, grill, roast",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u30d1\u30f3",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u713c\u3051\u307e\u3059",
+        "japanese_all_hiragana": "\u3084\u3051\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "bread",
+        "english": "be baked",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u8089",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u713c\u3051\u307e\u3059",
+        "japanese_all_hiragana": "\u3084\u3051\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "meat",
+        "english": "be roasted, be grilled",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7559\u5b88",
+        "japanese_all_hiragana": "\u308b\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "absence",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5b85\u914d\u4fbf",
+        "japanese_all_hiragana": "\u305f\u304f\u306f\u3044\u3073\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(package delivered by) home delivery service",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u539f\u56e0",
+        "japanese_all_hiragana": "\u3052\u3093\u3044\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "cause",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3053\u3061\u3089",
+        "japanese_all_hiragana": "\u3053\u3061\u3089",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "my side",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\uff5e\u306e\u6240",
+        "japanese_all_hiragana": "\uff5e\u306e\u3068\u3053\u308d",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "where ~ is/are, by the ~",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u534a\u5e74",
+        "japanese_all_hiragana": "\u306f\u3093\u3068\u3057",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "half a year",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4e01\u5ea6",
+        "japanese_all_hiragana": "\u3061\u3087\u3046\u3069",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "just, exactly",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u305f\u3063\u305f\u4eca",
+        "japanese_all_hiragana": "\u305f\u3063\u305f\u3044\u307e",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "just now (used with the past tense; indicates completion)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4eca\u3044\u3044\u3067\u3059\u304b",
+        "japanese_all_hiragana": "\u3044\u307e\u3044\u3044\u3067\u3059\u304b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Have you got a moment?",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30ac\u30b9\u30b5\u30fc\u30d3\u30b9\u30bb\u30f3\u30bf\u30fc",
+        "japanese_all_hiragana": "\u30ac\u30b9\u30b5\u30fc\u30d3\u30b9\u30bb\u30f3\u30bf\u30fc",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "gas service centre",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30ac\u30b9\u30ec\u30f3\u30b8",
+        "japanese_all_hiragana": "\u30ac\u30b9\u30ec\u30f3\u30b8",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "gas range, gas cooker",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5177\u5408",
+        "japanese_all_hiragana": "\u3050\u3042\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "condition",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7533\u3057\u8a33\u3042\u308a\u307e\u305b\u3093\u3002",
+        "japanese_all_hiragana": "\u3082\u3046\u3057\u308f\u3051\u3042\u308a\u307e\u305b\u3093\u3002",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "I'm sorry",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3069\u3061\u3089\u69d8\u3067\u3057\u3087\u3046\u304b\u3002",
+        "japanese_all_hiragana": "\u3069\u3061\u3089\u3055\u307e\u3067\u3057\u3087\u3046\u304b\u3002",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Who is this, please?",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304a\u5f85\u305f\u305b\u3057\u307e\u3057\u305f\u3002",
+        "japanese_all_hiragana": "\u304a\u307e\u305f\u305b\u3057\u307e\u3057\u305f\u3002",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Sorry to have kept you waiting",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5411\u304b\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u3080\u304b\u3044\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "head for",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3064\u3044\u3066\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u3064\u3044\u3066\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": " be lucky",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5e8a",
+        "japanese_all_hiragana": "\u3086\u304b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "floor",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u8ee2\u3073\u307e\u3059",
+        "japanese_all_hiragana": "\u3053\u308d\u3073\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "fall down, fall over",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30d9\u30eb",
+        "japanese_all_hiragana": "\u30d9\u30eb",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "bell",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u9cf4\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u306a\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "ring",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u614c\u3066\u3066",
+        "japanese_all_hiragana": "\u3042\u308f\u3066\u3066",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "in a hurry",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u9806\u756a\u306b",
+        "japanese_all_hiragana": "\u3058\u3085\u3093\u3070\u3093\u306b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "in order",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 46,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u51fa\u6765\u4e8b",
+        "japanese_all_hiragana": "\u3067\u304d\u3054\u3068",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "incident",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "\u98a8",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u5439\u304d\u307e\u3059",
+        "japanese_all_hiragana": "\u3075\u304d\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "wind",
+        "english": "blow",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "\u3054\u307f",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u71c3\u3048\u307e\u3059",
+        "japanese_all_hiragana": "\u3082\u3048\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "rubbish",
+        "english": "burn",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4ea1\u304f\u306a\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u306a\u304f\u306a\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "pass away",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "\u4eba",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u96c6\u307e\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u3042\u3064\u307e\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "people",
+        "english": "gather",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "\u4eba",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u5225\u308c\u307e\u3059",
+        "japanese_all_hiragana": "\u308f\u304b\u308c\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "people",
+        "english": "part, seperate",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "\u97f3\uff0f\u58f0\u3001\u5473\u3001\u306b\u304a\u3044",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "sound/voice, taste, smell",
+        "english": "be heard",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "i-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u53b3\u3057\u3044",
+        "japanese_all_hiragana": "\u304d\u3073\u3057\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "strict, hard",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "i-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3072\u3069\u3044",
+        "japanese_all_hiragana": "\u3072\u3069\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "terrible, severe",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "i-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u6016\u3044",
+        "japanese_all_hiragana": "\u3053\u308f\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "frightening, horrible",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5b9f\u9a13",
+        "japanese_all_hiragana": "\u3058\u3063\u3051\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "experiment",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30c7\u30fc\u30bf",
+        "japanese_all_hiragana": "\u30c7\u30fc\u30bf",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "data",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4eba\u53e3",
+        "japanese_all_hiragana": "\u3058\u3093\u3053\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "population",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u306b\u304a\u3044",
+        "japanese_all_hiragana": "\u306b\u304a\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "smell",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u79d1\u5b66",
+        "japanese_all_hiragana": "\u304b\u304c\u304f",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "science",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u533b\u5b66",
+        "japanese_all_hiragana": "\u3044\u304c\u304f",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "medicine, medicinal science",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u6587\u5b66",
+        "japanese_all_hiragana": "\u3076\u3093\u304c\u304f",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "literature",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30d1\u30c8\u30ab\u30fc",
+        "japanese_all_hiragana": "\u30d1\u30c8\u30ab\u30fc",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "police car",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u6551\u6025\u8eca",
+        "japanese_all_hiragana": "\u304d\u3085\u3046\u304d\u3085\u3046\u3057\u3083",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "ambulance",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u8cdb\u6210",
+        "japanese_all_hiragana": "\u3055\u3093\u305b\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "approval, agreement",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u53cd\u5bfe",
+        "japanese_all_hiragana": "\u306f\u3093\u305f\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "objection, opposition",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5927\u7d71\u9818",
+        "japanese_all_hiragana": "\u3060\u3044\u3068\u3046\u308a\u3087\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "president",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u301c",
+        "preJapaneseParticle": "",
+        "japanese": "\u306b\u3088\u308b\u3068",
+        "japanese_all_hiragana": "\u306b\u3088\u308b\u3068",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "according to \u301c(indicates that the source of information)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3069\u3046\u3082",
+        "japanese_all_hiragana": "\u3069\u3046\u3082",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "it seems that (used when making a tentative judgement)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u604b\u4eba",
+        "japanese_all_hiragana": "\u3053\u3044\u3073\u3068",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "sweetheart, boyfriend, girlfriend",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u76f8\u624b",
+        "japanese_all_hiragana": "\u3042\u3044\u3066",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the other person",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u77e5\u308a\u5408\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u3057\u308a\u3042\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "get acquainted",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5316\u7ca7",
+        "japanese_all_hiragana": "\u3051\u3057\u3087\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "makeup (\u301c\u3092\u3057\u307e\u3059: put on makeup)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5973\u6027",
+        "japanese_all_hiragana": "\u3058\u3087\u305b\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "female, woman",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4e16\u8a71\u3092\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u305b\u308f\u3092\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "take care of",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7537\u6027",
+        "japanese_all_hiragana": "\u3060\u3093\u305b\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "male, man",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u9577\u751f\u304d",
+        "japanese_all_hiragana": "\u306a\u304c\u3044\u304d",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "long life (\u301c\u3092\u3057\u307e\u3059: live long)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7406\u7531",
+        "japanese_all_hiragana": "\u308a\u3086\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "reason",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u95a2\u4fc2",
+        "japanese_all_hiragana": "\u304b\u3093\u3051\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "relationship",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u964d\u308d\u3057\u307e\u3059\u3001\u4e0b\u308d\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u304a\u308d\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "put down, lower, unload",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5c4a\u3051\u307e\u3059",
+        "japanese_all_hiragana": "\u3068\u3069\u3051\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "deliver",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4e16\u8a71\u3092\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u305b\u308f\u3092\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "take care of",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u9332\u97f3\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u308d\u304f\u304a\u3093\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "record",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5acc",
+        "japanese_all_hiragana": "\u3044\u3084",
+        "postJapanese": "\u306a",
+        "preEnglish": "",
+        "english": "unwilling, reluctant",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u587e",
+        "japanese_all_hiragana": "\u3058\u3085\u304f",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "cram school",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u751f\u5f92",
+        "japanese_all_hiragana": "\u305b\u3044\u3068",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "pupil",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30d5\u30a1\u30a4\u30eb",
+        "japanese_all_hiragana": "\u30d5\u30a1\u30a4\u30eb",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "file",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u81ea\u7531\u306b",
+        "japanese_all_hiragana": "\u3058\u3086\u3046\u306b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "freely",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\uff5e\u9593",
+        "japanese_all_hiragana": "\uff5e\u304b\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "for \uff5e(referring to duration)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3044\u3044\u3053\u3068\u3067\u3059\u306d\u3002",
+        "japanese_all_hiragana": "\u3044\u3044\u3053\u3068\u3067\u3059\u306d\u3002",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "That's good.",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304a\u5fd9\u3057\u3044\u3067\u3059\u304b\u3002",
+        "japanese_all_hiragana": "\u304a\u3044\u305d\u304c\u3057\u3044\u3067\u3059\u304b\u3002",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Are you busy? (used when talking to someone senior or older)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u55b6\u696d",
+        "japanese_all_hiragana": "\u3048\u3044\u304e\u3087\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "business, sales",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u305d\u308c\u307e\u3067\u306b",
+        "japanese_all_hiragana": "\u305d\u308c\u307e\u3067\u306b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "by that time",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u69cb\u3044\u307e\u305b\u3093",
+        "japanese_all_hiragana": "\u304b\u307e\u3044\u307e\u305b\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "It's all right. /I don't mind.",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u697d\u3057\u307f\u307e\u3059",
+        "japanese_all_hiragana": "\u305f\u306e\u3057\u307f\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "enjoy oneself",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u89aa",
+        "japanese_all_hiragana": "\u304a\u3084",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "parent",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5c0f\u5b66\u751f",
+        "japanese_all_hiragana": "\u3057\u3087\u3046\u304c\u304f\u305b\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "pupil, elementary schoolchild",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30fc\u30d1\u30fc\u30bb\u30f3\u30c8",
+        "japanese_all_hiragana": "\u30fc\u30d1\u30fc\u30bb\u30f3\u30c8",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "- percent ",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u305d\u306e\u6b21",
+        "japanese_all_hiragana": "\u305d\u306e\u3064\u304e",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "next",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7fd2\u5b57",
+        "japanese_all_hiragana": "\u3057\u3085\u3046\u3058",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "calligraphy",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 48,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u666e\u901a\u306e",
+        "japanese_all_hiragana": "\u3075\u3064\u3046\u306e",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "normal, usual",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5229\u7528\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u308a\u3088\u3046\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "use",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u4f1a\u793e",
+        "preJapaneseParticle": "\u306b",
+        "japanese": "\u52e4\u3081\u307e\u3059",
+        "japanese_all_hiragana": "\u3064\u3068\u3081\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "work",
+        "postEnglish": "for a company"
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u6905\u5b50",
+        "preJapaneseParticle": "\u306b",
+        "japanese": "\u639b\u3051\u307e\u3059",
+        "japanese_all_hiragana": "\u304b\u3051\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "sit on ",
+        "postEnglish": "a chair"
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u904e\u3054\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3059\u3054\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "spend (time), pass (time)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "be, go, come (respectful equivalent of \u3044\u307e\u3059\u3001\u884c\u304d\u307e\u3059\u3001\u6765\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u53ec\u3057\u4e0a\u304c\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u3081\u3057\u3042\u304c\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "eat, drink (respectful equivalent of \u98df\u3079\u307e\u3059\u3001\u98f2\u307f\u307e\u3059)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304a\u3063\u3057\u3083\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u304a\u3063\u3057\u3083\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "say, (one's name) is \uff5e(respectful equivalent of \u8a00\u3044\u307e\u3059)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u306a\u3055\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u306a\u3055\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "do (respectful equivalent of \u3057\u307e\u3059)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3054\u89a7\u306b\u306a\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u3054\u3089\u3093\u306b\u306a\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "see, look at (respectful equivalent of \u898b\u307e\u3059)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3054\u5b58\u77e5\u3067\u3059",
+        "japanese_all_hiragana": "\u3054\u305e\u3093\u3058\u3067\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "know (respectful equivalent of \u77e5\u3063\u3066\u3044\u308b\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u6328\u62f6",
+        "japanese_all_hiragana": "\u3042\u3044\u3055\u3064",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "greeting, address",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u65c5\u9928",
+        "japanese_all_hiragana": "\u308a\u3087\u304b\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Japanese-style hotel or inn",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30d0\u30b9\u505c",
+        "japanese_all_hiragana": "\u30d0\u30b9\u3066\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "bus stop",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5965\u69d8",
+        "japanese_all_hiragana": "\u304a\u304f\u3055\u307e",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(someone else's) wife (respectful equivalent of \u5965\u3055\u3093)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\uff5e\u69d8",
+        "japanese_all_hiragana": "\uff5e\u3055\u307e",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(respectful equivalent of \uff5e\u3055\u3093\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u305f\u307e\u306b",
+        "japanese_all_hiragana": "\u305f\u307e\u306b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "once in a while",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3069\u306a\u305f\u3067\u3082",
+        "japanese_all_hiragana": "\u3069\u306a\u305f\u3067\u3082",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "anybody (respectful equivalent of \u8ab0\u3067\u3082)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\uff5e\u3068\u3044\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\uff5e\u3068\u3044\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(one's name) is \uff5e",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30fc\u5e74\u30fc\u7d44",
+        "japanese_all_hiragana": "\u30fc\u306d\u3093\u30fc\u304f\u307f",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "class - of -th grade",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u71b1",
+        "preJapaneseParticle": "\u3092",
+        "japanese": "\u51fa\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3060\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "run",
+        "postEnglish": "a fever"
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3088\u308d\u3057\u304f\u304a\u4f1d\u3048\u304f\u3060\u3055\u3044\u3002",
+        "japanese_all_hiragana": "\u3088\u308d\u3057\u304f\u304a\u3064\u305f\u3048\u304f\u3060\u3055\u3044\u3002",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "give my best regards./Please say hello",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5931\u793c\u3044\u305f\u3057\u307e\u3059\u3002",
+        "japanese_all_hiragana": "\u3057\u3064\u308c\u3044\u3044\u305f\u3057\u307e\u3059\u3002",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Goodbye. (humbe equivalent of \u5931\u793c\u3057\u307e\u3059)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7d4c\u6b74",
+        "japanese_all_hiragana": "\u3051\u3044\u308c\u304d",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "background",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u533b\u5b66\u90e8",
+        "japanese_all_hiragana": "\u3044\u304c\u304f\u3076",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the medical department",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u76ee\u6307\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3081\u3056\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "aim for",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u9032\u307f\u307e\u3059",
+        "japanese_all_hiragana": "\u3059\u3059\u307f\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "go on (to graduate school)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "iPS\u7d30\u80de",
+        "japanese_all_hiragana": "iPS\u3055\u3044\u307c\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "induced pluriptent stem cell",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u958b\u767a\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u304b\u3044\u306f\u3064\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "develop, create",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30de\u30a6\u30b9",
+        "japanese_all_hiragana": "\u30de\u30a6\u30b9",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "mouse",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30d2\u30c8",
+        "japanese_all_hiragana": "\u30d2\u30c8",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "human",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u53d7\u8cde\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3058\u3085\u3057\u3087\u3046\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "be awarded a prize",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u8b1b\u6f14\u4f1a",
+        "japanese_all_hiragana": "\u3053\u3046\u3048\u3093\u304b\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "lecture meeting ",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5c71\u4e2d\u4f38\u5f25",
+        "japanese_all_hiragana": "\u3084\u307e\u306a\u304b\u3057\u3093\u3084",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Japanese medical scientist (1962 -) ",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 49,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30ce\u30fc\u30d9\u30eb\u8cde",
+        "japanese_all_hiragana": "\u30ce\u30fc\u30d9\u30eb\u3057\u3087\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Nobel Prize",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u53c2\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u307e\u3044\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "go, come (humble equivalent of \u884c\u304d\u307e\u3059\u3001\u6765\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304a\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u304a\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "be (humble equivalent of \u3044\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3044\u305f\u3060\u304d\u307e\u3059",
+        "japanese_all_hiragana": "\u3044\u305f\u3060\u304d\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "eat, drink, receive (humble equivalen of \u98df\u3079\u307e\u3059\u3001\u98f2\u307f\u307e\u3059\u3001\u3082\u3089\u3044\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7533\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3082\u3046\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "say, (one's name) is \uff5e\uff08humble equivalent of \u8a00\u3044\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3044\u305f\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3044\u305f\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "do (humble equivalent of \u3057\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u62dd\u898b\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u306f\u3044\u3051\u3093\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "see (humble equivalent of \u898b\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5b58\u3058\u307e\u3059",
+        "japanese_all_hiragana": "\u305e\u3093\u3058\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "get to know (humble equivalent of \u77e5\u308a\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u4f3a\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u3046\u304b\u304c\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "ask, hear, visit (humble equivalent of \u805e\u304d\u307e\u3059\u3001\u884c\u304d\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304a\u76ee\u306b\u304b\u304b\u308a\u307e\u3059",
+        "japanese_all_hiragana": "\u304a\u3081\u306b\u304b\u304b\u308a\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "meet (humble equivalent of \u4f1a\u3044\u307e\u3059\uff09",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u30b3\u30fc\u30d2\u30fc",
+        "preJapaneseParticle": "\u3092",
+        "japanese": "\u3044\u308c\u307e\u3059",
+        "japanese_all_hiragana": "\u3044\u308c\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "make",
+        "postEnglish": "coffee"
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7528\u610f\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3088\u3046\u3044\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "prepare",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u79c1",
+        "japanese_all_hiragana": "\u308f\u305f\u304f\u3057",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "humble I",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30ac\u30a4\u30c9",
+        "japanese_all_hiragana": "\u30ac\u30a4\u30c9",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "guide",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9",
+        "japanese_all_hiragana": "\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "e-mail address",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb",
+        "japanese_all_hiragana": "\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "schedule",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u518d\u6765\u9031",
+        "japanese_all_hiragana": "\u3055\u3089\u3044\u3057\u3085\u3046",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the week after next",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u518d\u6765\u6708",
+        "japanese_all_hiragana": "\u3055\u3089\u3044\u3052\u3064",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the month after next",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u518d\u6765\u5e74",
+        "japanese_all_hiragana": "\u3055\u3089\u3044\u306d\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the year after next",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u521d\u3081\u306b",
+        "japanese_all_hiragana": "\u306f\u3058\u3081\u306b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "first ",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u7dca\u5f35\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u304d\u3093\u3061\u3087\u3046\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "become tense, be strained, be nervous",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u8cde\u91d1",
+        "japanese_all_hiragana": "\u3057\u3087\u3046\u304d\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "prize money",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304d\u308a\u3093",
+        "japanese_all_hiragana": "\u304d\u308a\u3093",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "giraffe",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3053\u308d",
+        "japanese_all_hiragana": "\u3053\u308d",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "times, days",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "\u5922",
+        "preJapaneseParticle": "\u304c",
+        "japanese": "\u53f6\u3044\u307e\u3059",
+        "japanese_all_hiragana": "\u304b\u306a\u3044\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "dream",
+        "english": "be realized, come true",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5fdc\u63f4\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u304a\u3046\u3048\u3093\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "support",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5fc3\u304b\u3089",
+        "japanese_all_hiragana": "\u3053\u3053\u308d\u304b\u3089",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "from one's heart, sincerely",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u611f\u8b1d\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u304b\u3093\u3057\u3083\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "thank, be grateful",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304a\u793c",
+        "japanese_all_hiragana": "\u304a\u308c\u3044",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "gratitude, thanks",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304a\u5143\u6c17\u3067\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3059\u304b\u3002",
+        "japanese_all_hiragana": "\u304a\u3052\u3093\u304d\u3067\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3059\u304b",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "How are you doing? (respectful equivalent of \u304a\u5143\u6c17\u3067\u3059\u304b)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u8ff7\u60d1\u3092\u639b\u3051\u307e\u3059",
+        "japanese_all_hiragana": "\u3081\u3044\u308f\u304f\u3092\u304b\u3051\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "cause trouble, annoyance, inconvenience",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u30df\u30e5\u30f3\u30d8\u30f3",
+        "japanese_all_hiragana": "\u30df\u30e5\u30f3\u30d8\u30f3",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Munich",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 50,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u751f\u304b\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3044\u304b\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "make good use of",
+        "postEnglish": ""
     }
 ]
