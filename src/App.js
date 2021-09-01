@@ -35,6 +35,50 @@ class App extends React.Component {
     this.handleStartQuiz(_event, this.state.incorrectQuestions);
   };
 
+  handleStartAllQuiz = (_event, wordIndicesParam) => {
+    const wordIndices = wordIndicesParam || [...Array(1826).keys()];
+    const shuffled = this.shuffleArray(wordIndices);
+    const correctOptionIndex = Math.floor(Math.random() * 4);
+    if (this.state.isOpenEnded) {
+      const currentWordIndex = shuffled[0];
+      const {
+        japaneseAnswerOpenEnded,
+        japaneseAnswerOpenEndedHiragana
+      } = this.getQuestionAndAnswers(currentWordIndex);
+      this.setState({
+        isInQuiz: true,
+        questionsIndices: shuffled,
+        currentQnNum: 0,
+        numCorrect: 0,
+        previousQuestion: {
+          isCorrect: null,
+          english: null,
+          japanese: null
+        },
+        correctAnswer: japaneseAnswerOpenEnded,
+        correctAnswerHiragana: japaneseAnswerOpenEndedHiragana,
+        incorrectQuestions: [],
+        answeredQuestions: [],
+        answerFormValue: ""
+      });
+    } else {
+      this.setState({
+        isInQuiz: true,
+        questionsIndices: shuffled,
+        currentQnNum: 0,
+        numCorrect: 0,
+        previousQuestion: {
+          isCorrect: null,
+          english: null,
+          japanese: null
+        },
+        correctOptionIndex: correctOptionIndex,
+        incorrectQuestions: [],
+        answeredQuestions: []
+      });
+    }
+  };
+
   handleStartQuiz = (_event, wordIndicesParam) => {
     const wordIndices = wordIndicesParam || lessonList[this.state.lessonNum];
     const shuffled = this.shuffleArray(wordIndices);
@@ -521,6 +565,18 @@ class App extends React.Component {
                 <li>Redo incorrect questions</li>
                 <li>Updated some incorrect vocabulary entries 30/3/2020</li>
               </ul>
+            </Col>
+          </Row>
+          <h4>Experimental</h4>
+          <Row>
+            <Col>
+              <Button
+                block
+                variant={`outline-${themeColor}`}
+                onClick={this.handleStartAllQuiz}
+              >
+                Start All
+              </Button>
             </Col>
           </Row>
         </>
