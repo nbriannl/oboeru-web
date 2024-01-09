@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/oboeru-web/precache-manifest.967bab812accb275f89368068ba834eb.js"
+  "/oboeru-web/precache-manifest.c5d567a21ca057839e45380c6ba379de.js"
 );
 
 self.addEventListener('message', (event) => {
