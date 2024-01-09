@@ -168,7 +168,7 @@ class App extends React.Component {
     const englishQuestion = questionWord.english;
     let questionBlank = "(    ?    )";
     let japaneseAnswerString = `[${questionWord.japanese}]`;
-    let japaneseAnswerStringHiragana = `[${questionWord.japanese_all_hiragana}]`;
+    let japaneseAnswerStringHiragana = `[${questionWord.japaneseAllHiragana}]`;
     if (questionWord.preJapaneseParticle !== "") {
       questionBlank = questionWord.preJapaneseParticle + " " + questionBlank;
       japaneseAnswerString =
@@ -196,13 +196,13 @@ class App extends React.Component {
         japaneseAnswerStringHiragana + " " + questionWord.postJapanese;
     }
     let correctJapaneseOption =
-      questionWord.japanese + " [" + questionWord.japanese_all_hiragana + "]";
+      questionWord.japanese + " [" + questionWord.japaneseAllHiragana + "]";
     const incorrectJapaneseOptions = this.getIncorrectOptions(
       questionWord.partOfSpeech[0],
       questionIndex
     );
     const japaneseAnswerOpenEnded = questionWord.japanese;
-    const japaneseAnswerOpenEndedHiragana = questionWord.japanese_all_hiragana;
+    const japaneseAnswerOpenEndedHiragana = questionWord.japaneseAllHiragana;
     return {
       englishQuestion,
       questionBlank,
@@ -240,10 +240,7 @@ class App extends React.Component {
       const indexToVocab = posListForQuestionWord[index];
       const incorrectWord = vocabulary[indexToVocab];
       const incorrecOption =
-        incorrectWord.japanese +
-        " [" +
-        incorrectWord.japanese_all_hiragana +
-        "]";
+        incorrectWord.japanese + " [" + incorrectWord.japaneseAllHiragana + "]";
       return incorrecOption;
     });
     return incorrectOptions;
@@ -561,7 +558,7 @@ class App extends React.Component {
               </Form.Group>
               <h6 className="text-center">New features!</h6>
               <ul className="list-unstyled text-center">
-                <li>Fixed some vocab</li>
+                <li>Now generate straight for google, but ad-hoc</li>
                 <li>9/1/2024 - 2</li>
               </ul>
             </Col>
