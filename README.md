@@ -32,6 +32,8 @@ Please install and set up `Prettier`.
 
 At the end of this section, updating the vocabulary boils down to updating an excel file and running `npm run updatevocab`
 
+If it doesn't work `cd vocabulary_gen` and run `python3 main.py` or `python main.py`. Install dependencies via `pip/pip3 install -r requirements.txt`
+
 The vocabulary which the app uses is compiled in `vocabulary_gen/vocab.xlsx`. A python script then coverts it into: 
 
 - `vocabulary.json` a json array of words
