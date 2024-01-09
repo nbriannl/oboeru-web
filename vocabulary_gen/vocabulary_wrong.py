@@ -3,8 +3,7 @@ from enum import Enum
 from pykakasi import kakasi
 import random
 import json
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+
 
 class Vocabulary:
     def __init__(self):
@@ -64,20 +63,8 @@ class Word:
 class VocabularyBuilder:
     # returns an array of Word objects and a part of speech list
     def buildVocabulary(self, filePath):
-        # Initialize Google Sheets API credentials
-        scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-        credentials = ServiceAccountCredentials.from_json_keyfile_name('oboeru-410709-90e8c69eeb8a.json', scope)
-        gc = gspread.authorize(credentials)
-        # Open the worksheet
-        # Replace 'YOUR_SPREADSHEET_KEY' with your actual Google Sheets document key
-        spreadsheet_key = '1PAyIJA98h7Zgsj7Hpvhee5po4l8gZGjqNMiMRr27_nk'
-        worksheet_name = 'Sheet1'  # Change this to the actual sheet name
-        worksheet = gc.open_by_key(spreadsheet_key).worksheet(worksheet_name)
-        # Get data as a Pandas DataFrame
-        df = pd.DataFrame(worksheet.get_all_records())
-
-        # print('Loading vocabulary from ' + filePath)
-        # df = pd.read_excel(filePath)
+        print('Loading vocabulary from ' + filePath)
+        df = pd.read_excel(filePath)
         print('Vocabulary file loaded')
         wordList = []
         partOfSpeechList = {}
@@ -85,6 +72,8 @@ class VocabularyBuilder:
         kksi = kakasi()
         kksi.setMode("J", "H")
         for index, row in df.iterrows():
+            if index > 690 and index < 700:
+                print(row) 
             if self.checkValidData(row):
                 lesson_num = row['lesson']
                 pos_list = self.parsePartOfSpeech(row['pos'])
@@ -183,7 +172,7 @@ class VocabularyBuilder:
                 convertedPosElem = 'exp'
             elif posElem == 'counter':
                 convertedPosElem = 'counter'
-            elif posElem == 'undefined' or posElem == '':
+            elif posElem == 'undefined':
                 convertedPosElem = 'others'
             else:
                 raise Exception('invalid part of speech', posElem)
