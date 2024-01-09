@@ -8,8 +8,11 @@
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
+    "dotenv": "^16.3.1",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.2.0",
+    "google-auth-library": "^9.4.1",
+    "google-spreadsheet": "^4.1.1",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
@@ -23,7 +26,7 @@
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "updatevocab": "cd vocabulary_gen && python main.py"
+    "updatevocab": "node src/vocabulary.js"
   },
   "eslintConfig": {
     "extends": "react-app"
