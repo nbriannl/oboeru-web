@@ -4882,11 +4882,41 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
+        "japanese": "\u3072\u307e",
+        "japanese_all_hiragana": "",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "free (time)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 8,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
         "japanese": "\u4fbf\u5229",
         "japanese_all_hiragana": "\u3079\u3093\u308a",
         "postJapanese": "",
         "preEnglish": "",
         "english": "convenient",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 8,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3059\u3066\u304d",
+        "japanese_all_hiragana": "",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "fine, nice, wonderful",
         "postEnglish": ""
     },
     {
@@ -4947,6 +4977,21 @@
         "postJapanese": "",
         "preEnglish": "",
         "english": "old (not for person's age)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 8,
+        "partOfSpeech": [
+            "i-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3044\u3044\uff08\u3088\u3044\uff09",
+        "japanese_all_hiragana": "",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "good",
         "postEnglish": ""
     },
     {
@@ -7098,6 +7143,21 @@
     {
         "lesson": 11,
         "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "",
+        "japanese_all_hiragana": "",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Various counter words",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 11,
+        "partOfSpeech": [
             "noun"
         ],
         "isTransitive": null,
@@ -7353,6 +7413,21 @@
     {
         "lesson": 11,
         "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "",
+        "japanese_all_hiragana": "",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "various duration words",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 11,
+        "partOfSpeech": [
             "exp"
         ],
         "isTransitive": null,
@@ -7544,6 +7619,21 @@
         "postJapanese": "\u3002",
         "preEnglish": "",
         "english": "Please (favour/request)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 12,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u304b\u3093\u305f\u3093",
+        "japanese_all_hiragana": "",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "easy, simple",
         "postEnglish": ""
     },
     {
@@ -10334,6 +10424,21 @@
         "postJapanese": "",
         "preEnglish": "",
         "english": "which one (use for \u2265 3)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 16,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u3059\u3054\u3044\u3067\u3059\u306d",
+        "japanese_all_hiragana": "",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "\u201cThat\u2019s amazing.\u201d",
         "postEnglish": ""
     },
     {
@@ -19134,7 +19239,7 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japanese": "\u304d\u305d\u304f",
+        "japanese": "\u898f\u5247",
         "japanese_all_hiragana": "\u304d\u305d\u304f",
         "postJapanese": "",
         "preEnglish": "",
@@ -28623,6 +28728,21 @@
         "postJapanese": "",
         "preEnglish": "",
         "english": "according to \u301c(indicates that the source of information)",
+        "postEnglish": ""
+    },
+    {
+        "lesson": 47,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japanese": "\u5a5a\u7d04\u3057\u307e\u3059",
+        "japanese_all_hiragana": "\u3053\u3093\u306b\u3083\u304f\u3057\u307e\u3059",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "",
         "postEnglish": ""
     },
     {
