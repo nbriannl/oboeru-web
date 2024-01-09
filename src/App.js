@@ -562,7 +562,7 @@ class App extends React.Component {
               <h6 className="text-center">New features!</h6>
               <ul className="list-unstyled text-center">
                 <li>Fixed some vocab</li>
-                <li>9/1/2024</li>
+                <li>9/1/2024 - 2</li>
               </ul>
             </Col>
           </Row>
