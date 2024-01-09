@@ -30,9 +30,11 @@ Please install and set up `Prettier`.
 
 ### Vocabulary Generator
 
-At the end of this section, updating the vocabulary boils down to updating an excel file and running `npm run updatevocab`
+At the end of this section, updating the vocabulary boils down to updating an excel file in google sheets and running `npm run updatevocab`
 
-The vocabulary which the app uses is compiled in `vocabulary_gen/vocab.xlsx`. A python script then coverts it into: 
+If it doesn't work, then `cd vocabulary_gen` and run `python3 main.py` or `python main.py`. Install dependencies via `pip/pip3 install -r requirements.txt`
+
+The vocabulary which the app uses is in the excel file hosted in Google sheets. A python script then coverts it into: 
 
 - `vocabulary.json` a json array of words
 - `poslist.json` a json object. The key is the part of speech, and the value is the indices of words in `vocabulary.json` corresponding to that part of speech.
@@ -43,7 +45,9 @@ The python script was developed with `Python 3.7.4`. And uses `pandas` to load t
 Therefore, a suitable version of python in your system and `pip install pandas` should do fine.
 
 ## How to add Vocabulary
-To update the vocabulary, simply open and edit `vocab.xlsx` and run `npm run updatevocab`. If you do not want to install `npm` just run `python main.py` in the `/vocabulary_gen` directory. If you really don't want to do anything but update the xlsx. Just include the xlxs in the PR.
+To update the vocabulary, simply edit [this excel file](https://docs.google.com/spreadsheets/d/1PAyIJA98h7Zgsj7Hpvhee5po4l8gZGjqNMiMRr27_nk/edit?usp=sharing).
+
+If you do not want to install `npm` just run `python main.py` in the `/vocabulary_gen` directory. If you really don't want to do anything but update the xlsx. Just include the xlxs in the PR.
 
 ### Fields
 The excel file was originally made by me for Japanese 3 revision, hence not all fields are used in the current version of the application. It would be best however to fill up all fields when adding vocabulary as future functionality may use these.

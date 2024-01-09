@@ -24,3 +24,4 @@ yarn-error.log*
 
 # ignore pycache
 /vocabulary_gen/__pycache__
+/vocabulary_gen/oboeru-410709-90e8c69eeb8a.json
