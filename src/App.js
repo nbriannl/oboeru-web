@@ -558,8 +558,7 @@ class App extends React.Component {
               </Form.Group>
               <h6 className="text-center">New features!</h6>
               <ul className="list-unstyled text-center">
-                <li>Now generate straight for google, but ad-hoc</li>
-                <li>9/1/2024 - 2</li>
+                <li>Vocabulary Update (2024-01-19)</li>
               </ul>
             </Col>
           </Row>
