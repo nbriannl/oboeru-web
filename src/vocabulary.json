@@ -14507,7 +14507,7 @@
         "preJapanese": "",
         "preJapaneseParticle": "",
         "japaneseAllHiragana": "しょうかいします",
-        "japanese": "しょうかいします",
+        "japanese": "紹介します",
         "postJapanese": "",
         "preEnglish": "",
         "english": "introduce",
@@ -19675,7 +19675,7 @@
         "preJapanese": "",
         "preJapaneseParticle": "",
         "japaneseAllHiragana": "かぜ",
-        "japanese": "かぜ",
+        "japanese": "風",
         "postJapanese": "",
         "preEnglish": "",
         "english": "wind",
@@ -28670,8 +28670,8 @@
         "isTransitive": null,
         "preJapanese": "シャツ",
         "preJapaneseParticle": "が",
-        "japaneseAllHiragana": "めれます",
-        "japanese": "めれます",
+        "japaneseAllHiragana": "ぬれます",
+        "japanese": "濡れます",
         "postJapanese": "",
         "preEnglish": "a shirt",
         "english": "get wet",
@@ -30126,7 +30126,7 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "むかいします",
+        "japaneseAllHiragana": "むかいます",
         "japanese": "向かいます",
         "postJapanese": "",
         "preEnglish": "",
@@ -32211,6 +32211,502 @@
         "postJapanese": "",
         "preEnglish": "",
         "english": "make good use of",
+        "postEnglish": ""
+    },
+    {
+        "index": 2013,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ちり",
+        "japanese": "地理",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "geography",
+        "postEnglish": ""
+    },
+    {
+        "index": 2014,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しま",
+        "japanese": "島",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "island",
+        "postEnglish": ""
+    },
+    {
+        "index": 2015,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "たいりく",
+        "japanese": "大陸",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "continent",
+        "postEnglish": ""
+    },
+    {
+        "index": 2016,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "とし",
+        "japanese": "都市",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "city",
+        "postEnglish": ""
+    },
+    {
+        "index": 2017,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ほっかいどう",
+        "japanese": "北海道",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Hokkaido",
+        "postEnglish": ""
+    },
+    {
+        "index": 2018,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ほんしゅう",
+        "japanese": "本州",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Honshu (Japan's largest island)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2019,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しこく",
+        "japanese": "四国",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Shikoku (the smallest of Japan's four major islands)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2020,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "きゅうしゅう",
+        "japanese": "九州",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Kyushu (the third largest of Japan's four major islands)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2021,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ぜんたい",
+        "japanese": "全体",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "whole; entire; general",
+        "postEnglish": ""
+    },
+    {
+        "index": 2022,
+        "lesson": 51,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "～",
+        "japaneseAllHiragana": "ぶんの",
+        "japanese": "分の",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "one twenty-fifth (e.g. 25___1)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2023,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "とどうふけん",
+        "japanese": "都道府県",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "prefecture (the largest administrative unit in Japan)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2024,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しゅと",
+        "japanese": "首都",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "capital (city)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2025,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "せんそう",
+        "japanese": "戦争",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "war",
+        "postEnglish": ""
+    },
+    {
+        "index": 2026,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "へいわ",
+        "japanese": "平和",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "peace",
+        "postEnglish": ""
+    },
+    {
+        "index": 2027,
+        "lesson": 51,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "に/を",
+        "japaneseAllHiragana": "つたえる",
+        "japanese": "伝える",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to pass (knowledge) on; tell; inform",
+        "postEnglish": ""
+    },
+    {
+        "index": 2028,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "きこう",
+        "japanese": "気候",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "climate",
+        "postEnglish": ""
+    },
+    {
+        "index": 2029,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "きおん",
+        "japanese": "気温",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(atmospheric) temperature",
+        "postEnglish": ""
+    },
+    {
+        "index": 2030,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "さ",
+        "japanese": "差",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "gap; difference",
+        "postEnglish": ""
+    },
+    {
+        "index": 2031,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "さくら",
+        "japanese": "桜",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "cherry blossoms",
+        "postEnglish": ""
+    },
+    {
+        "index": 2032,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "おわり",
+        "japanese": "終わり",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the end",
+        "postEnglish": ""
+    },
+    {
+        "index": 2033,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ひとびと",
+        "japanese": "人々",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "people",
+        "postEnglish": ""
+    },
+    {
+        "index": 2034,
+        "lesson": 51,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "たのしむ",
+        "japanese": "楽しむ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to enjoy",
+        "postEnglish": ""
+    },
+    {
+        "index": 2035,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "めいしょ",
+        "japanese": "名所",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "famous place; place of interest",
+        "postEnglish": ""
+    },
+    {
+        "index": 2036,
+        "lesson": 51,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "もっとも",
+        "japanese": "最も",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "most; extremely",
+        "postEnglish": ""
+    },
+    {
+        "index": 2037,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "（お）しろ",
+        "japanese": "（お）城",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "castle",
+        "postEnglish": ""
+    },
+    {
+        "index": 2038,
+        "lesson": 51,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "が",
+        "japaneseAllHiragana": "のこる",
+        "japanese": "残る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to remain; be left over",
+        "postEnglish": ""
+    },
+    {
+        "index": 2039,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "さつえい",
+        "japanese": "撮影",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "filming; shooting (of a movie, a photograph, etc.) (（～を）suru noun)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2040,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "かんこう",
+        "japanese": "観光",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "sightseeing (（～を）suru noun)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2041,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "もくてき",
+        "japanese": "目的",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "purpose",
+        "postEnglish": ""
+    },
+    {
+        "index": 2042,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "リラックス",
+        "japanese": "リラックス",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "relax  (（～を）suru noun)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2043,
+        "lesson": 51,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "けんがく",
+        "japanese": "見学",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to visit, tour (of a place) (（～を）suru noun)",
         "postEnglish": ""
     }
 ]
