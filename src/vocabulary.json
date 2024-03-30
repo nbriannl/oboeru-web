@@ -33284,5 +33284,1237 @@
         "preEnglish": "",
         "english": "problem; question; issue",
         "postEnglish": ""
+    },
+    {
+        "index": 2080,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "まなぶ",
+        "japanese": "学ぶ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to learn; take lessons",
+        "postEnglish": ""
+    },
+    {
+        "index": 2081,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "げんだい",
+        "japanese": "現代",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the present day; age; today",
+        "postEnglish": ""
+    },
+    {
+        "index": 2082,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "（お）としより",
+        "japanese": "（お）年寄り",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "elderly person",
+        "postEnglish": ""
+    },
+    {
+        "index": 2083,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しゅるい",
+        "japanese": "種類",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "kind; sort; type",
+        "postEnglish": ""
+    },
+    {
+        "index": 2084,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "けんこう",
+        "japanese": "健康",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "health ～的（な）（な-adj) healthy (used for human/animal health only)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2085,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ばんぐみ",
+        "japanese": "番組",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(TV/radio) program",
+        "postEnglish": ""
+    },
+    {
+        "index": 2086,
+        "lesson": 53,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "だいひょうてき",
+        "japanese": "代表的",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "representative; typical",
+        "postEnglish": ""
+    },
+    {
+        "index": 2087,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "すもう",
+        "japanese": "相撲",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "sumo wrestling",
+        "postEnglish": ""
+    },
+    {
+        "index": 2088,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "こくない",
+        "japanese": "国内",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "a country's interior ～の(Phr) domestic; internal",
+        "postEnglish": ""
+    },
+    {
+        "index": 2089,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "せんしゅ",
+        "japanese": "選手",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "athlete; player",
+        "postEnglish": ""
+    },
+    {
+        "index": 2090,
+        "lesson": 53,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "すべて",
+        "japanese": "すべて",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "entirely; all ～(N) everything ; all",
+        "postEnglish": ""
+    },
+    {
+        "index": 2091,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "に・で",
+        "japaneseAllHiragana": "かつ",
+        "japanese": "勝つ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to win",
+        "postEnglish": ""
+    },
+    {
+        "index": 2092,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "せいちょう",
+        "japanese": "成長",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "growth （～が）～する to grow (up)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2093,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "えがお",
+        "japanese": "笑顔",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "smiling face",
+        "postEnglish": ""
+    },
+    {
+        "index": 2094,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "おおごえ",
+        "japanese": "大声",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "loud voice",
+        "postEnglish": ""
+    },
+    {
+        "index": 2095,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "が",
+        "japaneseAllHiragana": "さけぶ",
+        "japanese": "叫ぶ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to shout; yell; cry (out)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2096,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "に・で",
+        "japaneseAllHiragana": "まける",
+        "japanese": "負ける",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to lose; be defeated",
+        "postEnglish": ""
+    },
+    {
+        "index": 2097,
+        "lesson": 53,
+        "partOfSpeech": [
+            "i-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "くやしい",
+        "japanese": "くやしい",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(someone is) frustrated; (something is) regrettable",
+        "postEnglish": ""
+    },
+    {
+        "index": 2098,
+        "lesson": 53,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "ばかにする",
+        "japanese": "ばかにする",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to look down on; make fun of",
+        "postEnglish": ""
+    },
+    {
+        "index": 2099,
+        "lesson": 53,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ぜったい",
+        "japanese": "絶対",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "absolutely; surely",
+        "postEnglish": ""
+    },
+    {
+        "index": 2100,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "れい",
+        "japanese": "礼",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "bow; etiquette; thanks ～をする (Phr) to bow",
+        "postEnglish": ""
+    },
+    {
+        "index": 2101,
+        "lesson": 53,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "にむかって",
+        "japanese": "に向かって",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "toward; for; to; in the direction of",
+        "postEnglish": ""
+    },
+    {
+        "index": 2102,
+        "lesson": 53,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "おたがいに",
+        "japanese": "お互いに",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(to) each other; (to) one another",
+        "postEnglish": ""
+    },
+    {
+        "index": 2103,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "そんけい",
+        "japanese": "尊敬",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "respect （～を）～する to respect; look up to; show one's respect for",
+        "postEnglish": ""
+    },
+    {
+        "index": 2104,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "かんしゃ",
+        "japanese": "感謝",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "gratitude; appreciation （～に）～する to thank; show one's gratitude",
+        "postEnglish": ""
+    },
+    {
+        "index": 2105,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "あらわす",
+        "japanese": "表す",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to express; represent",
+        "postEnglish": ""
+    },
+    {
+        "index": 2106,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "ふくむ",
+        "japanese": "含む",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to include; contain; hold",
+        "postEnglish": ""
+    },
+    {
+        "index": 2107,
+        "lesson": 53,
+        "partOfSpeech": [
+            "i-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "れいぎただしい",
+        "japanese": "礼儀正しい",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "well-mannered; courteous; polite ",
+        "postEnglish": ""
+    },
+    {
+        "index": 2108,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "が",
+        "japaneseAllHiragana": "そだつ",
+        "japanese": "育つ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to grow (up); be brought up",
+        "postEnglish": ""
+    },
+    {
+        "index": 2109,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "せいしん",
+        "japanese": "精神",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "mind; spirit; will ～力（りょく）（N)emotional strength",
+        "postEnglish": ""
+    },
+    {
+        "index": 2110,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "のうりょく",
+        "japanese": "能力",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "ability; capacity; competence 運動～ (N) athletic ability",
+        "postEnglish": ""
+    },
+    {
+        "index": 2111,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "プレー",
+        "japanese": "プレー",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "play; ～をする (Phr) to play",
+        "postEnglish": ""
+    },
+    {
+        "index": 2112,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "おる",
+        "japanese": "折る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to break (a stick-like object); fracture",
+        "postEnglish": ""
+    },
+    {
+        "index": 2113,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "うつ",
+        "japanese": "打つ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to hit; strike",
+        "postEnglish": ""
+    },
+    {
+        "index": 2114,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "なげる",
+        "japanese": "投げる",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to throw; pitch",
+        "postEnglish": ""
+    },
+    {
+        "index": 2115,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "～に～を",
+        "japaneseAllHiragana": "あたえる",
+        "japanese": "与える",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to give",
+        "postEnglish": ""
+    },
+    {
+        "index": 2116,
+        "lesson": 53,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "きん",
+        "japanese": "金",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "gold ～メダル (N) gold medal",
+        "postEnglish": ""
+    },
+    {
+        "index": 2117,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "そだてる",
+        "japanese": "育てる",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to rear; bring up; train (a person)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2118,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "ゆずる",
+        "japanese": "譲る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to give; hand over; give up (one's seat to a senior)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2119,
+        "lesson": 53,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "まよう",
+        "japanese": "迷う",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to lose one's way; be uncertain; hesitate",
+        "postEnglish": ""
+    },
+    {
+        "index": 2120,
+        "lesson": 53,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "いっぱんてき",
+        "japanese": "一般的",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "general; common",
+        "postEnglish": ""
+    },
+    {
+        "index": 2121,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "はつめい",
+        "japanese": "発明",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "invention （～を）～する",
+        "postEnglish": ""
+    },
+    {
+        "index": 2122,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ものがたり",
+        "japanese": "物語",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "tale; story",
+        "postEnglish": ""
+    },
+    {
+        "index": 2123,
+        "lesson": 54,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ぜん",
+        "japanese": "全",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "whole; entire; all; full",
+        "postEnglish": ""
+    },
+    {
+        "index": 2124,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しょうひ",
+        "japanese": "消費",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "consumption; spending （～を）～する",
+        "postEnglish": ""
+    },
+    {
+        "index": 2125,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "おく",
+        "japanese": "億",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "one hundred million",
+        "postEnglish": ""
+    },
+    {
+        "index": 2126,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ベトナム",
+        "japanese": "ベトナム",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Vietnam",
+        "postEnglish": ""
+    },
+    {
+        "index": 2127,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "が",
+        "japaneseAllHiragana": "つづく",
+        "japanese": "続く",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to continue; last ～き(N)continuation (of story)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2128,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "りょう",
+        "japanese": "量",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "quantity; amount",
+        "postEnglish": ""
+    },
+    {
+        "index": 2129,
+        "lesson": 54,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "わかもの",
+        "japanese": "若者",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "young people",
+        "postEnglish": ""
+    },
+    {
+        "index": 2130,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ひとりぐらし",
+        "japanese": "一人暮らし",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "single life; living alone ～をする (Phr) to live alone",
+        "postEnglish": ""
+    },
+    {
+        "index": 2131,
+        "lesson": 54,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "げんざい",
+        "japanese": "現在",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "at present; now (N) the present time",
+        "postEnglish": ""
+    },
+    {
+        "index": 2132,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "とうなんアジア",
+        "japanese": "東南アジア",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "Southeast Asia",
+        "postEnglish": ""
+    },
+    {
+        "index": 2133,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "なんべい",
+        "japanese": "南米",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "South America",
+        "postEnglish": ""
+    },
+    {
+        "index": 2134,
+        "lesson": 54,
+        "partOfSpeech": [
+            "counter"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "ー",
+        "japaneseAllHiragana": "かこく",
+        "japanese": "か国",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "【counter for countries】",
+        "postEnglish": ""
+    },
+    {
+        "index": 2135,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "せんご",
+        "japanese": "戦後",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "postwar",
+        "postEnglish": ""
+    },
+    {
+        "index": 2136,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "じだい",
+        "japanese": "時代",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "times; period",
+        "postEnglish": ""
+    },
+    {
+        "index": 2137,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "れつ",
+        "japanese": "列",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "line (of people etc.); queue",
+        "postEnglish": ""
+    },
+    {
+        "index": 2138,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "くりかえす",
+        "japanese": "くり返す",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to repeat; do something over again",
+        "postEnglish": ""
+    },
+    {
+        "index": 2139,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しょうひん",
+        "japanese": "商品",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "product; merchandise",
+        "postEnglish": ""
+    },
+    {
+        "index": 2140,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "せいこう",
+        "japanese": "成功",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "success （～に）～する to succeed ; be successful",
+        "postEnglish": ""
+    },
+    {
+        "index": 2141,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "だいヒット",
+        "japanese": "大ヒット",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "great hit (success) （～が）～する",
+        "postEnglish": ""
+    },
+    {
+        "index": 2142,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "かず",
+        "japanese": "数",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "number ～（すう） (Suffix) the number of",
+        "postEnglish": ""
+    },
+    {
+        "index": 2143,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "が",
+        "japaneseAllHiragana": "ふえる",
+        "japanese": "増える",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to increase (in a number/amount)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2144,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "きょうそう",
+        "japanese": "競争",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "competition （～と）～する",
+        "postEnglish": ""
+    },
+    {
+        "index": 2145,
+        "lesson": 54,
+        "partOfSpeech": [
+            "i-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "はげしい",
+        "japanese": "激しい",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "severe; intense",
+        "postEnglish": ""
+    },
+    {
+        "index": 2146,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "～に～を",
+        "japaneseAllHiragana": "むける",
+        "japanese": "向ける",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to turn (One's eyes. Etc.) to; look at",
+        "postEnglish": ""
+    },
+    {
+        "index": 2147,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "こっきょう",
+        "japanese": "国境",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "a nation's border",
+        "postEnglish": ""
+    },
+    {
+        "index": 2148,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "を・と",
+        "japaneseAllHiragana": "しんじる",
+        "japanese": "信じる",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to believe; trust",
+        "postEnglish": ""
+    },
+    {
+        "index": 2149,
+        "lesson": 54,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "こくさいてき",
+        "japanese": "国際的",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "International",
+        "postEnglish": ""
+    },
+    {
+        "index": 2150,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しゅうかん",
+        "japanese": "習慣",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "habit, custom 食～ (N) eating customs/habit",
+        "postEnglish": ""
+    },
+    {
+        "index": 2151,
+        "lesson": 54,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "でんとう",
+        "japanese": "伝統",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "tradition",
+        "postEnglish": ""
+    },
+    {
+        "index": 2152,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "こえる",
+        "japanese": "越える",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to cross; pass",
+        "postEnglish": ""
+    },
+    {
+        "index": 2153,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "ひろげる",
+        "japanese": "広げる",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to spread; expand",
+        "postEnglish": ""
+    },
+    {
+        "index": 2154,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "みつける",
+        "japanese": "見つける",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to find (out); discover",
+        "postEnglish": ""
+    },
+    {
+        "index": 2155,
+        "lesson": 54,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "える",
+        "japanese": "得る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to get; obtain; acquire",
+        "postEnglish": ""
+    },
+    {
+        "index": 2156,
+        "lesson": 54,
+        "partOfSpeech": [
+            "others"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "ー",
+        "japaneseAllHiragana": "ご",
+        "japanese": "後",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(hours, days, years, etc.) later",
+        "postEnglish": ""
     }
 ]
