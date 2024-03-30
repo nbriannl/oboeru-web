@@ -558,7 +558,7 @@ class App extends React.Component {
               </Form.Group>
               <h6 className="text-center">New features!</h6>
               <ul className="list-unstyled text-center">
-                <li>Vocabulary Update (2024-03-17)</li>
+                <li>Vocabulary Update (2024-03-19)</li>
               </ul>
             </Col>
           </Row>

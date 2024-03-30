@@ -32708,5 +32708,581 @@
         "preEnglish": "",
         "english": "to visit, tour (of a place) (（～を）suru noun)",
         "postEnglish": ""
+    },
+    {
+        "index": 2044,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ぎじゅつ",
+        "japanese": "技術",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "technology; skill; technique",
+        "postEnglish": ""
+    },
+    {
+        "index": 2045,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "はったつ",
+        "japanese": "発達",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "development; growth （～が～する）",
+        "postEnglish": ""
+    },
+    {
+        "index": 2046,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "かいじょう",
+        "japanese": "会場",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "event site",
+        "postEnglish": ""
+    },
+    {
+        "index": 2047,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "絵",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "かく",
+        "japanese": "描く",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to draw; paint",
+        "postEnglish": ""
+    },
+    {
+        "index": 2048,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しゅじゅつ",
+        "japanese": "手術",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "surgery （～を～する) to perform a surgical operation",
+        "postEnglish": ""
+    },
+    {
+        "index": 2049,
+        "lesson": 52,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "じっさいに",
+        "japanese": "実際に",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "actually; really; practically（N)actuality; reality",
+        "postEnglish": ""
+    },
+    {
+        "index": 2050,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しゃかい",
+        "japanese": "社会",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "society; world",
+        "postEnglish": ""
+    },
+    {
+        "index": 2051,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "かつやく",
+        "japanese": "活躍",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "being active; taking an active part (suru noun)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2052,
+        "lesson": 52,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "るすばんをする",
+        "japanese": "留守番をする",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to house-sit (during a person's absence)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2053,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "はこぶ",
+        "japanese": "運ぶ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to carry",
+        "postEnglish": ""
+    },
+    {
+        "index": 2054,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "にんげん",
+        "japanese": "人間",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "human",
+        "postEnglish": ""
+    },
+    {
+        "index": 2055,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "くらす",
+        "japanese": "暮らす",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to live し instead of す (N)living",
+        "postEnglish": ""
+    },
+    {
+        "index": 2056,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "とし",
+        "japanese": "年",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "age ～とる (phrase) to grow old; age",
+        "postEnglish": ""
+    },
+    {
+        "index": 2057,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "け",
+        "japanese": "毛",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "hair; down; fur",
+        "postEnglish": ""
+    },
+    {
+        "index": 2058,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "に",
+        "japaneseAllHiragana": "さわる",
+        "japanese": "触る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to touch; feel",
+        "postEnglish": ""
+    },
+    {
+        "index": 2059,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "くび",
+        "japanese": "首",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "neck",
+        "postEnglish": ""
+    },
+    {
+        "index": 2060,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "うごかす",
+        "japanese": "動かす",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to move",
+        "postEnglish": ""
+    },
+    {
+        "index": 2061,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "こえ",
+        "japanese": "声",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "voice ～出す (Phrase) to utter",
+        "postEnglish": ""
+    },
+    {
+        "index": 2062,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "どうぶつ",
+        "japanese": "動物",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "animal",
+        "postEnglish": ""
+    },
+    {
+        "index": 2063,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "アレルギー",
+        "japanese": "アレルギー",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "allergy",
+        "postEnglish": ""
+    },
+    {
+        "index": 2064,
+        "lesson": 52,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "だいじょうぶ",
+        "japanese": "大丈夫",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "safe; all right",
+        "postEnglish": ""
+    },
+    {
+        "index": 2065,
+        "lesson": 52,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "だいじ",
+        "japanese": "大事",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "important",
+        "postEnglish": ""
+    },
+    {
+        "index": 2066,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "こうか",
+        "japanese": "効果",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "effectiveness; important ～がある (Phrase)to be effective",
+        "postEnglish": ""
+    },
+    {
+        "index": 2067,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "に",
+        "japaneseAllHiragana": "のる",
+        "japanese": "載る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to appear (in a magazine, etc.)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2068,
+        "lesson": 52,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "はじめて",
+        "japanese": "初めて",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "for the first time",
+        "postEnglish": ""
+    },
+    {
+        "index": 2069,
+        "lesson": 52,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "さいしょ",
+        "japanese": "最初",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "at first (N) the beginning",
+        "postEnglish": ""
+    },
+    {
+        "index": 2070,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "名前",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "つける",
+        "japanese": "つける",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to name",
+        "postEnglish": ""
+    },
+    {
+        "index": 2071,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "りかい",
+        "japanese": "理解",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "understanding; comprehension （～を～する)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2072,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": false,
+        "preJapanese": "",
+        "preJapaneseParticle": "が",
+        "japaneseAllHiragana": "うごく",
+        "japanese": "動く",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to move",
+        "postEnglish": ""
+    },
+    {
+        "index": 2073,
+        "lesson": 52,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ざんね",
+        "japanese": "残念",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "unfortunate; regrettable; disappointing",
+        "postEnglish": ""
+    },
+    {
+        "index": 2074,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "えんそう",
+        "japanese": "演奏",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "musical performance （～を～する) to play (a musical instrument)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2075,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "がくしゅう",
+        "japanese": "学習",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "learning; study （～を～する)",
+        "postEnglish": ""
+    },
+    {
+        "index": 2076,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "さいこう",
+        "japanese": "最高",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "the highest; maximum; best; greatest",
+        "postEnglish": ""
+    },
+    {
+        "index": 2077,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "けが",
+        "japanese": "怪我",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "injury ～をする(Phrase)to get hurt; be injured",
+        "postEnglish": ""
+    },
+    {
+        "index": 2078,
+        "lesson": 52,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": true,
+        "preJapanese": "",
+        "preJapaneseParticle": "を",
+        "japaneseAllHiragana": "まもる",
+        "japanese": "守る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "to protect (a person from danger); defend",
+        "postEnglish": ""
+    },
+    {
+        "index": 2079,
+        "lesson": 52,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "もんだい",
+        "japanese": "問題",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "problem; question; issue",
+        "postEnglish": ""
     }
 ]
