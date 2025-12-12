@@ -16,6 +16,7 @@ import "./App.css";
 import vocabulary from "./vocabulary.json";
 import posList from "./poslist.json";
 import lessonList from "./lessonlist.json";
+import BuildStamp from "./BuildStamp";
 
 const numLessons = Object.keys(lessonList).length;
 const lessonNumbers = [...Array(numLessons).keys()].map(x => x + 1);
@@ -583,6 +584,7 @@ class App extends React.Component {
         <Container className="content" fluid>
           {content}
         </Container>
+        <BuildStamp />
       </div>
     );
   }
