@@ -33,7 +33,6 @@ jobs:
           REACT_APP_BUILD_SHA: ${{ github.sha }}
           REACT_APP_BUILD_REF: ${{ github.ref_name }}
           REACT_APP_BUILD_RUN: ${{ github.run_number }}
-          REACT_APP_BUILD_TIME: ${{ github.run_started_at }}
 
       - name: Deploy (to gh-pages branch)
         uses: JamesIves/github-pages-deploy-action@v4
