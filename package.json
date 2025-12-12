@@ -10,7 +10,6 @@
     "bootstrap": "^4.4.1",
     "dotenv": "^16.3.1",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^2.2.0",
     "google-auth-library": "^9.4.1",
     "google-spreadsheet": "^4.1.1",
     "react": "^16.13.0",
@@ -45,6 +44,7 @@
   "homepage": "https://myusername.github.io/oboeru-web",
   "devDependencies": {
     "eslint-plugin-prettier": "^3.1.2",
+    "gh-pages": "^6.3.0",
     "prettier": "^1.19.1",
     "react-scripts": "^5.0.1"
   }
