@@ -29,12 +29,10 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
-          REACT_APP_BUILD_SHA: ${{ github.sha }}
-          REACT_APP_BUILD_REF: ${{ github.ref_name }}
-          REACT_APP_BUILD_RUN: ${{ github.run_number }}
+        run: |
+          echo "REACT_APP_BUILD_SHA=${{ github.sha }}" >> .env.production
+          echo "REACT_APP_BUILD_DATE=$(date -u +%F)" >> .env.production
+          npm run build
 
       - name: Deploy (to gh-pages branch)
         uses: JamesIves/github-pages-deploy-action@v4

@@ -2,10 +2,9 @@ import React from "react";
 
 export default function BuildStamp() {
   const sha = (process.env.REACT_APP_BUILD_SHA || "").slice(0, 7);
-  const run = process.env.REACT_APP_BUILD_RUN;
-  const ref = process.env.REACT_APP_BUILD_REF;
+  const date = process.env.REACT_APP_BUILD_DATE || "";
 
-  if (!sha && !run && !ref) return null;
+  if (!sha && !date) return null;
 
   return (
     <div
@@ -21,9 +20,9 @@ export default function BuildStamp() {
         borderRadius: 6,
         zIndex: 9999
       }}
-      title={`sha=${process.env.REACT_APP_BUILD_SHA}\nref=${ref}\nrun=${run}`}
+      title={`sha=${process.env.REACT_APP_BUILD_SHA}\ndate=${date}`}
     >
-      build {sha} · {ref} · #{run}
+      {date} · {sha}
     </div>
   );
 }
