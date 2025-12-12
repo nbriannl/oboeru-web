@@ -18,120 +18,121 @@ import posList from "./poslist.json";
 import lessonList from "./lessonlist.json";
 import BuildStamp from "./BuildStamp";
 
-const numLessons = Object.keys(lessonList).length;
-const lessonNumbers = [...Array(numLessons).keys()].map(x => x + 1);
+const THEME = {
+  red: "#DC3545",
+  blue: "#007BFF"
+};
+
+function setBrowserThemeColor(color) {
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", color);
+}
+
+// More robust than “1..N”
+const lessonNumbers = Object.keys(lessonList)
+  .map(Number)
+  .filter(n => Number.isFinite(n))
+  .sort((a, b) => a - b);
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      // UI config
       isInQuiz: false,
-      lessonNum: 1,
-      isBlueTheme: false, // checked false == Red theme
-      isOpenEnded: false
+      lessonNum: lessonNumbers[0] ?? 1,
+      isBlueTheme: false, // false => red
+      isOpenEnded: false,
+
+      // quiz runtime (set when quiz starts)
+      questionsIndices: undefined,
+      currentQnNum: undefined,
+      numCorrect: undefined,
+      previousQuestion: undefined,
+      correctOptionIndex: undefined,
+      correctAnswer: undefined,
+      correctAnswerHiragana: undefined,
+      incorrectQuestions: undefined,
+      answeredQuestions: undefined,
+      answerFormValue: undefined
     };
   }
 
-  handleRestartQuiz = _event => {
-    this.handleStartQuiz(_event, this.state.incorrectQuestions);
-  };
+  componentDidMount() {
+    this.applyThemeColor();
+  }
 
-  handleStartAllQuiz = (_event, wordIndicesParam) => {
-    const wordIndices = wordIndicesParam || [...Array(1826).keys()];
-    const shuffled = this.shuffleArray(wordIndices);
-    const correctOptionIndex = Math.floor(Math.random() * 4);
-    if (this.state.isOpenEnded) {
-      const currentWordIndex = shuffled[0];
-      const {
-        japaneseAnswerOpenEnded,
-        japaneseAnswerOpenEndedHiragana
-      } = this.getQuestionAndAnswers(currentWordIndex);
-      this.setState({
-        isInQuiz: true,
-        questionsIndices: shuffled,
-        currentQnNum: 0,
-        numCorrect: 0,
-        previousQuestion: {
-          isCorrect: null,
-          english: null,
-          japanese: null
-        },
-        correctAnswer: japaneseAnswerOpenEnded,
-        correctAnswerHiragana: japaneseAnswerOpenEndedHiragana,
-        incorrectQuestions: [],
-        answeredQuestions: [],
-        answerFormValue: ""
-      });
-    } else {
-      this.setState({
-        isInQuiz: true,
-        questionsIndices: shuffled,
-        currentQnNum: 0,
-        numCorrect: 0,
-        previousQuestion: {
-          isCorrect: null,
-          english: null,
-          japanese: null
-        },
-        correctOptionIndex: correctOptionIndex,
-        incorrectQuestions: [],
-        answeredQuestions: []
-      });
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.isBlueTheme !== this.state.isBlueTheme) {
+      this.applyThemeColor();
     }
-  };
+  }
+
+  applyThemeColor() {
+    const color = this.state.isBlueTheme ? THEME.blue : THEME.red;
+    setBrowserThemeColor(color);
+  }
+
+  // ---------- Quiz lifecycle ----------
 
   handleStartQuiz = (_event, wordIndicesParam) => {
     const wordIndices = wordIndicesParam || lessonList[this.state.lessonNum];
-    const shuffled = this.shuffleArray(wordIndices);
-    const correctOptionIndex = Math.floor(Math.random() * 4);
+    this.startQuizFromIndices(wordIndices);
+  };
+
+  handleStartAllQuiz = (_event, wordIndicesParam) => {
+    const wordIndices = wordIndicesParam || [
+      ...Array(vocabulary.length).keys()
+    ];
+    this.startQuizFromIndices(wordIndices);
+  };
+
+  handleRestartQuiz = _event => {
+    const wordIndices = this.state.incorrectQuestions || [];
+    this.startQuizFromIndices(wordIndices);
+  };
+
+  startQuizFromIndices = wordIndicesInput => {
+    const wordIndices = Array.isArray(wordIndicesInput)
+      ? [...wordIndicesInput]
+      : [];
+
+    const questionsIndices = this.shuffleArray(wordIndices);
+    const baseState = {
+      isInQuiz: true,
+      questionsIndices,
+      currentQnNum: 0,
+      numCorrect: 0,
+      previousQuestion: {
+        isCorrect: null,
+        english: null,
+        japanese: null,
+        japaneseAllHiragana: null
+      },
+      incorrectQuestions: [],
+      answeredQuestions: []
+    };
+
     if (this.state.isOpenEnded) {
-      const currentWordIndex = shuffled[0];
+      const currentWordIndex = questionsIndices[0];
       const {
         japaneseAnswerOpenEnded,
         japaneseAnswerOpenEndedHiragana
       } = this.getQuestionAndAnswers(currentWordIndex);
+
       this.setState({
-        isInQuiz: true,
-        questionsIndices: shuffled,
-        currentQnNum: 0,
-        numCorrect: 0,
-        previousQuestion: {
-          isCorrect: null,
-          english: null,
-          japanese: null
-        },
+        ...baseState,
         correctAnswer: japaneseAnswerOpenEnded,
         correctAnswerHiragana: japaneseAnswerOpenEndedHiragana,
-        incorrectQuestions: [],
-        answeredQuestions: [],
         answerFormValue: ""
       });
-    } else {
-      this.setState({
-        isInQuiz: true,
-        questionsIndices: shuffled,
-        currentQnNum: 0,
-        numCorrect: 0,
-        previousQuestion: {
-          isCorrect: null,
-          english: null,
-          japanese: null
-        },
-        correctOptionIndex: correctOptionIndex,
-        incorrectQuestions: [],
-        answeredQuestions: []
-      });
+      return;
     }
-  };
 
-  shuffleArray = array => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * i);
-      const temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-    return array;
+    this.setState({
+      ...baseState,
+      correctOptionIndex: this.getRandomInt(0, 3)
+    });
   };
 
   handleEndQuiz = () => {
@@ -141,14 +142,19 @@ class App extends React.Component {
       currentQnNum: undefined,
       previousQuestion: undefined,
       correctOptionIndex: undefined,
+      correctAnswer: undefined,
+      correctAnswerHiragana: undefined,
       incorrectQuestions: undefined,
       answeredQuestions: undefined,
-      numCorrect: undefined
+      numCorrect: undefined,
+      answerFormValue: undefined
     });
   };
 
+  // ---------- UI config handlers ----------
+
   handleLessonSelect = event => {
-    const selectedLessonNum = parseInt(event.target.value);
+    const selectedLessonNum = Number(event.target.value);
     this.setState({ lessonNum: selectedLessonNum });
   };
 
@@ -164,12 +170,32 @@ class App extends React.Component {
     this.setState({ answerFormValue: event.target.value });
   };
 
+  // ---------- Helpers ----------
+
+  shuffleArray = array => {
+    // Fisher–Yates shuffle on a copy
+    const a = [...array];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1)); // 0..i
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  };
+
+  getRandomInt = (min, max) => {
+    const lo = Math.ceil(min);
+    const hi = Math.floor(max);
+    return Math.floor(Math.random() * (hi - lo + 1)) + lo;
+  };
+
   getQuestionAndAnswers = questionIndex => {
     const questionWord = vocabulary[questionIndex];
     const englishQuestion = questionWord.english;
+
     let questionBlank = "(    ?    )";
     let japaneseAnswerString = `[${questionWord.japanese}]`;
     let japaneseAnswerStringHiragana = `[${questionWord.japaneseAllHiragana}]`;
+
     if (questionWord.preJapaneseParticle !== "") {
       questionBlank = questionWord.preJapaneseParticle + " " + questionBlank;
       japaneseAnswerString =
@@ -177,6 +203,7 @@ class App extends React.Component {
       japaneseAnswerStringHiragana =
         questionWord.preJapaneseParticle + " " + japaneseAnswerStringHiragana;
     }
+
     if (questionWord.preJapanese !== "") {
       questionBlank = questionWord.preJapanese + " " + questionBlank;
       japaneseAnswerString =
@@ -184,11 +211,13 @@ class App extends React.Component {
       japaneseAnswerStringHiragana =
         questionWord.preJapanese + " " + japaneseAnswerStringHiragana;
     }
+
     if (questionWord.partOfSpeech.includes("na-adj")) {
       questionBlank = questionBlank + "[な]";
       japaneseAnswerString = japaneseAnswerString + "[な]";
       japaneseAnswerStringHiragana = japaneseAnswerStringHiragana + "[な]";
     }
+
     if (questionWord.postJapanese !== "") {
       questionBlank = questionBlank + " " + questionWord.postJapanese;
       japaneseAnswerString =
@@ -196,14 +225,15 @@ class App extends React.Component {
       japaneseAnswerStringHiragana =
         japaneseAnswerStringHiragana + " " + questionWord.postJapanese;
     }
-    let correctJapaneseOption =
+
+    const correctJapaneseOption =
       questionWord.japanese + " [" + questionWord.japaneseAllHiragana + "]";
+
     const incorrectJapaneseOptions = this.getIncorrectOptions(
       questionWord.partOfSpeech[0],
       questionIndex
     );
-    const japaneseAnswerOpenEnded = questionWord.japanese;
-    const japaneseAnswerOpenEndedHiragana = questionWord.japaneseAllHiragana;
+
     return {
       englishQuestion,
       questionBlank,
@@ -211,194 +241,168 @@ class App extends React.Component {
       japaneseAnswerStringHiragana,
       correctJapaneseOption,
       incorrectJapaneseOptions,
-      japaneseAnswerOpenEnded,
-      japaneseAnswerOpenEndedHiragana
+      japaneseAnswerOpenEnded: questionWord.japanese,
+      japaneseAnswerOpenEndedHiragana: questionWord.japaneseAllHiragana
     };
   };
 
   getIncorrectOptions = (partOfSpeech, indexQuestionWord) => {
-    const posListForQuestionWord = posList[partOfSpeech];
+    const posListForQuestionWord = posList[partOfSpeech] || [];
     const indexInPosList = posListForQuestionWord.indexOf(indexQuestionWord);
-    let optionIndices = [];
-    while (optionIndices.length < 3) {
+
+    // Fallback if not found (avoid crashes)
+    if (indexInPosList < 0 || posListForQuestionWord.length < 4) {
+      return [];
+    }
+
+    const optionIndices = new Set();
+    let guard = 0;
+
+    while (optionIndices.size < 3 && guard < 10_000) {
+      guard++;
       const randomIndex = this.getRandomInt(
         0,
         posListForQuestionWord.length - 1
       );
+
       const randomWord =
         vocabulary[posListForQuestionWord[randomIndex]].japanese;
       const questionWord =
         vocabulary[posListForQuestionWord[indexInPosList]].japanese;
+
       if (
         randomIndex !== indexInPosList &&
-        !optionIndices.includes(randomIndex) &&
+        !optionIndices.has(randomIndex) &&
         randomWord !== questionWord
       ) {
-        optionIndices.push(randomIndex);
+        optionIndices.add(randomIndex);
       }
     }
-    const incorrectOptions = optionIndices.map(index => {
+
+    return [...optionIndices].map(index => {
       const indexToVocab = posListForQuestionWord[index];
       const incorrectWord = vocabulary[indexToVocab];
-      const incorrecOption =
-        incorrectWord.japanese + " [" + incorrectWord.japaneseAllHiragana + "]";
-      return incorrecOption;
+      return (
+        incorrectWord.japanese + " [" + incorrectWord.japaneseAllHiragana + "]"
+      );
     });
-    return incorrectOptions;
   };
 
-  getRandomInt = (min, max) => {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
+  // ---------- Answer handlers ----------
 
   handleOptionSelect = event => {
-    const isCorrect =
-      parseInt(event.target.value) === this.state.correctOptionIndex;
-    let newNumCorrect = this.state.numCorrect;
-    if (isCorrect) {
-      newNumCorrect = newNumCorrect + 1;
-    }
+    const pickedIndex = Number(event.target.value);
+    const isCorrect = pickedIndex === this.state.correctOptionIndex;
 
     const currQnNum = this.state.currentQnNum;
-    const nextQnNum = this.state.currentQnNum + 1;
-
+    const nextQnNum = currQnNum + 1;
     const currentWordIndex = this.state.questionsIndices[currQnNum];
+
     const {
       englishQuestion,
       japaneseAnswerString,
       japaneseAnswerStringHiragana
     } = this.getQuestionAndAnswers(currentWordIndex);
 
-    const correctOptionIndex = Math.floor(Math.random() * 4);
-
-    const currentAnsweredQuestions = this.state.answeredQuestions;
-    currentAnsweredQuestions.push({
+    const answeredEntry = {
       isCorrect,
       english: englishQuestion,
       japanese: japaneseAnswerString,
       japaneseAllHiragana: japaneseAnswerStringHiragana
-    });
+    };
 
-    const currentIncorrectQuestions = this.state.incorrectQuestions;
-    if (!isCorrect) {
-      currentIncorrectQuestions.push(currentWordIndex);
-    }
+    const answeredQuestions = [...this.state.answeredQuestions, answeredEntry];
+    const incorrectQuestions = isCorrect
+      ? [...this.state.incorrectQuestions]
+      : [...this.state.incorrectQuestions, currentWordIndex];
 
     this.setState({
       currentQnNum: nextQnNum,
-      previousQuestion: {
-        isCorrect: isCorrect,
-        english: englishQuestion,
-        japanese: japaneseAnswerString,
-        japaneseAllHiragana: japaneseAnswerStringHiragana
-      },
-      numCorrect: newNumCorrect,
-      correctOptionIndex: correctOptionIndex,
-      answeredQuestions: currentAnsweredQuestions
+      numCorrect: this.state.numCorrect + (isCorrect ? 1 : 0),
+      previousQuestion: answeredEntry,
+      correctOptionIndex: this.getRandomInt(0, 3),
+      answeredQuestions,
+      incorrectQuestions
     });
   };
 
   handleAnswerSubmit = event => {
+    event.preventDefault();
+
+    const answer = this.state.answerFormValue || "";
     const isCorrect =
-      this.state.answerFormValue === this.state.correctAnswer ||
-      this.state.answerFormValue === this.state.correctAnswerHiragana;
-    let newNumCorrect = this.state.numCorrect;
-    if (isCorrect) {
-      newNumCorrect = newNumCorrect + 1;
-    }
+      answer === this.state.correctAnswer ||
+      answer === this.state.correctAnswerHiragana;
 
     const currQnNum = this.state.currentQnNum;
-    const nextQnNum = this.state.currentQnNum + 1;
+    const nextQnNum = currQnNum + 1;
+
     const currentWordIndex = this.state.questionsIndices[currQnNum];
     const nextWordIndex = this.state.questionsIndices[nextQnNum];
+
     const {
       englishQuestion,
       japaneseAnswerString,
       japaneseAnswerStringHiragana
     } = this.getQuestionAndAnswers(currentWordIndex);
 
-    const numTotal = this.state.questionsIndices.length;
-    const isQuizEnd = nextQnNum >= numTotal;
-    let nextJapaneseAnswerOpenEnded = "";
-    let nextJapaneseAnswerOpenEndedHiragana = "";
-    if (!isQuizEnd) {
-      const {
-        japaneseAnswerOpenEnded,
-        japaneseAnswerOpenEndedHiragana
-      } = this.getQuestionAndAnswers(nextWordIndex);
-      nextJapaneseAnswerOpenEnded = japaneseAnswerOpenEnded;
-      nextJapaneseAnswerOpenEndedHiragana = japaneseAnswerOpenEndedHiragana;
-    }
-
-    const currentAnsweredQuestions = this.state.answeredQuestions;
-    currentAnsweredQuestions.push({
+    const answeredEntry = {
       isCorrect,
       english: englishQuestion,
       japanese: japaneseAnswerString,
       japaneseAllHiragana: japaneseAnswerStringHiragana
-    });
+    };
 
-    const currentIncorrectQuestions = this.state.incorrectQuestions;
-    if (!isCorrect) {
-      currentIncorrectQuestions.push(currentWordIndex);
+    const answeredQuestions = [...this.state.answeredQuestions, answeredEntry];
+    const incorrectQuestions = isCorrect
+      ? [...this.state.incorrectQuestions]
+      : [...this.state.incorrectQuestions, currentWordIndex];
+
+    const numTotal = this.state.questionsIndices.length;
+    const isQuizEnd = nextQnNum >= numTotal;
+
+    let nextCorrectAnswer = "";
+    let nextCorrectAnswerHiragana = "";
+
+    if (!isQuizEnd) {
+      const next = this.getQuestionAndAnswers(nextWordIndex);
+      nextCorrectAnswer = next.japaneseAnswerOpenEnded;
+      nextCorrectAnswerHiragana = next.japaneseAnswerOpenEndedHiragana;
     }
 
     this.setState({
       currentQnNum: nextQnNum,
-      previousQuestion: {
-        isCorrect: isCorrect,
-        english: englishQuestion,
-        japanese: japaneseAnswerString,
-        japaneseAllHiragana: japaneseAnswerStringHiragana
-      },
-      numCorrect: newNumCorrect,
-      correctAnswer: nextJapaneseAnswerOpenEnded,
-      correctAnswerHiragana: nextJapaneseAnswerOpenEndedHiragana,
-      answeredQuestions: currentAnsweredQuestions,
+      numCorrect: this.state.numCorrect + (isCorrect ? 1 : 0),
+      previousQuestion: answeredEntry,
+      correctAnswer: nextCorrectAnswer,
+      correctAnswerHiragana: nextCorrectAnswerHiragana,
+      answeredQuestions,
+      incorrectQuestions,
       answerFormValue: ""
     });
-
-    event.preventDefault();
   };
+
+  // ---------- Render ----------
 
   render() {
     const themeColor = this.state.isBlueTheme ? "primary" : "danger";
-    const redColor = "#DC3545";
-    const blueColor = "#007BFF";
-    if (this.state.isBlueTheme) {
-      document
-        .querySelector('meta[name="theme-color"]')
-        .setAttribute("content", blueColor);
-    } else {
-      document
-        .querySelector('meta[name="theme-color"]')
-        .setAttribute("content", redColor);
-    }
 
     const isInQuiz = this.state.isInQuiz;
     const isOpenEnded = this.state.isOpenEnded;
+
     let content;
+
     if (isInQuiz) {
       const numTotal = this.state.questionsIndices.length;
       const currentQnNum = this.state.currentQnNum; // 0-index
       const isQuizEnd = currentQnNum >= numTotal;
+
       const numCorrect = this.state.numCorrect;
       const numWrong = currentQnNum - numCorrect;
+
       if (isQuizEnd) {
-        let restartButton = "";
-        if (numWrong !== 0) {
-          restartButton = (
-            <Row className="restart-button" onClick={this.handleRestartQuiz}>
-              <Col>
-                <Button block variant={`outline-${themeColor}`}>
-                  Test Incorrect Questions
-                </Button>
-              </Col>
-            </Row>
-          );
-        }
+        const showRestart = numWrong !== 0;
+
         content = (
           <>
             <Row className="quit-button" onClick={this.handleEndQuiz}>
@@ -408,6 +412,7 @@ class App extends React.Component {
                 </Button>
               </Col>
             </Row>
+
             <Row className="previous-question-card">
               <Col>
                 <PreviousQuestionCard
@@ -415,6 +420,7 @@ class App extends React.Component {
                 />
               </Col>
             </Row>
+
             <Row className="question-card">
               <Col>
                 <QuestionCard
@@ -426,7 +432,17 @@ class App extends React.Component {
                 />
               </Col>
             </Row>
-            {restartButton}
+
+            {showRestart && (
+              <Row className="restart-button" onClick={this.handleRestartQuiz}>
+                <Col>
+                  <Button block variant={`outline-${themeColor}`}>
+                    Test Incorrect Questions
+                  </Button>
+                </Col>
+              </Row>
+            )}
+
             <Row className="question-card">
               <Col>
                 <SummaryTable questions={this.state.answeredQuestions} />
@@ -439,37 +455,40 @@ class App extends React.Component {
         const { englishQuestion, questionBlank } = this.getQuestionAndAnswers(
           currentWordIndex
         );
-        let answerContent = "";
+
+        let answerContent = null;
+
         if (isOpenEnded) {
           answerContent = (
-            <>
-              <OpenEndedAnswerForm
-                themeColor={themeColor}
-                value={this.state.answerFormValue}
-                handleAnswerSubmit={this.handleAnswerSubmit}
-                handleAnswerChange={this.handleAnswerChange}
-              />
-            </>
+            <OpenEndedAnswerForm
+              themeColor={themeColor}
+              value={this.state.answerFormValue}
+              handleAnswerSubmit={this.handleAnswerSubmit}
+              handleAnswerChange={this.handleAnswerChange}
+            />
           );
         } else {
-          const currentWordIndex = this.state.questionsIndices[currentQnNum];
           const {
             correctJapaneseOption,
             incorrectJapaneseOptions
           } = this.getQuestionAndAnswers(currentWordIndex);
-          const correctOptionIndex = this.state.correctOptionIndex;
-          let options = incorrectJapaneseOptions;
-          options.splice(correctOptionIndex, 0, correctJapaneseOption);
+
+          const options = [...incorrectJapaneseOptions];
+          options.splice(
+            this.state.correctOptionIndex,
+            0,
+            correctJapaneseOption
+          );
+
           answerContent = (
-            <>
-              <MCQOptions
-                themeColor={themeColor}
-                handleOptionSelect={this.handleOptionSelect}
-                options={options}
-              />
-            </>
+            <MCQOptions
+              themeColor={themeColor}
+              handleOptionSelect={this.handleOptionSelect}
+              options={options}
+            />
           );
         }
+
         content = (
           <>
             <Row className="quit-button" onClick={this.handleEndQuiz}>
@@ -479,6 +498,7 @@ class App extends React.Component {
                 </Button>
               </Col>
             </Row>
+
             <Row className="previous-question-card">
               <Col>
                 <PreviousQuestionCard
@@ -486,6 +506,7 @@ class App extends React.Component {
                 />
               </Col>
             </Row>
+
             <Row className="question-card">
               <Col>
                 <QuestionCard
@@ -498,6 +519,7 @@ class App extends React.Component {
                 />
               </Col>
             </Row>
+
             <Row className="answer-buttons">
               <Col>{answerContent}</Col>
             </Row>
@@ -505,14 +527,12 @@ class App extends React.Component {
         );
       }
     } else {
-      // Main screen
-      const options = lessonNumbers.map(number => {
-        return (
-          <option key={number.toString()} value={number}>
-            {number}
-          </option>
-        );
-      });
+      const options = lessonNumbers.map(number => (
+        <option key={number.toString()} value={number}>
+          {number}
+        </option>
+      ));
+
       content = (
         <>
           <Row>
@@ -526,6 +546,7 @@ class App extends React.Component {
               </Button>
             </Col>
           </Row>
+
           <Row>
             <Col>
               <Form.Group
@@ -540,7 +561,9 @@ class App extends React.Component {
                 >
                   {options}
                 </Form.Control>
-                <br></br>
+
+                <br />
+
                 <Form.Check
                   type="switch"
                   id="mode-switch"
@@ -548,7 +571,9 @@ class App extends React.Component {
                   checked={this.state.isOpenEnded}
                   onChange={this.handleModeSwitch}
                 />
-                <br></br>
+
+                <br />
+
                 <Form.Check
                   type="switch"
                   id="theme-switch"
@@ -557,13 +582,16 @@ class App extends React.Component {
                   onChange={this.handleThemeSwitch}
                 />
               </Form.Group>
+
               <h6 className="text-center">New features!</h6>
               <ul className="list-unstyled text-center">
-                <li>Vocabulary Update (2024-03-30)</li>
+                <li>Refactoring in progress!</li>
               </ul>
             </Col>
           </Row>
+
           <h4>Experimental</h4>
+
           <Row>
             <Col>
               <Button
@@ -578,6 +606,7 @@ class App extends React.Component {
         </>
       );
     }
+
     return (
       <div>
         <NavBar bg={themeColor} />
@@ -590,13 +619,11 @@ class App extends React.Component {
   }
 }
 
-const NavBar = props => {
-  return (
-    <Navbar bg={props.bg} variant="dark" expand="lg">
-      <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
-    </Navbar>
-  );
-};
+const NavBar = props => (
+  <Navbar bg={props.bg} variant="dark" expand="lg">
+    <Navbar.Brand href="#home">Oboeru</Navbar.Brand>
+  </Navbar>
+);
 
 function PreviousQuestionCard(props) {
   const {
@@ -605,6 +632,7 @@ function PreviousQuestionCard(props) {
     japanese,
     japaneseAllHiragana
   } = props.previousQuestion;
+
   if (isCorrect === null) {
     return (
       <Card bg="light" text="black" className="text-center">
@@ -616,7 +644,9 @@ function PreviousQuestionCard(props) {
       </Card>
     );
   }
+
   const bgStyle = isCorrect ? "success" : "danger";
+
   return (
     <Card bg={bgStyle} text="white" className="text-center">
       <Card.Header>Previous Question</Card.Header>
@@ -624,7 +654,7 @@ function PreviousQuestionCard(props) {
         <Card.Title>{english}</Card.Title>
         <Card.Text>
           {japanese}
-          <br></br>
+          <br />
           {japaneseAllHiragana}
         </Card.Text>
       </Card.Body>
@@ -639,14 +669,16 @@ function PreviousQuestionCardCompact(props) {
     japanese,
     japaneseAllHiragana
   } = props.previousQuestion;
+
   const bgStyle = isCorrect ? "success" : "danger";
+
   return (
     <Card bg={bgStyle} text="white" className="text-center">
       <Card.Body>
         <Card.Title>{english}</Card.Title>
         <Card.Text>
           {japanese}
-          <br></br>
+          <br />
           {japaneseAllHiragana}
         </Card.Text>
       </Card.Body>
@@ -677,89 +709,48 @@ function MCQOptions(props) {
   const themeColor = props.themeColor;
   return (
     <ButtonGroup vertical className="special">
-      <Button
-        value={0}
-        variant={`outline-${themeColor}`}
-        onClick={props.handleOptionSelect}
-      >
-        {props.options[0]}
-      </Button>
-      <Button
-        value={1}
-        variant={`outline-${themeColor}`}
-        onClick={props.handleOptionSelect}
-      >
-        {props.options[1]}
-      </Button>
-      <Button
-        value={2}
-        variant={`outline-${themeColor}`}
-        onClick={props.handleOptionSelect}
-      >
-        {props.options[2]}
-      </Button>
-      <Button
-        value={3}
-        variant={`outline-${themeColor}`}
-        onClick={props.handleOptionSelect}
-      >
-        {props.options[3]}
-      </Button>
+      {props.options.map((opt, idx) => (
+        <Button
+          key={idx}
+          value={idx}
+          variant={`outline-${themeColor}`}
+          onClick={props.handleOptionSelect}
+        >
+          {opt}
+        </Button>
+      ))}
     </ButtonGroup>
   );
 }
 
-const OpenEndedAnswerForm = props => {
-  return (
-    <>
-      {/* <form onSubmit={props.handleAnswerSubmit}>
-        <label>
-          <input
-            type="text"
-            value={props.value}
-            onChange={props.handleAnswerChange}
-          />
-        </label>
-        <input type="submit" value="Submit" />
-      </form> */}
-      <Form>
-        <Form.Group controlId="formAnswer">
-          <Form.Label>Answer</Form.Label>
-          <Form.Control
-            type="answer"
-            placeholder="Enter answer here"
-            value={props.value}
-            onChange={props.handleAnswerChange}
-          />
-          <Form.Text className="text-muted">
-            If your answer includes kanji, you must type exactly the same as the
-            textbook's entry.
-          </Form.Text>
-        </Form.Group>
-        <Button
-          variant={props.themeColor}
-          type="submit"
-          onClick={props.handleAnswerSubmit}
-        >
-          Submit
-        </Button>
-      </Form>
-    </>
-  );
-};
+const OpenEndedAnswerForm = props => (
+  <Form onSubmit={props.handleAnswerSubmit}>
+    <Form.Group controlId="formAnswer">
+      <Form.Label>Answer</Form.Label>
+      <Form.Control
+        type="answer"
+        placeholder="Enter answer here"
+        value={props.value}
+        onChange={props.handleAnswerChange}
+      />
+      <Form.Text className="text-muted">
+        If your answer includes kanji, you must type exactly the same as the
+        textbook's entry.
+      </Form.Text>
+    </Form.Group>
+    <Button variant={props.themeColor} type="submit">
+      Submit
+    </Button>
+  </Form>
+);
 
-const SummaryTable = props => {
-  const cards = props.questions.map((question, index) => {
-    return (
+const SummaryTable = props => (
+  <>
+    <h3 className="text-center">Summary</h3>
+    {props.questions.map((question, index) => (
       <PreviousQuestionCardCompact key={index} previousQuestion={question} />
-    );
-  });
-  return (
-    <>
-      <h3 className="text-center">Summary</h3>
-      {cards}
-    </>
-  );
-};
+    ))}
+  </>
+);
 
 export default App;
