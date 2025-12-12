@@ -16,8 +16,7 @@
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
-    "react-helmet": "^5.2.1",
-    "react-scripts": "3.4.0"
+    "react-helmet": "^5.2.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -46,6 +45,7 @@
   "homepage": "https://myusername.github.io/oboeru-web",
   "devDependencies": {
     "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "react-scripts": "^5.0.1"
   }
 }
