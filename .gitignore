@@ -13,6 +13,7 @@
 
 # misc
 .DS_Store
+.secrets
 .env
 .env.local
 .env.development.local

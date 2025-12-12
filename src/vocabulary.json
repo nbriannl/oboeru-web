@@ -40,8 +40,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "あのひと　（あのかた）",
-        "japanese": "あの人　（あの方）",
+        "japaneseAllHiragana": "あのひと （あのかた）",
+        "japanese": "あの人 （あの方）",
         "postJapanese": "",
         "preEnglish": "",
         "english": "that person (with polite version)",
@@ -296,7 +296,7 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "なんさい　（おいくつ）",
+        "japaneseAllHiragana": "なんさい （おいくつ）",
         "japanese": "何歳（おいくつ）",
         "postJapanese": "",
         "preEnglish": "",
@@ -1416,8 +1416,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "トイレ　（お手洗い）",
-        "japanese": "トイレ　（お手洗い）",
+        "japaneseAllHiragana": "トイレ （お手洗い）",
+        "japanese": "トイレ （お手洗い）",
         "postJapanese": "",
         "preEnglish": "",
         "english": "toilet, rest room",
@@ -3624,7 +3624,7 @@
         "isTransitive": true,
         "preJapanese": "たばこ",
         "preJapaneseParticle": "を",
-        "japaneseAllHiragana": "すいます　",
+        "japaneseAllHiragana": "すいます",
         "japanese": "すいます",
         "postJapanese": "",
         "preEnglish": "",
@@ -6556,7 +6556,7 @@
         "japanese": "よく",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "well, much (adverb of degree. positive) ",
+        "english": "well, much (adverb of degree. positive)",
         "postEnglish": ""
     },
     {
@@ -11678,7 +11678,7 @@
         "japanese": "２，３",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "two or three　[～counter suffix]",
+        "english": "two or three [～counter suffix]",
         "postEnglish": ""
     },
     {
@@ -11694,7 +11694,7 @@
         "japanese": "までに",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "before, by　[～deadline]",
+        "english": "before, by [～deadline]",
         "postEnglish": ""
     },
     {
@@ -11790,7 +11790,7 @@
         "japanese": "お大事に",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "Take care of yourself.　(Said to people who are ill)",
+        "english": "Take care of yourself. (Said to people who are ill)",
         "postEnglish": ""
     },
     {
@@ -12702,7 +12702,7 @@
         "japanese": "～くん",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "informal ～さん, ",
+        "english": "informal ～さん,",
         "postEnglish": ""
     },
     {
@@ -12718,7 +12718,7 @@
         "japanese": "うん",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "informal  はい",
+        "english": "informal はい",
         "postEnglish": ""
     },
     {
@@ -12910,7 +12910,7 @@
         "japanese": "けど",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "informal　が",
+        "english": "informal が",
         "postEnglish": ""
     },
     {
@@ -13614,7 +13614,7 @@
         "japanese": "着ます",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "put on  (a suit, sweater, outerwear, (lit) one piece, cardigan, blouse, white shirt, kimono)",
+        "english": "put on (a suit, sweater, outerwear, (lit) one piece, cardigan, blouse, white shirt, kimono)",
         "postEnglish": ""
     },
     {
@@ -13678,7 +13678,7 @@
         "japanese": "します",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "put on [tie]　(accessories generally)",
+        "english": "put on [tie] (accessories generally)",
         "postEnglish": ""
     },
     {
@@ -15576,13 +15576,13 @@
             "verb"
         ],
         "isTransitive": null,
-        "preJapanese": " 道",
+        "preJapanese": "道",
         "preJapaneseParticle": "を",
         "japaneseAllHiragana": "はしります",
-        "japanese": "走ります ",
+        "japanese": "走ります",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "run, drive ",
+        "english": "run, drive",
         "postEnglish": ""
     },
     {
@@ -15611,7 +15611,7 @@
         "preJapanese": "音",
         "preJapaneseParticle": "が",
         "japaneseAllHiragana": "きこえます",
-        "japanese": "聞こえます ",
+        "japanese": "聞こえます",
         "postJapanese": "",
         "preEnglish": "a sound",
         "english": "can be heard",
@@ -15886,7 +15886,7 @@
         "japanese": "後",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "after ～  (duration of time)",
+        "english": "after ～ (duration of time)",
         "postEnglish": ""
     },
     {
@@ -16318,7 +16318,7 @@
         "japanese": "通います",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "go to and from ",
+        "english": "go to and from",
         "postEnglish": ""
     },
     {
@@ -17146,8 +17146,8 @@
         "isTransitive": false,
         "preJapanese": "電気が",
         "preJapaneseParticle": "が",
-        "japaneseAllHiragana": "つきます ",
-        "japanese": "つきます ",
+        "japaneseAllHiragana": "つきます",
+        "japanese": "つきます",
         "postJapanese": "",
         "preEnglish": "a light",
         "english": "come on, be turned on",
@@ -17274,8 +17274,8 @@
         "isTransitive": false,
         "preJapanese": "ボタン",
         "preJapaneseParticle": "が",
-        "japaneseAllHiragana": "はずれます ",
-        "japanese": "はずれます ",
+        "japaneseAllHiragana": "はずれます",
+        "japanese": "はずれます",
         "postJapanese": "",
         "preEnglish": "a button",
         "english": "be undone",
@@ -18126,7 +18126,7 @@
         "japanese": "こうぎ",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "lecture ",
+        "english": "lecture",
         "postEnglish": ""
     },
     {
@@ -19038,7 +19038,7 @@
         "japanese": "の方",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "place toward ～, direction of ～　(～がいいです)",
+        "english": "place toward ～, direction of ～ (～がいいです)",
         "postEnglish": ""
     },
     {
@@ -20078,7 +20078,7 @@
         "japanese": "当たります",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "win ",
+        "english": "win",
         "postEnglish": ""
     },
     {
@@ -21422,7 +21422,7 @@
         "japanese": "お茶をたてます",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "make  tea",
+        "english": "make tea",
         "postEnglish": ""
     },
     {
@@ -21551,7 +21551,7 @@
         "japanese": "分",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "portion for  ～",
+        "english": "portion for ～",
         "postEnglish": ""
     },
     {
@@ -24418,7 +24418,7 @@
         "japanese": "整理します",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "sort  out",
+        "english": "sort out",
         "postEnglish": ""
     },
     {
@@ -29650,7 +29650,7 @@
         "japanese": "覚めます",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "wake up ",
+        "english": "wake up",
         "postEnglish": ""
     },
     {
@@ -29682,7 +29682,7 @@
         "japanese": "回答",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "answer, reply ",
+        "english": "answer, reply",
         "postEnglish": ""
     },
     {
@@ -30146,7 +30146,7 @@
         "japanese": "ついています",
         "postJapanese": "",
         "preEnglish": "",
-        "english": " be lucky",
+        "english": "be lucky",
         "postEnglish": ""
     },
     {
@@ -31106,7 +31106,7 @@
         "japanese": "ーパーセント",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "- percent ",
+        "english": "- percent",
         "postEnglish": ""
     },
     {
@@ -31202,7 +31202,7 @@
         "japanese": "掛けます",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "sit on ",
+        "english": "sit on",
         "postEnglish": ""
     },
     {
@@ -31666,7 +31666,7 @@
         "japanese": "講演会",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "lecture meeting ",
+        "english": "lecture meeting",
         "postEnglish": ""
     },
     {
@@ -31682,7 +31682,7 @@
         "japanese": "山中伸弥",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "Japanese medical scientist (1962 -) ",
+        "english": "Japanese medical scientist (1962 -)",
         "postEnglish": ""
     },
     {
@@ -32002,7 +32002,7 @@
         "japanese": "初めに",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "first ",
+        "english": "first",
         "postEnglish": ""
     },
     {
@@ -32690,7 +32690,7 @@
         "japanese": "リラックス",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "relax  (（～を）suru noun)",
+        "english": "relax (（～を）suru noun)",
         "postEnglish": ""
     },
     {
@@ -33730,7 +33730,7 @@
         "japanese": "礼儀正しい",
         "postJapanese": "",
         "preEnglish": "",
-        "english": "well-mannered; courteous; polite ",
+        "english": "well-mannered; courteous; polite",
         "postEnglish": ""
     },
     {

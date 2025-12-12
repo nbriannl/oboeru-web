@@ -49,13 +49,44 @@ class Word {
 }
 
 class VocabularyBuilder {
+  normalizeText(input) {
+    if (input === null || input === undefined) return "";
+    return String(input)
+      .replace(/\u3000/g, " ") // full-width space -> normal space
+      .replace(/[ \t]+/g, " ") // collapse multiple spaces/tabs (optional)
+      .trim(); // optional (remove if you need leading/trailing spaces)
+  }
+
   async buildVocabulary(filePath) {
-    console.log(process.env.GOOGLE_PRIVATE_KEY);
-    const serviceAccountAuth = new JWT({
-      email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL, // Replace with your service account email
-      key: process.env.GOOGLE_PRIVATE_KEY.split(String.raw`\n`).join("\n"), // Replace with your private key
-      scopes: ["https://www.googleapis.com/auth/spreadsheets"]
-    });
+    function loadServiceAccountCreds() {
+      if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON) {
+        return JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON.trim());
+      }
+
+      if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON_PATH) {
+        const raw = fs.readFileSync(
+          process.env.GOOGLE_SERVICE_ACCOUNT_JSON_PATH,
+          "utf8"
+        );
+        return JSON.parse(raw);
+      }
+
+      return null;
+    }
+
+    const creds = loadServiceAccountCreds();
+
+    const serviceAccountAuth = creds
+      ? new JWT({
+          email: creds.client_email,
+          key: creds.private_key,
+          scopes: ["https://www.googleapis.com/auth/spreadsheets"]
+        })
+      : new JWT({
+          email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+          key: process.env.GOOGLE_PRIVATE_KEY.split(String.raw`\n`).join("\n"),
+          scopes: ["https://www.googleapis.com/auth/spreadsheets"]
+        });
 
     const doc = new GoogleSpreadsheet(
       "1PAyIJA98h7Zgsj7Hpvhee5po4l8gZGjqNMiMRr27_nk",
@@ -113,17 +144,18 @@ class VocabularyBuilder {
               ? false
               : null;
 
-          const preJapanese = this.convertNanToEmptyString(row.preJapanese);
-          const preJapaneseParticle = this.convertNanToEmptyString(
+          const preJapanese = this.normalizeText(row.preJapanese);
+          const preJapaneseParticle = this.normalizeText(
             row.preJapaneseParticle
           );
-          const japaneseAllHiragana = row.japaneseAllHiragana;
-          const japanese = row.japanese;
-          const postJapanese = this.convertNanToEmptyString(row.postJapanese);
-          const preEnglish = this.convertNanToEmptyString(row.preEnglish);
-          const english = row.english;
-          const postEnglish = this.convertNanToEmptyString(row.postEnglish);
-
+          const japaneseAllHiragana = this.normalizeText(
+            row.japaneseAllHiragana
+          );
+          const japanese = this.normalizeText(row.japanese);
+          const postJapanese = this.normalizeText(row.postJapanese);
+          const preEnglish = this.normalizeText(row.preEnglish);
+          const english = this.normalizeText(row.english);
+          const postEnglish = this.normalizeText(row.postEnglish);
           const word = new Word(
             index,
             lessonNum,
