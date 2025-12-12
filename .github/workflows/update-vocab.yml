@@ -1,0 +1,50 @@
+name: Update vocab (PR)
+
+on:
+    workflow_dispatch:
+
+permissions:
+    contents: write
+    pull-requests: write
+
+concurrency:
+    group: update-vocab
+    cancel-in-progress: true
+
+jobs:
+    update:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Use Node 18
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 18
+                  cache: npm
+
+            - name: Install
+              run: npm ci
+
+            - name: Generate vocab
+              run: npm run updatevocab
+              env:
+                  GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+                  # keep these only if your script still supports split vars
+                  GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+                  GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+
+            - name: Create PR with updated vocab
+              uses: peter-evans/create-pull-request@v7
+              with:
+                  commit-message: "chore: update vocab"
+                  title: "chore: update vocab"
+                  body: "Automated vocab update from Google Sheet."
+                  branch: chore/update-vocab
+                  delete-branch: true
+                  add-paths: |
+                      src/vocabulary.json
+                      src/poslist.json
+                      src/lessonlist.json
