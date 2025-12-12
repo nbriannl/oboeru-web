@@ -1,26 +1,18 @@
 {
   "files": {
-    "main.css": "/oboeru-web/static/css/main.aacde068.chunk.css",
-    "main.js": "/oboeru-web/static/js/main.f6ee5bd5.chunk.js",
-    "main.js.map": "/oboeru-web/static/js/main.f6ee5bd5.chunk.js.map",
-    "runtime-main.js": "/oboeru-web/static/js/runtime-main.42dea728.js",
-    "runtime-main.js.map": "/oboeru-web/static/js/runtime-main.42dea728.js.map",
-    "static/css/2.99b0aee6.chunk.css": "/oboeru-web/static/css/2.99b0aee6.chunk.css",
-    "static/js/2.cfea689d.chunk.js": "/oboeru-web/static/js/2.cfea689d.chunk.js",
-    "static/js/2.cfea689d.chunk.js.map": "/oboeru-web/static/js/2.cfea689d.chunk.js.map",
+    "main.css": "/oboeru-web/static/css/main.656c508d.css",
+    "main.js": "/oboeru-web/static/js/main.ce3483f8.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/oboeru-web/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/oboeru-web/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/oboeru-web/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/oboeru-web/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/oboeru-web/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/oboeru-web/index.html",
-    "precache-manifest.ba31ad0469f92724e0b523963e8fc091.js": "/oboeru-web/precache-manifest.ba31ad0469f92724e0b523963e8fc091.js",
-    "service-worker.js": "/oboeru-web/service-worker.js",
-    "static/css/2.99b0aee6.chunk.css.map": "/oboeru-web/static/css/2.99b0aee6.chunk.css.map",
-    "static/css/main.aacde068.chunk.css.map": "/oboeru-web/static/css/main.aacde068.chunk.css.map",
-    "static/js/2.cfea689d.chunk.js.LICENSE.txt": "/oboeru-web/static/js/2.cfea689d.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/oboeru-web/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.656c508d.css.map": "/oboeru-web/static/css/main.656c508d.css.map",
+    "main.ce3483f8.js.map": "/oboeru-web/static/js/main.ce3483f8.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.42dea728.js",
-    "static/css/2.99b0aee6.chunk.css",
-    "static/js/2.cfea689d.chunk.js",
-    "static/css/main.aacde068.chunk.css",
-    "static/js/main.f6ee5bd5.chunk.js"
+    "static/css/main.656c508d.css",
+    "static/js/main.ce3483f8.js"
   ]
 }
