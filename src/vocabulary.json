@@ -34734,8 +34734,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "しんちょう(な/に)",
-        "japanese": "慎重(な/に)",
+        "japaneseAllHiragana": "しんちょう",
+        "japanese": "慎重",
         "postJapanese": "",
         "preEnglish": "",
         "english": "careful",
@@ -34782,8 +34782,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "たいしょうてき(な/に)",
-        "japanese": "対照的(な/に)",
+        "japaneseAllHiragana": "たいしょうてき",
+        "japanese": "対照的",
         "postJapanese": "",
         "preEnglish": "",
         "english": "contrasting",
@@ -34798,8 +34798,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "らくてんてき(な/に)",
-        "japanese": "楽天的(な/に)",
+        "japaneseAllHiragana": "らくてんてき",
+        "japanese": "楽天的",
         "postJapanese": "",
         "preEnglish": "",
         "english": "optimistic",
@@ -34814,8 +34814,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "きまぐれ(な/に)",
-        "japanese": "気まぐれ(な/に)",
+        "japaneseAllHiragana": "きまぐれ",
+        "japanese": "気まぐれ",
         "postJapanese": "",
         "preEnglish": "",
         "english": "capricious",
@@ -34861,9 +34861,9 @@
         ],
         "isTransitive": null,
         "preJapanese": "",
-        "preJapaneseParticle": "",
-        "japaneseAllHiragana": "～はというと",
-        "japanese": "～はというと",
+        "preJapaneseParticle": "～",
+        "japaneseAllHiragana": "はというと",
+        "japanese": "はというと",
         "postJapanese": "",
         "preEnglish": "",
         "english": "as for …",
@@ -34894,8 +34894,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "てんけいてき(な/に)",
-        "japanese": "典型的(な/に)",
+        "japaneseAllHiragana": "てんけいてき",
+        "japanese": "典型的",
         "postJapanese": "",
         "preEnglish": "",
         "english": "typical",
@@ -34942,8 +34942,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "のんき(な/に)",
-        "japanese": "のんき(な/に)",
+        "japaneseAllHiragana": "のんき",
+        "japanese": "のんき",
         "postJapanese": "",
         "preEnglish": "",
         "english": "easygoing",
@@ -34974,8 +34974,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "わがまま(な/に)",
-        "japanese": "わがまま(な/に)",
+        "japaneseAllHiragana": "わがまま",
+        "japanese": "わがまま",
         "postJapanese": "",
         "preEnglish": "",
         "english": "selfish",
@@ -34990,8 +34990,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "れいせい(な/に)",
-        "japanese": "冷静(な/に)",
+        "japaneseAllHiragana": "れいせい",
+        "japanese": "冷静",
         "postJapanese": "",
         "preEnglish": "",
         "english": "calm",
@@ -35038,8 +35038,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "きゃっかんてき(な/に)",
-        "japanese": "客観的(な/に)",
+        "japaneseAllHiragana": "きゃっかんてき",
+        "japanese": "客観的",
         "postJapanese": "",
         "preEnglish": "",
         "english": "objective",
@@ -35054,8 +35054,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "さまざま(な/に)",
-        "japanese": "様々(な/に)",
+        "japaneseAllHiragana": "さまざま",
+        "japanese": "様々",
         "postJapanese": "",
         "preEnglish": "",
         "english": "various",
@@ -35086,8 +35086,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "かがくてき(な/に)",
-        "japanese": "科学的(な/に)",
+        "japaneseAllHiragana": "かがくてき",
+        "japanese": "科学的",
         "postJapanese": "",
         "preEnglish": "",
         "english": "scientific",
@@ -35118,8 +35118,8 @@
         "isTransitive": null,
         "preJapanese": "",
         "preJapaneseParticle": "",
-        "japaneseAllHiragana": "いいかげん(な/に)",
-        "japanese": "いいかげん(な/に)",
+        "japaneseAllHiragana": "いいかげん",
+        "japanese": "いいかげん",
         "postJapanese": "",
         "preEnglish": "",
         "english": "unreliable / irresponsible",
@@ -35203,6 +35203,758 @@
         "postJapanese": "",
         "preEnglish": "",
         "english": "measure",
+        "postEnglish": ""
+    },
+    {
+        "index": 2200,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "おもいだす",
+        "japanese": "思い出す",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "remember",
+        "postEnglish": ""
+    },
+    {
+        "index": 2201,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "れんそうする",
+        "japanese": "連想する",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "associate",
+        "postEnglish": ""
+    },
+    {
+        "index": 2202,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "きたくする",
+        "japanese": "帰宅する",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "come home",
+        "postEnglish": ""
+    },
+    {
+        "index": 2203,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "よびだす",
+        "japanese": "呼び出す",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "tell sb to come / call",
+        "postEnglish": ""
+    },
+    {
+        "index": 2204,
+        "lesson": 56,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "よう",
+        "japanese": "よう",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "like",
+        "postEnglish": ""
+    },
+    {
+        "index": 2205,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しじする",
+        "japanese": "指示する",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "give instructions",
+        "postEnglish": ""
+    },
+    {
+        "index": 2206,
+        "lesson": 56,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "～",
+        "japaneseAllHiragana": "まま",
+        "japanese": "まま",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "as …",
+        "postEnglish": ""
+    },
+    {
+        "index": 2207,
+        "lesson": 56,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "あせまみれ",
+        "japanese": "汗まみれ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "be soaked in sweat",
+        "postEnglish": ""
+    },
+    {
+        "index": 2208,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ぬく",
+        "japanese": "抜く",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "pull",
+        "postEnglish": ""
+    },
+    {
+        "index": 2209,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "こえがする",
+        "japanese": "声がする",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "hear a voice",
+        "postEnglish": ""
+    },
+    {
+        "index": 2210,
+        "lesson": 56,
+        "partOfSpeech": [
+            "na-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "せいかく",
+        "japanese": "正確",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "precise",
+        "postEnglish": ""
+    },
+    {
+        "index": 2211,
+        "lesson": 56,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "～",
+        "japaneseAllHiragana": "べき",
+        "japanese": "べき",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "should …",
+        "postEnglish": ""
+    },
+    {
+        "index": 2212,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ひ",
+        "japanese": "陽",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "sunlight",
+        "postEnglish": ""
+    },
+    {
+        "index": 2213,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "える",
+        "japanese": "得る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "get",
+        "postEnglish": ""
+    },
+    {
+        "index": 2214,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "いきかえる",
+        "japanese": "生き返る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "come back to life",
+        "postEnglish": ""
+    },
+    {
+        "index": 2215,
+        "lesson": 56,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "それとも",
+        "japanese": "それとも",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "or",
+        "postEnglish": ""
+    },
+    {
+        "index": 2216,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "かわききる",
+        "japanese": "乾き切る",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "dry out",
+        "postEnglish": ""
+    },
+    {
+        "index": 2217,
+        "lesson": 56,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ごくごく",
+        "japanese": "ごくごく",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "(drink sth) in gulps",
+        "postEnglish": ""
+    },
+    {
+        "index": 2218,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "のどをならす",
+        "japanese": "のどを鳴らす",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "gurgle",
+        "postEnglish": ""
+    },
+    {
+        "index": 2219,
+        "lesson": 56,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ようやく",
+        "japanese": "ようやく",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "finally",
+        "postEnglish": ""
+    },
+    {
+        "index": 2220,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "かいほうする",
+        "japanese": "解放する",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "release",
+        "postEnglish": ""
+    },
+    {
+        "index": 2221,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "みあわせる",
+        "japanese": "見合わせる",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "look at each other",
+        "postEnglish": ""
+    },
+    {
+        "index": 2222,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "うなずく",
+        "japanese": "うなずく",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "nod",
+        "postEnglish": ""
+    },
+    {
+        "index": 2223,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ゆうすずみ",
+        "japanese": "夕涼み",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "cooling oneself in the evening breeze",
+        "postEnglish": ""
+    },
+    {
+        "index": 2224,
+        "lesson": 56,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "～",
+        "japaneseAllHiragana": "がてら",
+        "japanese": "がてら",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "while … / on the way to …",
+        "postEnglish": ""
+    },
+    {
+        "index": 2225,
+        "lesson": 56,
+        "partOfSpeech": [
+            "i-adj"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "きげんがいい",
+        "japanese": "機嫌がいい",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "be in a good mood",
+        "postEnglish": ""
+    },
+    {
+        "index": 2226,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "つれだす",
+        "japanese": "連れ出す",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "take sb out",
+        "postEnglish": ""
+    },
+    {
+        "index": 2227,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "はなび",
+        "japanese": "花火",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "fireworks",
+        "postEnglish": ""
+    },
+    {
+        "index": 2228,
+        "lesson": 56,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "もっとも",
+        "japanese": "もっとも",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "though",
+        "postEnglish": ""
+    },
+    {
+        "index": 2229,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "とうじ",
+        "japanese": "当時",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "at that time",
+        "postEnglish": ""
+    },
+    {
+        "index": 2230,
+        "lesson": 56,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "～",
+        "japaneseAllHiragana": "のことだから",
+        "japanese": "のことだから",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "as is often the case with …",
+        "postEnglish": ""
+    },
+    {
+        "index": 2231,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "うちあげ",
+        "japanese": "打ち上げ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "rocket",
+        "postEnglish": ""
+    },
+    {
+        "index": 2232,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "とおりがかり",
+        "japanese": "通りがかり",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "passing",
+        "postEnglish": ""
+    },
+    {
+        "index": 2233,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ゆかた",
+        "japanese": "ゆかた",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "casual summer kimono",
+        "postEnglish": ""
+    },
+    {
+        "index": 2234,
+        "lesson": 56,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ゆったり",
+        "japanese": "ゆったり",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "in a relaxed way",
+        "postEnglish": ""
+    },
+    {
+        "index": 2235,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "こしをおろす",
+        "japanese": "腰を下ろす",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "sit down",
+        "postEnglish": ""
+    },
+    {
+        "index": 2236,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "みつめる",
+        "japanese": "見つめる",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "gaze at …",
+        "postEnglish": ""
+    },
+    {
+        "index": 2237,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "いっしゅん",
+        "japanese": "一瞬",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "for an instant",
+        "postEnglish": ""
+    },
+    {
+        "index": 2238,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "あたり",
+        "japanese": "辺り",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "around / surroundings",
+        "postEnglish": ""
+    },
+    {
+        "index": 2239,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "くらやみ",
+        "japanese": "暗やみ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "darkness",
+        "postEnglish": ""
+    },
+    {
+        "index": 2240,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "しゅんかん",
+        "japanese": "瞬間",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "moment",
+        "postEnglish": ""
+    },
+    {
+        "index": 2241,
+        "lesson": 56,
+        "partOfSpeech": [
+            "noun"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "きっかけ",
+        "japanese": "きっかけ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "trigger / cause",
+        "postEnglish": ""
+    },
+    {
+        "index": 2242,
+        "lesson": 56,
+        "partOfSpeech": [
+            "adverb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ふと",
+        "japanese": "ふと",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "suddenly / by chance",
+        "postEnglish": ""
+    },
+    {
+        "index": 2243,
+        "lesson": 56,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "～",
+        "japaneseAllHiragana": "(10ねん)あまり",
+        "japanese": "(10年)余り",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "over 10 years",
+        "postEnglish": ""
+    },
+    {
+        "index": 2244,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ねだる",
+        "japanese": "ねだる",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "ask sb to …",
+        "postEnglish": ""
+    },
+    {
+        "index": 2245,
+        "lesson": 56,
+        "partOfSpeech": [
+            "verb"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "",
+        "japaneseAllHiragana": "ながめる",
+        "japanese": "眺める",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "look at …",
+        "postEnglish": ""
+    },
+    {
+        "index": 2246,
+        "lesson": 56,
+        "partOfSpeech": [
+            "exp"
+        ],
+        "isTransitive": null,
+        "preJapanese": "",
+        "preJapaneseParticle": "～",
+        "japaneseAllHiragana": "つつ",
+        "japanese": "つつ",
+        "postJapanese": "",
+        "preEnglish": "",
+        "english": "while …ing",
         "postEnglish": ""
     }
 ]
