@@ -10,7 +10,7 @@ export default function MCQOptions({
     <ButtonGroup vertical className="special">
       {options.map((opt, idx) => (
         <Button
-          key={idx}
+          key={`${idx}-${opt}`}
           value={idx}
           variant={`outline-${themeColor}`}
           onClick={handleOptionSelect}
