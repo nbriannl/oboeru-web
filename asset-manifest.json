@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/oboeru-web/static/css/main.656c508d.css",
-    "main.js": "/oboeru-web/static/js/main.56c54a01.js",
+    "main.js": "/oboeru-web/static/js/main.506720dc.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/oboeru-web/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/oboeru-web/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/oboeru-web/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -9,10 +9,10 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/oboeru-web/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/oboeru-web/index.html",
     "main.656c508d.css.map": "/oboeru-web/static/css/main.656c508d.css.map",
-    "main.56c54a01.js.map": "/oboeru-web/static/js/main.56c54a01.js.map"
+    "main.506720dc.js.map": "/oboeru-web/static/js/main.506720dc.js.map"
   },
   "entrypoints": [
     "static/css/main.656c508d.css",
-    "static/js/main.56c54a01.js"
+    "static/js/main.506720dc.js"
   ]
 }
