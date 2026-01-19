@@ -201,7 +201,7 @@ class VocabularyBuilder {
 
       // Save lessonList to a JSON file
       const lessonListJson = JSON.stringify(lessonList, null, 4);
-      fs.writeFileSync("./src/lessonList.json", lessonListJson);
+      fs.writeFileSync("./src/lessonlist.json", lessonListJson);
       console.log("lessonList saved to JSON file");
 
       return { wordList, partOfSpeechList, lessonList };
