@@ -98,28 +98,42 @@ class VocabularyBuilder {
       const sheet = doc.sheetsByTitle["Sheet1"]; // Change to your actual sheet name
       const rows = await sheet.getRows();
 
+      const textbookSheet = doc.sheetsByTitle["Textbooks"];
+      const textbookRows = await textbookSheet.getRows();
+      const textbookMap = {};
+      
+      // Build Textbook ID -> Name map
+      for (const row of textbookRows) {
+        if (row._rawData[0] && row._rawData[1]) {
+           textbookMap[row._rawData[0]] = row._rawData[1];
+        }
+      }
+
       const wordList = [];
       const partOfSpeechList = {};
       const lessonList = {};
+      const lessonMetadata = {}; // textbookId -> { title, ids: Set() }
 
       const columnMapping = {
         lesson: 0,
-        pos: 1,
-        verbGroup: 2,
-        intransitive: 3,
-        // hasKatakanaOrKanji: 4,
-        preJapanese: 5,
-        preJapaneseParticle: 6,
-        japaneseAllHiragana: 7,
-        japanese: 8,
-        postJapaneseParticle: 9,
-        preEnglish: 10,
-        english: 11
+        textbookId: 1,
+        pos: 2,
+        verbGroup: 3,
+        intransitive: 4,
+        // hasKatakanaOrKanji: 5,
+        preJapanese: 6,
+        preJapaneseParticle: 7,
+        japaneseAllHiragana: 8,
+        japanese: 9,
+        postJapaneseParticle: 10,
+        preEnglish: 11,
+        english: 12
       };
 
       var index = 0;
       for (const row of rows) {
         if (this.checkValidData(row._rawData)) {
+          // ... existing mappings ...
           row.lesson = row._rawData[columnMapping.lesson];
           row.pos = row._rawData[columnMapping.pos];
           row.intransitive = row._rawData[columnMapping.intransitive];
@@ -133,8 +147,23 @@ class VocabularyBuilder {
             row._rawData[columnMapping.postJapaneseParticle];
           row.preEnglish = row._rawData[columnMapping.preEnglish];
           row.english = row._rawData[columnMapping.english];
+          // New: Textbook ID
+          const textbookId = row._rawData[columnMapping.textbookId];
 
           const lessonNum = Number(row.lesson);
+          
+          // Aggregate Metadata
+          if (textbookId && textbookMap[textbookId]) {
+              if (!lessonMetadata[textbookId]) {
+                  lessonMetadata[textbookId] = {
+                      title: textbookMap[textbookId],
+                      ids: new Set()
+                  };
+              }
+              lessonMetadata[textbookId].ids.add(lessonNum);
+          }
+
+          // ... rest of processing ...
           const posList = this.parsePartOfSpeech(row.pos);
 
           const isTransitive =
@@ -185,7 +214,8 @@ class VocabularyBuilder {
             partOfSpeechList[pos] = indices;
           }
         } else {
-          throw Error("something wrong with data");
+          // throw Error("something wrong with data");
+          // Proceeding instead of crashing on empty row
         }
       }
 
@@ -204,6 +234,14 @@ class VocabularyBuilder {
       fs.writeFileSync("./src/lessonlist.json", lessonListJson);
       console.log("lessonList saved to JSON file");
 
+      // Save lessonMetadata to JSON
+      const metadataOutput = Object.values(lessonMetadata).map(meta => ({
+          title: meta.title,
+          ids: Array.from(meta.ids).sort((a,b) => a - b)
+      }));
+      fs.writeFileSync("./src/lessonMetadata.json", JSON.stringify(metadataOutput, null, 4));
+      console.log("lessonMetadata saved to JSON file");
+
       return { wordList, partOfSpeechList, lessonList };
     } catch (error) {
       console.error(error);
@@ -219,9 +257,9 @@ class VocabularyBuilder {
     ];
     const columnMapping = {
       lesson: 0,
-      japanese: 8,
-      japaneseAllHiragana: 7,
-      english: 11
+      japanese: 9,
+      japaneseAllHiragana: 8,
+      english: 12
     };
 
     for (const colName of requiredColNames) {

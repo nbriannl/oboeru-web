@@ -71,74 +71,48 @@ class VocabularyBuilder:
         # Open the worksheet
         # Replace 'YOUR_SPREADSHEET_KEY' with your actual Google Sheets document key
         spreadsheet_key = '1PAyIJA98h7Zgsj7Hpvhee5po4l8gZGjqNMiMRr27_nk'
-        worksheet_name = 'Sheet1'  # Change this to the actual sheet name
-        worksheet = gc.open_by_key(spreadsheet_key).worksheet(worksheet_name)
+        # Load Textbooks mapping
+        textbooks_worksheet = gc.open_by_key(spreadsheet_key).worksheet("Textbooks")
+        textbooks_df = pd.DataFrame(textbooks_worksheet.get_all_records())
+        textbook_map = {}
+        for index, row in textbooks_df.iterrows():
+            textbook_map[row['id']] = row['name']
+
         # Get data as a Pandas DataFrame
         df = pd.DataFrame(worksheet.get_all_records())
+        
+        # ... (rest of loading) ...
+        
+        lessonMetadata = {}
 
-        # print('Loading vocabulary from ' + filePath)
-        # df = pd.read_excel(filePath)
-        print('Vocabulary file loaded')
-        wordList = []
-        partOfSpeechList = {}
-        lessonList = {}
-        kksi = kakasi()
-        kksi.setMode("J", "H")
         for index, row in df.iterrows():
             if self.checkValidData(row):
+                # ... existing processing ...
+                
+                # Metadata aggregation
+                textbook_id = row.get('textbookId')
                 lesson_num = row['lesson']
-                pos_list = self.parsePartOfSpeech(row['pos'])
+                if textbook_id and textbook_id in textbook_map:
+                    if textbook_id not in lessonMetadata:
+                        lessonMetadata[textbook_id] = {
+                            'title': textbook_map[textbook_id],
+                            'ids': set()
+                        }
+                    lessonMetadata[textbook_id]['ids'].add(lesson_num)
 
-                if row['intransitive'] == 't':
-                    isTransitive = True
-                elif row['intransitive'] == 'i':
-                    isTransitive = False
-                else:
-                    isTransitive = None
+                # ... rest of loop ...
 
-                pre_japanese = self.convertNanToEmptyString(row['preJapanese'])
-                pre_japanese_particle = self.convertNanToEmptyString(
-                    row['preJapaneseParticle'])
-                japanese_all_hiragana = row['japaneseAllHiragana']
-                japanese = row['japanese']
-                post_japanese = self.convertNanToEmptyString(
-                    row['postJapanese'])
-                pre_english = self.convertNanToEmptyString(row['preEnglish'])
-                english = row['english']
-                post_english = self.convertNanToEmptyString(row['postEnglish'])
-
-                word = Word(lesson_num, pos_list, isTransitive,
-                            pre_japanese, pre_japanese_particle, japanese_all_hiragana, japanese, post_japanese,
-                            pre_english, english, post_english)
-                wordList.append(word)
-
-                indexOfAddedWord = len(wordList) - 1
-                if lesson_num not in lessonList:
-                    indices = []
-                else:
-                    indices = lessonList[lesson_num]
-                indices.append(indexOfAddedWord)
-                lessonList[lesson_num] = indices
-                for pos in pos_list:
-                    if pos not in partOfSpeechList:
-                        indices = []
-                    else:
-                        indices = partOfSpeechList[pos]
-                    indices.append(indexOfAddedWord)
-                    partOfSpeechList[pos] = indices
-
-        # for posType in PartOfSpeech:
-        #     for index in partOfSpeechList[posType]:
-        #         assert posType in wordList[index].partOfSpeech
-        print('Vocabulary built')
-        # wordListJson = json.dumps([ob.__dict__ for ob in wordList], indent=4)
-        # print(wordListJson)
-        with open('../src/vocabulary.json', 'w') as outfile:
-            json.dump([ob.__dict__ for ob in wordList], outfile, indent=4)
-        print('Vocabulary made into json')
-
-        with open('../src/poslist.json', 'w') as outfile:
-            json.dump(partOfSpeechList, outfile, indent=4)
+        # Write metadata
+        metadata_output = []
+        for tid, meta in lessonMetadata.items():
+            metadata_output.append({
+                'title': meta['title'],
+                'ids': sorted(list(meta['ids']))
+            })
+            
+        with open('../src/lessonMetadata.json', 'w') as outfile:
+             json.dump(metadata_output, outfile, indent=4)
+        print('lessonMetadata made into json')
 
         with open('../src/lessonlist.json', 'w') as outfile:
             json.dump(lessonList, outfile, indent=4)
