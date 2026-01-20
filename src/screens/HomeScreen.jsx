@@ -35,7 +35,7 @@ export default function HomeScreen({
             <Form.Control
               as="select"
               value={lessonNum}
-              onChange={e => setLessonNum(Number(e.target.value))}
+              onChange={e => setLessonNum(e.target.value)}
             >
               {(() => {
                 const groups = lessonMetadata.map(meta => ({
@@ -45,12 +45,12 @@ export default function HomeScreen({
                 const others = [];
 
                 lessonNumbers.forEach(n => {
-                  const num = Number(n);
-                  const group = groups.find(g => g.ids.includes(num));
+                  // Check if 'n' belongs to a group
+                  const group = groups.find(g => g.ids.includes(n));
                   if (group) {
-                    group.lessons.push(num);
+                    group.lessons.push(n);
                   } else {
-                    others.push(num);
+                    others.push(n);
                   }
                 });
 
@@ -59,11 +59,17 @@ export default function HomeScreen({
                     {groups.map(g =>
                       g.lessons.length > 0 ? (
                         <optgroup key={g.title} label={g.title}>
-                          {g.lessons.map(n => (
-                            <option key={n} value={n}>
-                              {n}
-                            </option>
-                          ))}
+                          {g.lessons.map(id => {
+                            // Extract lesson number from ID "textbookId-lessonNum"
+                            const parts = String(id).split("-");
+                            const displayNum =
+                              parts.length > 1 ? parts[parts.length - 1] : id;
+                            return (
+                              <option key={id} value={id}>
+                                {displayNum}
+                              </option>
+                            );
+                          })}
                         </optgroup>
                       ) : null
                     )}

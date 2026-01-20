@@ -152,7 +152,9 @@ class VocabularyBuilder {
 
           const lessonNum = Number(row.lesson);
           
-          // Aggregate Metadata
+      // Aggregate Metadata
+          const uniqueLessonId = `${textbookId || 'default'}-${lessonNum}`;
+
           if (textbookId && textbookMap[textbookId]) {
               if (!lessonMetadata[textbookId]) {
                   lessonMetadata[textbookId] = {
@@ -160,7 +162,7 @@ class VocabularyBuilder {
                       ids: new Set()
                   };
               }
-              lessonMetadata[textbookId].ids.add(lessonNum);
+              lessonMetadata[textbookId].ids.add(uniqueLessonId);
           }
 
           // ... rest of processing ...
@@ -204,9 +206,9 @@ class VocabularyBuilder {
           wordList.push(word);
 
           const indexOfAddedWord = wordList.length - 1;
-          const indices = lessonList[lessonNum] || [];
+          const indices = lessonList[uniqueLessonId] || [];
           indices.push(indexOfAddedWord);
-          lessonList[lessonNum] = indices;
+          lessonList[uniqueLessonId] = indices;
 
           for (const pos of posList) {
             const indices = partOfSpeechList[pos] || [];
@@ -237,7 +239,11 @@ class VocabularyBuilder {
       // Save lessonMetadata to JSON
       const metadataOutput = Object.values(lessonMetadata).map(meta => ({
           title: meta.title,
-          ids: Array.from(meta.ids).sort((a,b) => a - b)
+          ids: Array.from(meta.ids).sort((a, b) => {
+              const numA = parseInt(a.split('-').pop(), 10);
+              const numB = parseInt(b.split('-').pop(), 10);
+              return numA - numB;
+          })
       }));
       fs.writeFileSync("./src/lessonMetadata.json", JSON.stringify(metadataOutput, null, 4));
       console.log("lessonMetadata saved to JSON file");
