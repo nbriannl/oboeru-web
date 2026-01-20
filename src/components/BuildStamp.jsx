@@ -1,8 +1,11 @@
 import React from "react";
 
 export default function BuildStamp() {
-  const sha = (process.env.REACT_APP_BUILD_SHA || "").slice(0, 7);
-  const date = process.env.REACT_APP_BUILD_DATE || "";
+  // Vite uses import.meta.env. VITE_ prefix is required for user vars usually,
+  // but let's just make it safe for now so it doesn't crash.
+  const env = import.meta.env || {};
+  const sha = (env.VITE_BUILD_SHA || env.REACT_APP_BUILD_SHA || "").slice(0, 7);
+  const date = env.VITE_BUILD_DATE || env.REACT_APP_BUILD_DATE || "";
 
   if (!sha && !date) return null;
 
@@ -20,7 +23,7 @@ export default function BuildStamp() {
         borderRadius: 6,
         zIndex: 9999
       }}
-      title={`sha=${process.env.REACT_APP_BUILD_SHA}\ndate=${date}`}
+      title={`sha=${sha}\ndate=${date}`}
     >
       {date} · {sha}
     </div>

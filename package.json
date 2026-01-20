@@ -12,18 +12,17 @@
     "font-awesome": "^4.7.0",
     "google-auth-library": "^9.4.1",
     "google-spreadsheet": "^4.1.1",
-    "react": "^16.13.0",
+    "react": "^18.3.1",
     "react-bootstrap": "^1.0.0-beta.17",
-    "react-dom": "^16.13.0",
+    "react-dom": "^18.3.1",
     "react-helmet": "^5.2.1"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d dist",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "updatevocab": "node src/vocabulary.js"
   },
   "eslintConfig": {
@@ -43,9 +42,10 @@
   },
   "homepage": "https://myusername.github.io/oboeru-web",
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
     "eslint-plugin-prettier": "^3.1.2",
     "gh-pages": "^6.3.0",
     "prettier": "^1.19.1",
-    "react-scripts": "^5.0.1"
+    "vite": "^5.4.21"
   }
 }
