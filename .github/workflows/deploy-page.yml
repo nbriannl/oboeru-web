@@ -30,13 +30,13 @@ jobs:
 
       - name: Build
         run: |
-          echo "REACT_APP_BUILD_SHA=${{ github.sha }}" >> .env.production
-          echo "REACT_APP_BUILD_DATE=$(date -u +%F)" >> .env.production
+          echo "VITE_BUILD_SHA=${{ github.sha }}" >> .env.production
+          echo "VITE_BUILD_DATE=$(date -u +%F)" >> .env.production
           npm run build
 
       - name: Deploy (to gh-pages branch)
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build
+          folder: dist
           clean: true
