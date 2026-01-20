@@ -12,13 +12,24 @@ import QuizScreen from "./screens/QuizScreen";
 import { useTheme } from "./hooks/useTheme";
 import { useQuizController } from "./hooks/useQuizController";
 
-const lessonNumbers = Object.keys(lessonList)
-  .map(Number)
-  .filter(n => Number.isFinite(n))
-  .sort((a, b) => a - b);
+const lessonNumbers = Object.keys(lessonList);
+// .sort() sorting strings logic? standard alphanumeric sort is usually fine, or custom sort if needed
+// For now, removing the number cast and sort. The API returns insertion order often, but let's trust Object.keys order or just sort alphanumerically?
+// The previous code sorted numbers. Let's do a basic sort to be safe, but keys are strings now.
+lessonNumbers.sort((a, b) => {
+  // Simple sort to avoid potential localeCompare issues on some environments
+  if (a === b) return 0;
+  // Try to sort by last number part if possible for better ordering
+  const numA = parseInt(a.split("-").pop(), 10);
+  const numB = parseInt(b.split("-").pop(), 10);
+  if (!isNaN(numA) && !isNaN(numB)) {
+    if (numA !== numB) return numA - numB;
+  }
+  return a < b ? -1 : 1;
+});
 
 export default function App() {
-  const [lessonNum, setLessonNum] = useState(lessonNumbers[0] ?? 1);
+  const [lessonNum, setLessonNum] = useState(lessonNumbers[0]);
   const [isOpenEnded, setIsOpenEnded] = useState(false);
 
   const { isBlueTheme, setIsBlueTheme, themeColor } = useTheme();
