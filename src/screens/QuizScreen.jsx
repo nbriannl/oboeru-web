@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import { Row, Col, Button } from "react-bootstrap";
 
 import { QUIZ_PHASE } from "../quiz/quizReducer";
 import { getQuestionAndAnswers } from "../quiz/quizEngine";
@@ -32,53 +31,47 @@ export default function QuizScreen({
     return getQuestionAndAnswers(idx);
   }, [isQuizEnd, quiz.questionsIndices, currentQnNum0]);
 
+  const isDark = themeColor === "dark";
+
   if (isQuizEnd) {
     const showRestart = numWrong !== 0;
 
     return (
-      <>
-        <Row className="quit-button" onClick={endQuiz}>
-          <Col>
-            <Button block variant={`outline-${themeColor}`}>
-              Quit
-            </Button>
-          </Col>
-        </Row>
+      <div className="max-w-2xl mx-auto w-full space-y-6">
+        <div className="flex justify-end">
+          <button 
+            onClick={endQuiz}
+            className={`px-4 py-2 rounded border transition-colors ${isDark ? 'border-slate-600 text-slate-300 hover:bg-slate-700' : 'border-red-200 text-red-600 hover:bg-red-50'}`}
+          >
+            Quit
+          </button>
+        </div>
 
-        <Row className="previous-question-card">
-          <Col>
-            <PreviousQuestionCard previousQuestion={quiz.previousQuestion} />
-          </Col>
-        </Row>
+        <PreviousQuestionCard previousQuestion={quiz.previousQuestion} />
 
-        <Row className="question-card">
-          <Col>
-            <QuestionCard
-              title="Quiz Over"
-              currentQnNum={currentQnNum0}
-              numTotal={numTotal}
-              numCorrect={numCorrect}
-              numWrong={numWrong}
-            />
-          </Col>
-        </Row>
+        <QuestionCard
+          title="Quiz Over"
+          text="Good job!"
+          currentQnNum={currentQnNum0}
+          numTotal={numTotal}
+          numCorrect={numCorrect}
+          numWrong={numWrong}
+        />
 
         {showRestart && (
-          <Row className="restart-button" onClick={restartIncorrect}>
-            <Col>
-              <Button block variant={`outline-${themeColor}`}>
-                Test Incorrect Questions
-              </Button>
-            </Col>
-          </Row>
+           <button 
+             onClick={restartIncorrect}
+             className={`w-full py-4 px-6 rounded-xl text-white font-bold text-lg shadow-lg transform transition-all hover:scale-105 active:scale-95 ${isDark ? 'bg-slate-700 hover:bg-slate-600' : 'bg-red-600 hover:bg-red-500'}`}
+           >
+             Test Incorrect Questions
+           </button>
         )}
 
-        <Row className="question-card">
-          <Col>
-            <SummaryTable questions={quiz.answeredQuestions} />
-          </Col>
-        </Row>
-      </>
+        <SummaryTable questions={quiz.answeredQuestions} />
+        
+        {/* Spacer for bottom padding */}
+        <div className="h-12"></div>
+      </div>
     );
   }
 
@@ -107,37 +100,30 @@ export default function QuizScreen({
   }
 
   return (
-    <>
-      <Row className="quit-button" onClick={endQuiz}>
-        <Col>
-          <Button block variant={`outline-${themeColor}`}>
-            Quit
-          </Button>
-        </Col>
-      </Row>
+    <div className="max-w-2xl mx-auto w-full space-y-6">
+      <div className="flex justify-end">
+        <button 
+          onClick={endQuiz}
+          className={`px-4 py-2 rounded border transition-colors ${isDark ? 'border-slate-600 text-slate-300 hover:bg-slate-700' : 'border-red-200 text-red-600 hover:bg-red-50'}`}
+        >
+          Quit
+        </button>
+      </div>
 
-      <Row className="previous-question-card">
-        <Col>
-          <PreviousQuestionCard previousQuestion={quiz.previousQuestion} />
-        </Col>
-      </Row>
+      <PreviousQuestionCard previousQuestion={quiz.previousQuestion} />
 
-      <Row className="question-card">
-        <Col>
-          <QuestionCard
-            title={qa.englishQuestion}
-            text={qa.questionBlank}
-            currentQnNum={currentQnNum0 + 1}
-            numTotal={numTotal}
-            numCorrect={numCorrect}
-            numWrong={numWrong}
-          />
-        </Col>
-      </Row>
+      <QuestionCard
+        title={qa.englishQuestion}
+        text={qa.questionBlank}
+        currentQnNum={currentQnNum0 + 1}
+        numTotal={numTotal}
+        numCorrect={numCorrect}
+        numWrong={numWrong}
+      />
 
-      <Row className="answer-buttons">
-        <Col>{answerContent}</Col>
-      </Row>
-    </>
+      <div className="mt-6">
+        {answerContent}
+      </div>
+    </div>
   );
 }
