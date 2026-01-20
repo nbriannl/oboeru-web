@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Button, Form } from "react-bootstrap";
+import lessonMetadata from "../lessonMetadata.json";
 
 export default function HomeScreen({
   themeColor,
@@ -36,11 +37,48 @@ export default function HomeScreen({
               value={lessonNum}
               onChange={e => setLessonNum(Number(e.target.value))}
             >
-              {lessonNumbers.map(n => (
-                <option key={String(n)} value={n}>
-                  {n}
-                </option>
-              ))}
+              {(() => {
+                const groups = lessonMetadata.map(meta => ({
+                  ...meta,
+                  lessons: []
+                }));
+                const others = [];
+
+                lessonNumbers.forEach(n => {
+                  const num = Number(n);
+                  const group = groups.find(g => g.ids.includes(num));
+                  if (group) {
+                    group.lessons.push(num);
+                  } else {
+                    others.push(num);
+                  }
+                });
+
+                return (
+                  <>
+                    {groups.map(g =>
+                      g.lessons.length > 0 ? (
+                        <optgroup key={g.title} label={g.title}>
+                          {g.lessons.map(n => (
+                            <option key={n} value={n}>
+                              {n}
+                            </option>
+                          ))}
+                        </optgroup>
+                      ) : null
+                    )}
+                    {others.length > 0 && (
+                      <optgroup label="Others">
+                        {others.map(n => (
+                          <option key={n} value={n}>
+                            {n}
+                          </option>
+                        ))}
+                      </optgroup>
+                    )}
+                  </>
+                );
+              })()}
             </Form.Control>
 
             <br />
