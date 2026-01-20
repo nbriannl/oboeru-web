@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 
 export function PreviousQuestionCard({ previousQuestion }) {
   const {
@@ -11,30 +10,28 @@ export function PreviousQuestionCard({ previousQuestion }) {
 
   if (isCorrect === null) {
     return (
-      <Card bg="light" text="black" className="text-center">
-        <Card.Header>Previous Question</Card.Header>
-        <Card.Body>
-          <Card.Title></Card.Title>
-          <Card.Text></Card.Text>
-        </Card.Body>
-      </Card>
+      <div className="bg-gray-50 text-gray-400 p-4 rounded-lg text-center border-2 border-dashed border-gray-200 mb-4 h-24 flex items-center justify-center">
+        <span className="text-sm font-medium">No previous question</span>
+      </div>
     );
   }
 
-  const bgStyle = isCorrect ? "success" : "danger";
+  const bgStyle = isCorrect ? "bg-green-600" : "bg-red-600";
 
   return (
-    <Card bg={bgStyle} text="white" className="text-center">
-      <Card.Header>Previous Question</Card.Header>
-      <Card.Body>
-        <Card.Title>{english}</Card.Title>
-        <Card.Text>
+    <div className={`${bgStyle} text-white rounded-lg shadow-md overflow-hidden text-center mb-4`}>
+      <div className="bg-black/10 p-2 text-xs font-bold uppercase tracking-wider">
+        Previous Question
+      </div>
+      <div className="p-4">
+        <h4 className="text-lg font-bold mb-1">{english}</h4>
+        <p className="text-base opacity-90">
           {japanese}
           <br />
-          {japaneseAllHiragana}
-        </Card.Text>
-      </Card.Body>
-    </Card>
+          <span className="text-sm opacity-75">{japaneseAllHiragana}</span>
+        </p>
+      </div>
+    </div>
   );
 }
 
@@ -45,18 +42,16 @@ export function PreviousQuestionCardCompact({ previousQuestion }) {
     japanese,
     japaneseAllHiragana
   } = previousQuestion;
-  const bgStyle = isCorrect ? "success" : "danger";
+  const bgStyle = isCorrect ? "bg-green-100 border-green-200 text-green-900" : "bg-red-100 border-red-200 text-red-900";
 
   return (
-    <Card bg={bgStyle} text="white" className="text-center">
-      <Card.Body>
-        <Card.Title>{english}</Card.Title>
-        <Card.Text>
-          {japanese}
-          <br />
-          {japaneseAllHiragana}
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <div className={`${bgStyle} border rounded-lg p-3 text-center mb-2 shadow-sm`}>
+      <h5 className="font-bold text-sm">{english}</h5>
+      <p className="text-sm">
+        {japanese}
+        <br />
+        <span className="text-xs opacity-75">{japaneseAllHiragana}</span>
+      </p>
+    </div>
   );
 }

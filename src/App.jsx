@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 
-import "./App.css";
 import lessonList from "./lessonlist.json";
 
 import NavBar from "./components/NavBar";
@@ -47,9 +45,9 @@ export default function App() {
   } = useQuizController(lessonNum, isOpenEnded, lessonList);
 
   return (
-    <div>
+    <div className={`min-h-screen flex flex-col ${isBlueTheme ? 'bg-slate-900 text-white' : 'bg-red-50 text-gray-900'}`}>
       <NavBar bg={themeColor} />
-      <Container className="content" fluid>
+      <div className="container mx-auto px-4 py-8 flex-grow">
         {!isInQuiz ? (
           <HomeScreen
             themeColor={themeColor}
@@ -74,7 +72,7 @@ export default function App() {
             onOpenAnswerSubmit={onOpenAnswerSubmit}
           />
         )}
-      </Container>
+      </div>
       <BuildStamp />
     </div>
   );
